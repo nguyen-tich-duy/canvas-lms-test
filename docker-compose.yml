@@ -1,0 +1,51 @@
+version: '3.7'
+services:
+  web:
+    image: "${WEB_IMAGE:?web_image}"
+    container_name: ${WEB_CONTAINER_NAME}
+    env_file: project/project.env
+    # This override variables in above file.
+    volumes:
+      - ${DATA_PATH:?data_path}/home:/var/lib/home
+    ports:
+      - "38080:8080"
+    restart: unless-stopped
+    logging:
+      # limit logs retained on host to 25MB
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
+    networks:
+      default: {}
+      outside:
+        aliases:
+          - ${COMPOSE_PROJECT_NAME}
+    depends_on:
+      - db
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      # - "com.centurylinklabs.watchtower.stop-signal=INT" # Send Ctrl+C
+  db:
+    image: postgres:9.6-alpine
+    container_name: ${COMPOSE_PROJECT_NAME}_db
+    restart: unless-stopped
+    env_file: postgresql/psql.env
+    volumes:
+      - ${DATA_PATH:?data_path}/db/postgres:/var/lib/postgresql/data
+    networks:
+      default: {}
+      outside:
+        aliases:
+          - ${COMPOSE_PROJECT_NAME}
+    logging:
+      # limit logs retained on host to 25MB
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
+            
+networks:
+  outside:
+    name: ${NETWORK_NAME}
+    external: true
