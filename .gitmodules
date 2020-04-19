@@ -1,0 +1,4 @@
+[submodule "canvas-src"]
+	path = canvas-src
+	url = https://github.com/instructure/canvas-lms.git
+	shallow = true
