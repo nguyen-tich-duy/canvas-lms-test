@@ -1,0 +1,6 @@
+production: &production
+  address: mailcatcher
+  port: 1025
+  domain: <%= ENV["PUBLIC_DOMAIN"] %>
+  outgoing_address: <%= ENV["OUTGOING_EMAIL"] %>
+  default_name: Flexidata Canvas

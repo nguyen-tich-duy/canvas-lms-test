@@ -1,0 +1,58 @@
+version: '2'
+services:
+  jobs: &BASE
+    environment: &BASE-ENV
+      RAILS_ENV: production
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      DB_PASSWORD: ${DB_PASSWORD}
+      ENCRYPTION_SECRET: ${ENCRYPTION_SECRET}
+      SIGNING_SECRET: ${SIGNING_SECRET}
+      PUBLIC_DOMAIN: ${PUBLIC_DOMAIN}
+    volumes:
+      - ${DATA_PATH}/tmp:/usr/src/app/tmp
+      - ${DATA_PATH}/reports:/usr/src/app/reports
+      - ${DATA_PATH}/quizzes_dist:/usr/src/app/client_apps/canvas_quizzes/dist
+      - ${DATA_PATH}/quizzes_node_modules:/usr/src/app/client_apps/canvas_quizzes/node_modules
+      - ${DATA_PATH}/quizzes_tmp:/usr/src/app/client_apps/canvas_quizzes/tmp
+      - ${DATA_PATH}/pacts:/usr/src/app/pacts
+      - ${DATA_PATH}/log:/usr/src/app/log
+    restart: unless-stopped
+    logging:
+      # limit logs retained on host to 25MB
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
+    networks:
+      default: {}
+      canvas:
+        aliases:
+          - ${COMPOSE_PROJECT_NAME}
+    depends_on:
+      - postgres
+      - redis
+      
+  web:
+    <<: *BASE
+        
+  postgres:
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - ${DATA_PATH}/postgres/data:/var/lib/postgresql/data
+    networks:
+      default: {}
+      canvas:
+        aliases:
+          - ${COMPOSE_PROJECT_NAME}
+    logging:
+      # limit logs retained on host to 25MB
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "50"
+  
+networks:
+  canvas:
+    external: true
