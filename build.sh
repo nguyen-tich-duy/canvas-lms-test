@@ -7,9 +7,12 @@ set -eo pipefail
 
 BASE_PATH=$(dirname $(realpath $0))
 
-pushd $BASE_PATH
+cd $BASE_PATH
 
+source ./.env.production
 source ./.env
+
+git submodule update --init --depth 1
 
 cp .env canvas-lms/
 cp .env.* canvas-lms/
@@ -17,10 +20,10 @@ cp .env.* canvas-lms/
 cp -r docker-compose/canvas-lms/* canvas-lms/
 cp -r config/canvas-lms/* canvas-lms/config/
 
-pushd $BASE_PATH/canvas-lms
+cd $BASE_PATH/canvas-lms
 
-docker-compose build
-# bash ./build/canvas-lms/build.sh
-
-popd
-popd
+if [ "$1" == "clean" ]; then
+    docker-compose down --rmi local
+else
+    docker-compose build
+fi

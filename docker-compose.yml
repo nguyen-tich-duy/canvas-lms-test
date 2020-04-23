@@ -1,51 +1,65 @@
 version: '3.7'
 services:
-  web:
-    image: "${WEB_IMAGE:?web_image}"
-    container_name: ${WEB_CONTAINER_NAME}
-    env_file: project/project.env
-    # This override variables in above file.
-    volumes:
-      - ${DATA_PATH:?data_path}/home:/var/lib/home
+  web: 
+    image: ${WEB_IMAGE}
+    container_name: ${COMPOSE_PROJECT_NAME}_web
+    environment: &BASE-ENV
+      RAILS_ENV: production
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      DB_PASSWORD: ${DB_PASSWORD}
+      ENCRYPTION_SECRET: ${ENCRYPTION_SECRET}
+      SIGNING_SECRET: ${SIGNING_SECRET}
+      PUBLIC_DOMAIN: ${PUBLIC_DOMAIN}
+    volumes: &BASE-VOLUMES
+      - log:/usr/src/app/log
+      - quizzes_tmp:/usr/src/app/client_apps/canvas_quizzes/tmp
+      - reports:/usr/src/app/reports
+      - tmp:/usr/src/app/tmp
     ports:
-      - "38080:8080"
+      - "${WEB_PORT}:80"
     restart: unless-stopped
-    logging:
+    logging: &LOGGING
       # limit logs retained on host to 25MB
       driver: "json-file"
       options:
         max-size: "500k"
         max-file: "50"
-    networks:
-      default: {}
-      outside:
-        aliases:
-          - ${COMPOSE_PROJECT_NAME}
-    depends_on:
-      - db
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true"
-      # - "com.centurylinklabs.watchtower.stop-signal=INT" # Send Ctrl+C
-  db:
-    image: postgres:9.6-alpine
-    container_name: ${COMPOSE_PROJECT_NAME}_db
+    depends_on: &BASE-DEPENDS
+      - postgres
+      - redis
+
+  jobs:
+    image: ${WEB_IMAGE}
+    container_name: ${COMPOSE_PROJECT_NAME}_jobs
+    command: bundle exec script/delayed_job run
+    environment: *BASE-ENV
+    volumes: *BASE-VOLUMES
     restart: unless-stopped
-    env_file: postgresql/psql.env
+    logging: *LOGGING
+    depends_on: *BASE-DEPENDS
+
+  postgres:
+    image: "${POSTGRES_IMAGE}"
+    container_name: ${COMPOSE_PROJECT_NAME}_postgres
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - ${DATA_PATH:?data_path}/db/postgres:/var/lib/postgresql/data
-    networks:
-      default: {}
-      outside:
-        aliases:
-          - ${COMPOSE_PROJECT_NAME}
-    logging:
-      # limit logs retained on host to 25MB
-      driver: "json-file"
-      options:
-        max-size: "500k"
-        max-file: "50"
-            
-networks:
-  outside:
-    name: ${NETWORK_NAME}
-    external: true
+      - pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    logging: *LOGGING
+
+  redis:
+    image: redis:alpine
+    container_name: ${COMPOSE_PROJECT_NAME}_redis
+    volumes:
+      - redis:/data
+    restart: unless-stopped
+    logging: *LOGGING
+
+volumes:
+  log: {}
+  quizzes_tmp: {}
+  pg_data: {}
+  tmp: {}
+  reports: {}
+  redis: {}

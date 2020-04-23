@@ -6,6 +6,7 @@ IFS=$'\n\t'
 # -o: prevents errors in a pipeline from being masked
 # IFS new value is less likely to cause confusing bugs when looping arrays or arguments (e.g. $@)
 
+source ./.env.production
 source ./.env
 
 docker-compose logs --tail=100 -f | ccze -A 

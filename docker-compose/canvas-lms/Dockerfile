@@ -52,20 +52,13 @@ RUN unzip woff-code-latest.zip -d woff \
 
 WORKDIR $APP_HOME
 
-# COPY --chown=docker:docker Gemfile         ${APP_HOME}
-# COPY --chown=docker:docker Gemfile.d       ${APP_HOME}Gemfile.d
-# COPY --chown=docker:docker config          ${APP_HOME}config
-# COPY --chown=docker:docker gems            ${APP_HOME}gems
-# COPY --chown=docker:docker packages        ${APP_HOME}packages
-# COPY --chown=docker:docker script          ${APP_HOME}script
-# COPY --chown=docker:docker package.json    ${APP_HOME}
-# COPY --chown=docker:docker yarn.lock       ${APP_HOME}
-# COPY --chown=docker:docker babel.config.js ${APP_HOME}
 COPY --chown=docker:docker . $APP_HOME
 
 USER docker
+# if yarn hits a snag try one more time with concurrency set to 1
+# https://github.com/yarnpkg/yarn/issues/2629
 RUN bundle install --jobs 8 \
-  && yarn install --pure-lockfile \
+  && (yarn install --pure-lockfile || yarn install --pure-lockfile --network-concurrency 1) \
   && mkdir -p .yardoc \
              app/stylesheets/brandable_css_brands \
              app/views/info \
@@ -97,26 +90,24 @@ RUN bundle install --jobs 8 \
 # TODO: switch to canvas:compile_assets_dev once we stop using this Dockerfile in production/e2e \
   && COMPILE_ASSETS_NPM_INSTALL=0 bundle exec rake canvas:compile_assets \
   # downgrade to prod dependencies \
-  bundle install --without test development; \
-  bundle clean --force; \
+  && bundle install --without test development mysql sqlite \
+  && bundle clean --force \
   \
   # now some cleanup... \
-  rm -rf \
+  && rm -rf \
     /home/docker/.bundle/cache \
     $GEM_HOME/cache \
     $GEM_HOME/bundler/gems/*/{.git,spec,test,features} \
     $GEM_HOME/gems/*/{spec,test,features} \
     `yarn cache dir` \
-    /root/.node-gyp \
     /tmp/phantomjs \
     .yardoc \
     client_apps/canvas_quizzes/{tmp,node_modules} \
     config/locales/generated \
     gems/*/node_modules \
     gems/plugins/*/node_modules \
-    log \
     public/dist/maps \
     public/doc/api/*.json \
     public/javascripts/translations \
     tmp-*.tmp \
-    node-modules
+    node_modules
