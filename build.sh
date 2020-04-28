@@ -6,6 +6,7 @@ set -eo pipefail
 # -o: prevents errors in a pipeline from being masked
 
 BASE_PATH=$(dirname $(realpath $0))
+WEB_ROOT=$BASE_PATH/canvas-lms
 
 cd $BASE_PATH
 
@@ -16,19 +17,26 @@ source ./.env
 message "Update git repo"
 git submodule update --init --depth 1
 
-# build canvas-lms 
+# build canvas-lms
 message "Building canvas-lms"
 
+# patches
+
+source patches/default_font.sh
+source patches/footer.sh
+
+# .env
 cat >canvas-lms/.env<<EOF
 COMPOSE_PROJECT_NAME=${BUILD_PREFIX}-lms
 WEB_IMAGE=${WEB_IMAGE}
 POSTGRES_IMAGE=${POSTGRES_IMAGE}
 EOF
 
+# config
 cp -r docker-compose/canvas-lms/* canvas-lms/
 cp -r config/canvas-lms/* canvas-lms/config/
 
-cd $BASE_PATH/canvas-lms
+cd $WEB_ROOT
 
 if [ "$1" == "clean" ]; then
     docker-compose down --rmi local
