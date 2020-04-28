@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  web:
+    environment:
+      VIRTUAL_HOST: ${PUBLIC_DOMAIN}
+
+  rce-api:
+    environment:
+      VIRTUAL_HOST: ${RCE_HOST}
+      HTTP_PROTOCOL_OVERRIDE: http
+    extra_hosts:
+      - "${PUBLIC_DOMAIN}:10.0.2.4"

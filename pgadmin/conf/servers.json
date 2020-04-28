@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Canvas Server",
+      "Group": "Canvas",
+      "Port": 5432,
+      "Username": "postgres",
+      "Host": "postgres",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "canvas"
+    }
+  }
+}

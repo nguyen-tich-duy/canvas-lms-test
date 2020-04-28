@@ -1,0 +1,4 @@
+version: '3'
+services:
+  web: &WEB
+    image: ${RCE_IMAGE}

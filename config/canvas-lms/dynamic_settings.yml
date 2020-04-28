@@ -5,7 +5,7 @@ production:
         encryption-secret: <%= ENV["ENCRYPTION_SECRET"] %>
         signing-secret: <%= ENV["SIGNING_SECRET"] %>
       rich-content-service:
-        app-host: <%= ENV["PUBLIC_DOMAIN"] %>
+        app-host: <%= ENV["RCE_HOST"] %>
 
 development:
   # tree

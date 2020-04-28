@@ -13,20 +13,7 @@ cd $BASE_PATH
 source ./.env.production
 source ./.env
 
-function prompt {
-  read -r -p "$1 " "$2"
-}
-
-function message {
-  echo ''
-  echo "$BOLD> $*$NORMAL"
-}
-
-function confirm_command {
-  prompt "OK to run '$*'? [y/n]" confirm
-  [[ ${confirm:-n} == 'y' ]] || return 1
-  eval "$*"
-}
+source scripts/common.sh
 
 function database_exists {
   docker-compose run --rm web \
@@ -53,13 +40,14 @@ If you want to migrate the existing database, use migrate.sh
     message 'About to run "bundle exec rake db:drop"'
     prompt "type NUKE in all caps: " nuked
     [[ ${nuked:-n} == 'NUKE' ]] || exit 1
-    docker-compose run --rm web env DISABLE_DATABASE_ENVIRONMENT_CHECK=$DISABLE_DATABASE_ENVIRONMENT_CHECK bundle exec rake db:drop
+    docker-compose run -e DISABLE_DATABASE_ENVIRONMENT_CHECK=$DISABLE_DATABASE_ENVIRONMENT_CHECK --rm web \
+      bundle exec rake db:drop
   fi
 
   message "Creating new database"
   docker-compose run --rm web \
     bundle exec rake db:create
-  docker-compose run --rm web \
+  docker-compose run -e CANVAS_LMS_STATS_COLLECTION=$CANVAS_LMS_STATS_COLLECTION --rm web \
     bundle exec rake db:initial_setup
 }
 

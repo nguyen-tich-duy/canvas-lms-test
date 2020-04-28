@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  web: 
+  web:
     image: ${WEB_IMAGE}
     container_name: ${COMPOSE_PROJECT_NAME}_web
     environment: &BASE-ENV
@@ -10,16 +10,21 @@ services:
       ENCRYPTION_SECRET: ${ENCRYPTION_SECRET}
       SIGNING_SECRET: ${SIGNING_SECRET}
       PUBLIC_DOMAIN: ${PUBLIC_DOMAIN}
+      RCE_HOST: ${RCE_HOST}
+      ENABLE_HTTPS: ${ENABLE_HTTPS}
+      # VIRTUAL_HOST: canvas.docker
     volumes: &BASE-VOLUMES
+      - ./canvas-lms/config:/usr/src/app/config
       - log:/usr/src/app/log
       - quizzes_tmp:/usr/src/app/client_apps/canvas_quizzes/tmp
       - reports:/usr/src/app/reports
       - tmp:/usr/src/app/tmp
+      - upload:/usr/src/app/upload
     ports:
       - "${WEB_PORT}:80"
     restart: unless-stopped
     logging: &LOGGING
-      # limit logs retained on host to 25MB
+      ## limit logs retained on host to 25MB
       driver: "json-file"
       options:
         max-size: "500k"
@@ -56,7 +61,24 @@ services:
     restart: unless-stopped
     logging: *LOGGING
 
+  rce-api:
+    image: ${RCE_IMAGE}
+    container_name: ${COMPOSE_PROJECT_NAME}_rce-api
+    environment:
+      NODE_ENV: production
+      STATSD_HOST: 127.0.0.1
+      STATSD_PORT: 8125
+      ECOSYSTEM_KEY: "${ENCRYPTION_SECRET}"
+      ECOSYSTEM_SECRET: "${SIGNING_SECRET}"
+      YOUTUBE_API_KEY: "${YOUTUBE_API_KEY}"
+      PORT: ${RCE_PORT}
+      # VIRTUAL_HOST: rce.docker
+      # HTTP_PROTOCOL_OVERRIDE: http
+    ports:
+      - "${RCE_PORT}:80"
+
 volumes:
+  upload: {}
   log: {}
   quizzes_tmp: {}
   pg_data: {}

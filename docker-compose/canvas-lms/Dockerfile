@@ -79,6 +79,7 @@ RUN bundle install --jobs 8 \
              public/javascripts/compiled \
              public/javascripts/translations \
              reports \
+             upload \
              tmp \
              /home/docker/.bundler/ \
              /home/docker/.cache/yarn \

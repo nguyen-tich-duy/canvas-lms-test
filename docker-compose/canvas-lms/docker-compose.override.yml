@@ -1,0 +1,11 @@
+# See doc/docker/README.md or https://github.com/instructure/canvas-lms/tree/master/doc/docker
+version: '2'
+services:
+  web: &WEB
+    image: ${WEB_IMAGE}
+
+  jobs:
+    image: ${WEB_IMAGE}
+
+  postgres:
+    image: ${POSTGRES_IMAGE}

@@ -1,0 +1,7 @@
+{
+    "files.watcherExclude": {
+        "**/.git/modules/**": true,
+        "**/canvas-lms/**/*": true,
+        "**/canvas-rce-api/**/*": true
+    }
+}

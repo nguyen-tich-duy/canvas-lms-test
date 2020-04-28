@@ -9,4 +9,4 @@ IFS=$'\n\t'
 source ./.env.production
 source ./.env
 
-docker-compose logs --tail=100 -f | ccze -A 
+docker-compose logs --tail=100 -f $@ | ccze -A 

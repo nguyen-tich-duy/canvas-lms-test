@@ -6,12 +6,16 @@ IFS=$'\n\t'
 # -o: prevents errors in a pipeline from being masked
 # IFS new value is less likely to cause confusing bugs when looping arrays or arguments (e.g. $@)
 
+
+BASE_PATH=$(dirname $(dirname $(realpath $0)))
+
+cd $BASE_PATH
+
+source ./scripts/common.sh
+
 source ./.env.production
 source ./.env
 
-bash ./down.sh
+export COMPOSE_FILE=docker-compose.yml:docker-compose.pgadmin.yml
 
-docker pull ${WEB_IMAGE}
-docker pull ${POSTGRES_IMAGE}
-
-bash ./up.sh
+exec_command "docker-compose exec pgadmin sh -l"

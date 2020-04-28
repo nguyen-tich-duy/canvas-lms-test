@@ -2,3 +2,7 @@
 	path = canvas-lms
 	url = https://github.com/instructure/canvas-lms.git
 	shallow = true
+[submodule "canvas-rce-api"]
+	path = canvas-rce-api
+	url = https://github.com/instructure/canvas-rce-api
+	shallow = true
