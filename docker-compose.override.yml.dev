@@ -9,4 +9,4 @@ services:
       VIRTUAL_HOST: ${RCE_HOST}
       HTTP_PROTOCOL_OVERRIDE: http
     extra_hosts:
-      - "${PUBLIC_DOMAIN}:10.0.2.4"
+      - "${PUBLIC_DOMAIN}:${DOCKER_HOST_IP}"

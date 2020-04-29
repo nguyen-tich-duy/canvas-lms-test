@@ -19,6 +19,8 @@ exec_command "git submodule update --init --depth 1"
 message "Copy new settings"
 exec_command "cp -r config/canvas-lms/* canvas-lms/config"
 
+export DOCKER_HOST_IP=$(ip -4 addr show docker0 | grep -Po 'inet \K[\d.]+')
+
 exec_command "docker-compose up -d  $@"
 
 if [ "$NOLOG" != "1" ]; then
