@@ -9,4 +9,8 @@ IFS=$'\n\t'
 source ./.env.production
 source ./.env
 
-docker-compose logs --tail=100 -f $@ | ccze -A 
+if [ "$1" == "production" ]; then
+  sudo tail -n 100 -f /var/lib/docker/volumes/${COMPOSE_PROJECT_NAME}_log/_data/production.log | ccze -A
+else
+  docker-compose logs --tail=100 -f $@ | ccze -A
+fi
