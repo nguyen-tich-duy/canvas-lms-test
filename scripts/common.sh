@@ -24,3 +24,14 @@ function confirm_command {
   fi
   exec_command "$*"
 }
+
+function set_variable {
+  local varname=$1
+  shift
+  if [ -z "${!varname}" ]; then
+    eval "$varname=\"$@\""
+  else
+    echo "Error: $varname already set"
+    usage
+  fi
+}

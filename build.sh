@@ -5,6 +5,13 @@ set -eo pipefail
 # -e: immediately exit if any command has a non-zero exit status
 # -o: prevents errors in a pipeline from being masked
 
+function usage {
+  echo "./build.sh          : build local only"
+  echo "./build.sh clean    : remove all images"
+  echo "./build.sh push     : build and push"
+  echo "./build.sh push-only: push only (no build)"
+}
+
 BASE_PATH=$(dirname $(realpath $0))
 WEB_ROOT=$BASE_PATH/canvas-lms
 
@@ -13,6 +20,21 @@ cd $BASE_PATH
 source ./scripts/common.sh
 source ./.env.build
 source ./.env
+
+unset SKIP_BUILD ACTION
+
+case "$1" in
+  push|clean)
+    ACTION=$1
+    shift;;
+  "push-only")
+    ACTION=push
+    SKIP_BUILD=1
+    shift;;
+  -h|--help)
+    usage
+    exit 2;;
+esac
 
 message "Update git repo"
 git submodule update --init --depth 1
@@ -38,10 +60,10 @@ cp -r config/canvas-lms/* canvas-lms/config/
 
 cd $WEB_ROOT
 
-if [ "$1" == "clean" ]; then
-    docker-compose down --rmi local
+if [ "$ACTION" == "clean" ]; then
+  docker-compose down --rmi local
 else
-    docker-compose build
+  [ -z "$SKIP_BUILD" ] && docker-compose build || message "[SKIPPED]"
 fi
 cd ..
 
@@ -57,9 +79,19 @@ cp -r docker-compose/canvas-rce-api/* canvas-rce-api/
 
 cd $BASE_PATH/canvas-rce-api
 
-if [ "$1" == "clean" ]; then
-    docker-compose down --rmi local
+if [ "$ACTION" == "clean" ]; then
+  docker-compose down --rmi local
 else
-    docker-compose build
+  [ -z "$SKIP_BUILD" ] && docker-compose build || message "[SKIPPED]"
 fi
 cd ..
+
+if [ "$ACTION" == "push" ]; then
+  cd $WEB_ROOT
+  # ignore docker-compose.override.yml to avoid mistake
+  exec_command "docker-compose push"
+
+  cd $BASE_PATH/canvas-rce-api
+  # ignore docker-compose.override.yml to avoid mistake
+  exec_command "docker-compose push"
+fi
