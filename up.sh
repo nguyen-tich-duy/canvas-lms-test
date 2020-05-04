@@ -13,6 +13,8 @@ source ./scripts/common.sh
 source ./.env.production
 source ./.env
 
+[ "$1" == "--no-logs" ] && { NOLOG=1;shift; }
+
 message "Update git repo"
 exec_command "git submodule update --init --depth 1"
 
