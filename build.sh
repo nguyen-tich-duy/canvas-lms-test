@@ -42,11 +42,6 @@ git submodule update --init --depth 1
 # build canvas-lms
 message "Building canvas-lms"
 
-# patches
-
-source patches/default_font.sh
-source patches/footer.sh
-
 # .env
 cat >canvas-lms/.env<<EOF
 COMPOSE_PROJECT_NAME=${BUILD_PREFIX}-lms

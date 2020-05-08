@@ -16,7 +16,7 @@ source ./.env
 [ "$1" == "--no-logs" ] && { NOLOG=1;shift; }
 
 message "Update git repo"
-exec_command "git submodule update --init --depth 1"
+exec_command "git submodule update --init --depth 1 canvas-lms"
 
 message "Copy new settings"
 exec_command "cp -r config/canvas-lms/* canvas-lms/config"

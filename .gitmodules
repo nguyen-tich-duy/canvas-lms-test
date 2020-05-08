@@ -1,7 +1,8 @@
 [submodule "canvas-lms"]
 	path = canvas-lms
-	url = https://github.com/instructure/canvas-lms.git
+	url = git@gitlab.com:flexidata/lms/canvas-lms.git
 	shallow = true
+	branch = fxd/stable
 [submodule "canvas-rce-api"]
 	path = canvas-rce-api
 	url = https://github.com/instructure/canvas-rce-api
