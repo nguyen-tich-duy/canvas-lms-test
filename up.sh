@@ -23,6 +23,8 @@ exec_command "cp -r config/canvas-lms/* canvas-lms/config"
 
 export DOCKER_HOST_IP=$(ip -4 addr show docker0 | grep -Po 'inet \K[\d.]+')
 
+[ "$ENABLE_HTTPS" == "false" ] && export HTTP_PROTOCOL_OVERRIDE=http
+
 exec_command "docker-compose up -d  $@"
 
 if [ "$NOLOG" != "1" ]; then

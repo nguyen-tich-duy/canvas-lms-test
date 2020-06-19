@@ -73,7 +73,7 @@ services:
       YOUTUBE_API_KEY: "${YOUTUBE_API_KEY}"
       PORT: ${RCE_PORT}
       # VIRTUAL_HOST: rce.docker
-      # HTTP_PROTOCOL_OVERRIDE: http
+      HTTP_PROTOCOL_OVERRIDE: ${HTTP_PROTOCOL_OVERRIDE:-https}
     ports:
       - "${RCE_PORT}:80"
 
