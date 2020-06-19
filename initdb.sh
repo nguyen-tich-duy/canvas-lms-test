@@ -18,6 +18,11 @@ source scripts/common.sh
 message "Update git repo"
 exec_command "git submodule update --init --depth 1 canvas-lms"
 
+message "Copy new settings"
+exec_command "cp -r config/canvas-lms/* canvas-lms/config"
+
+export DOCKER_HOST_IP=$(ip -4 addr show docker0 | grep -Po 'inet \K[\d.]+')
+
 function database_exists {
   docker-compose run --rm web \
     bundle exec rails runner 'ActiveRecord::Base.connection' &> /dev/null
