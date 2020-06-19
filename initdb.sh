@@ -15,6 +15,9 @@ source ./.env
 
 source scripts/common.sh
 
+message "Update git repo"
+exec_command "git submodule update --init --depth 1 canvas-lms"
+
 function database_exists {
   docker-compose run --rm web \
     bundle exec rails runner 'ActiveRecord::Base.connection' &> /dev/null
