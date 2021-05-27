@@ -6,6 +6,15 @@ IFS=$'\n\t'
 # -o: prevents errors in a pipeline from being masked
 # IFS new value is less likely to cause confusing bugs when looping arrays or arguments (e.g. $@)
 
+# Usage:
+#   Show canvas production.log
+#     ./logs.sh production
+#   Show docker logs for the related service
+#     ./logs.sh postgres
+#     ./logs.sh web
+#   Show all docker logs
+#     ./logs.sh
+
 source ./.env.production
 source ./.env
 

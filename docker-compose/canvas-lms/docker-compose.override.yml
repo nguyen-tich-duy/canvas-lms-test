@@ -9,3 +9,7 @@ services:
 
   postgres:
     image: ${POSTGRES_IMAGE}
+    build:
+      context: .
+      dockerfile: ./Dockerfile-postgresql
+

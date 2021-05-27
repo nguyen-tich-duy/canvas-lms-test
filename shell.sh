@@ -18,4 +18,4 @@ else
     SERVICE_NAME=$1
 fi
 
-docker exec -ti ${COMPOSE_PROJECT_NAME}_${SERVICE_NAME} env TERM=xterm ${CONTAINER_SHELL} ${CONTAINER_SHELL_ARGS[@]}
+docker-compose exec ${SERVICE_NAME} env TERM=xterm ${CONTAINER_SHELL} ${CONTAINER_SHELL_ARGS[@]}

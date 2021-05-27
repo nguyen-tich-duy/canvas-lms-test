@@ -2,7 +2,6 @@ version: '3.7'
 services:
   web:
     image: ${WEB_IMAGE}
-    container_name: ${COMPOSE_PROJECT_NAME}_web
     environment: &BASE-ENV
       RAILS_ENV: production
       ENCRYPTION_KEY: ${ENCRYPTION_KEY}
@@ -35,7 +34,6 @@ services:
 
   jobs:
     image: ${WEB_IMAGE}
-    container_name: ${COMPOSE_PROJECT_NAME}_jobs
     command: bundle exec script/delayed_job run
     environment: *BASE-ENV
     volumes: *BASE-VOLUMES
@@ -45,7 +43,7 @@ services:
 
   postgres:
     image: "${POSTGRES_IMAGE}"
-    container_name: ${COMPOSE_PROJECT_NAME}_postgres
+    command: "postgres ${POSTGRES_ARGS}"
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
@@ -55,7 +53,6 @@ services:
 
   redis:
     image: redis:alpine
-    container_name: ${COMPOSE_PROJECT_NAME}_redis
     volumes:
       - redis:/data
     restart: unless-stopped
@@ -63,7 +60,6 @@ services:
 
   rce-api:
     image: ${RCE_IMAGE}
-    container_name: ${COMPOSE_PROJECT_NAME}_rce-api
     environment:
       NODE_ENV: production
       STATSD_HOST: 127.0.0.1

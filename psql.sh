@@ -16,16 +16,16 @@ source ./.env
 # make sure the container is started
 docker-compose start postgres
 
-function less_exists {
-  docker-compose exec postgres less -V &> /dev/null
-}
+# function less_exists {
+#   docker-compose exec postgres less -V &> /dev/null
+# }
 
-if ! less_exists; then
-  echo "Install support tools"
-  docker-compose exec postgres apt-get update
-  docker-compose exec postgres apt-get install less -y
-  docker-compose exec postgres rm rm -rf /var/lib/apt/lists/*
-fi
+# if ! less_exists; then
+#   echo "Install support tools"
+#   docker-compose exec postgres apt-get update
+#   docker-compose exec postgres apt-get install less -y
+#   docker-compose exec postgres rm rm -rf /var/lib/apt/lists/*
+# fi
 
 echo "Start psql..."
-docker-compose exec postgres env LESS='-S' su postgres -c "psql canvas"
+docker-compose exec postgres env LESS='-S' PAGER=less su postgres -c "psql canvas"
