@@ -1,6 +1,16 @@
 # Uncomment to enable cassandra
 # see canvas/config/cassandra.yml.example for further instructions
 
+production:
+  page_views:
+    servers:
+    - cassandra:9160
+    keyspace: page_views
+  auditors:
+    servers:
+    - cassandra:9160
+    keyspace: auditors
+
 # development:
 #   page_views:
 #     servers:

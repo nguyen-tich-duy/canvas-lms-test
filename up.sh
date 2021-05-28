@@ -9,9 +9,10 @@ IFS=$'\n\t'
 BASE_PATH=$(dirname $(realpath $0))
 cd $BASE_PATH
 
-source ./scripts/common.sh
 source ./.env.production
 source ./.env
+
+source ./scripts/common.sh
 
 [ "$1" == "--no-logs" ] && { NOLOG=1;shift; }
 
