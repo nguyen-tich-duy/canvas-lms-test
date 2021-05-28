@@ -39,6 +39,10 @@ esac
 message "Update git repo"
 git submodule update --init --depth 1
 
+message "Add Analytics module"
+#rm -rf $WEB_ROOT/gems/plugins/analytics
+[ ! -e $WEB_ROOT/gems/plugins/analytics ] && git clone https://github.com/instructure/analytics $WEB_ROOT/gems/plugins/analytics --depth 1
+
 # build canvas-lms
 message "Building canvas-lms"
 
@@ -50,8 +54,8 @@ POSTGRES_IMAGE=${POSTGRES_IMAGE}
 EOF
 
 # config
-cp -r docker-compose/canvas-lms/* canvas-lms/
-cp -r config/canvas-lms/* canvas-lms/config/
+cp -ur docker-compose/canvas-lms/* canvas-lms/
+cp -ur config/canvas-lms/* canvas-lms/config/
 
 cd $WEB_ROOT
 
@@ -70,7 +74,7 @@ COMPOSE_PROJECT_NAME=${BUILD_PREFIX}-rce-api
 RCE_IMAGE=${RCE_IMAGE}
 EOF
 
-cp -r docker-compose/canvas-rce-api/* canvas-rce-api/
+cp -ur docker-compose/canvas-rce-api/* canvas-rce-api/
 
 cd $BASE_PATH/canvas-rce-api
 

@@ -1,4 +1,4 @@
-FROM instructure/node-passenger:10
+FROM instructure/node-passenger:12
 
 USER root
 RUN npm install -g npm@6
