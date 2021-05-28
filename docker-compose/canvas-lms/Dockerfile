@@ -116,6 +116,7 @@ RUN bundle install --jobs 8 \
              /home/docker/.cache/yarn \
              /home/docker/.gem/ \
   \
+  && chmod +x vendor/QTIMigrationTool/migrate.py \
   # update Gemfile.lock in cases where a lock file was pulled in during the `COPY --chown=docker:docker . $APP_HOME` step \
   && bundle lock --local --conservative \
   \

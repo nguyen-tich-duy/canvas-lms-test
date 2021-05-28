@@ -43,6 +43,10 @@ message "Add Analytics module"
 #rm -rf $WEB_ROOT/gems/plugins/analytics
 [ ! -e $WEB_ROOT/gems/plugins/analytics ] && git clone https://github.com/instructure/analytics $WEB_ROOT/gems/plugins/analytics --depth 1
 
+message "Add QTI module"
+mkdir -p $WEB_ROOT/vendor
+[ ! -e $WEB_ROOT/vendor/QTIMigrationTool ] && git clone https://github.com/instructure/QTIMigrationTool.git $WEB_ROOT/vendor/QTIMigrationTool --depth 1
+
 # build canvas-lms
 message "Building canvas-lms"
 
