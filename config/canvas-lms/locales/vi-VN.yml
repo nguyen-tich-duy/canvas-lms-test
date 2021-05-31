@@ -5332,8 +5332,8 @@ vi-VN:
         bạn có bất kỳ cuộc hẹn nào. Bạn sẽ được thông báo nếu có cuộc hẹn.
       scheduler_explanation_teacher_header: Bạn chưa tạo bất kỳ nhóm cuộc hẹn nào
         và không có nhóm nào bạn có thể đăng ký
-      scheduler_explanation_teacher_paragraph_1: Đây là Công cụ lập lịch. Bạn có thể
-        sử dụng nó để tạo các nhóm cuộc hẹn cho học sinh của bạn để đăng ký.
+      scheduler_explanation_teacher_paragraph_1: Đây là Trình lập lịch biểu. Bạn có
+        thể sử dụng nó để tạo các nhóm cuộc hẹn cho học sinh của bạn để đăng ký.
       scheduler_explanation_teacher_paragraph_2: 'Ví dụ: giả sử bạn muốn thực hiện
         bài tập giữa kỳ với từng học sinh trong khóa học của mình. Bạn sẽ tạo một
         nhóm cuộc hẹn mới, chỉ định ngày và giờ bạn có sẵn, yêu cầu nhóm đó chia thời
@@ -5358,13 +5358,13 @@ vi-VN:
       done_go_back_to_list: Xong, quay lại danh sách
       links:
         accessibility_warning: 'Mẹo: Để cải thiện khả năng truy cập vào các sự kiện
-          lịch, vui lòng sử dụng chế độ xem danh sách'
-        calendar_agenda: Chương trình nghị sự
+          lịch, vui lòng sử dụng chế độ xem chương trình'
+        calendar_agenda: Chương trình
         calendar_month: Tháng
-        calendar_scheduler: Người lập kế hoạch
+        calendar_scheduler: Trình lập lịch biểu
         calendar_week: Tuần
         improved_accessibility_recommend_agenda: 'Cảnh báo: Để cải thiện khả năng
-          truy cập, vui lòng sử dụng Lịch "Chế độ xem danh sách".'
+          truy cập, vui lòng sử dụng Lịch "Chế độ xem chương trình".'
       loading: Tải
       my_appointment_groups: Các nhóm hẹn của tôi
     calendar_navigator:
@@ -6456,7 +6456,7 @@ vi-VN:
       recordings: "%{recordingCount} Bản ghi"
       settings: Cài đặt
       type: "%{type}"
-      view: Lượt xem
+      view: Xem
     confirm:
       close: Bạn có chắc chắn muốn kết thúc hội nghị này? Bạn sẽ không thể mở lại
         nó.
@@ -6499,7 +6499,7 @@ vi-VN:
       settings: Cài đặt
       start: Khởi đầu
       type: "%{type}"
-      view: Lượt xem
+      view: Xem
     no_concluded_conferences: Không có hội nghị kết thúc
     no_new_conferences: Không có hội nghị mới
     no_settings_error: Hội nghị không có trang cài đặt nâng cao
@@ -8384,8 +8384,8 @@ vi-VN:
         conclude: Kết thúc khóa học này
         copy: Sao chép khóa học này
         delete: Xóa khóa học này
-        export_content: 'Nội dung khóa học xuất '
-        import: 'Nội dung khóa học nhập '
+        export_content: 'Xuất nội dung khóa học '
+        import: 'Nhập nội dung khóa học '
         new_badge: Mới
         reset: Đặt lại nội dung khóa học
         stats: Thống kê khóa học
@@ -8978,7 +8978,7 @@ vi-VN:
   date_created_b93b76fb: ", Ngày tạo:"
   date_created_createdat_265a0dfa: 'ngày tạo: %{createdAt}'
   date_ee500367: Ngày
-  date_error_7b38f8ff: Lỗi ngày
+  date_error_7b38f8ff: Ngày tháng năm không hợp lệ
   date_is_required_9c6f5e83: Ngày là bắt buộc!
   date_modified_4d065406: ", ngày sửa đổi:"
   date_modified_e1c8ac8f: Ngày sửa đổi
@@ -9060,7 +9060,7 @@ vi-VN:
     - Tháng Mười Hai
   datepicker:
     errors:
-      not_a_date: Đó không phải là một cuộc hẹn hò!
+      not_a_date: Định dạng ngày tháng năm không chính xác!
     first_day_index: '1'
     nextText: Kế tiếp
     prevText: Trước đó
@@ -10005,11 +10005,11 @@ vi-VN:
   due_date_6a281fe3: Hạn:%{date}
   due_date_822625d8: Ngày hết hạn
   due_date_bf4eaf46: Hạn%{date}
-  due_date_cannot_be_after_course_end_fd128a14: Ngày hết hạn không thể sau khi kết
-    thúc khóa học
+  due_date_cannot_be_after_course_end_fd128a14: Ngày hết hạn không thể sau khi  khóa
+    học kết thúc
   due_date_cannot_be_after_lock_date_675b30aa: Ngày hết hạn không thể sau ngày khóa.
-  due_date_cannot_be_after_section_end_b0f54388: Ngày hết hạn không thể sau khi kết
-    thúc phần
+  due_date_cannot_be_after_section_end_b0f54388: 'Ngày hết hạn không thể sau khi lớp
+    kết thúc '
   due_date_cannot_be_after_term_end_5d504cb1: Ngày hết hạn không thể sau khi kết thúc
     học kỳ
   due_date_cannot_be_before_course_start_ecc523ba: Ngày hết hạn không thể trước khi
@@ -10052,7 +10052,7 @@ vi-VN:
   due_time_9acd6b69: 'Hạn: %{time}'
   due_to_the_size_of_your_course_you_must_select_a_s_f834ba66: Do quy mô khóa học
     của bạn, bạn phải chọn một nhóm học sinh trước khi khởi chạy SpeedGrader.
-  duplicate_31cec192: Bản sao
+  duplicate_31cec192: Nhân bản
   duplicate_assignment_name_3ca7d753: Bản sao bài tập%{name}
   duplicate_discussion_title_43b39959: Bản sao Thảo luận %{title}
   duplicate_discussion_title_6537ef4d: Bản sao thảo luận %{title}
@@ -10097,9 +10097,8 @@ vi-VN:
     cho số lượng * lượt xem trang * vào ngày đó. Một thanh màu cam cho biết rằng học
     sinh ** đã thực hiện một số hành động ** trong khóa học vào ngày hôm đó.
   each_bar_represents_the_number_of_page_views_on_th_442f8465: Mỗi thanh đại diện
-    cho số lượng * lượt xem trang * vào ngày đó. Một thanh màu cam cho biết rằng một
-    số người dùng ** đã thực hiện một hành động ** trong một khóa học vào ngày hôm
-    đó.
+    cho số lượng *lượt xem trang* vào ngày đó. Một thanh màu cam cho biết rằng một
+    số người dùng **đã thực hiện một hành động** trong một khóa học vào ngày hôm đó.
   each_bar_represents_the_number_of_page_views_on_th_66e1dcc0: Mỗi thanh đại diện
     cho số lượng * lượt xem trang * vào ngày đó. Một thanh màu cam cho biết rằng một
     số người dùng ** đã thực hiện một hành động ** trong khóa học vào ngày hôm đó.
@@ -10401,8 +10400,8 @@ vi-VN:
   end_course_set_up_tutorial_f358b85d: Hướng dẫn thiết lập khóa học
   end_date_cannot_be_before_start_date_eb62ed6d: Ngày kết thúc không thể trước ngày
     bắt đầu
-  end_date_cdd7a7b6: 'Ngày cuối:'
-  end_date_e0093ed7: Ngày cuối
+  end_date_cdd7a7b6: 'Ngày kết thúc:'
+  end_date_e0093ed7: Ngày kết thúc
   end_date_from_cdd9d90: 'Ngày kết thúc từ:'
   end_date_to_8b17929d: 'Ngày kết thúc:'
   end_dates_249d8dbb: 'Ngày kết thúc:'
@@ -10994,7 +10993,7 @@ vi-VN:
   explanation_of_statuses_90a26d07: 'Giải thích về các trạng thái:'
   export_an_existing_quiz_to_new_quizzes_2_format_8fd08a23: Xuất một bài kiểm tra
     hiện có sang 2 định dạng Bài kiểm tra mới
-  export_course_content_f4774b74: Nội dung khóa học xuất khẩu
+  export_course_content_f4774b74: Xuất nội dung khóa học
   export_de71cd8e: Xuất
   export_failed_5d615d6d: Không xuất thành công
   export_in_progress_70db262a: Đang xuất
@@ -11757,7 +11756,7 @@ vi-VN:
   grade_10d1e5a1: "%{grade}"
   grade_9c6f076d: dấu
   grade_a91e433e: 'Điểm:'
-  grade_anonymously_6c37133a: Chấm điểm nặc danh
+  grade_anonymously_6c37133a: Chấm điểm ẩn danh
   grade_assignment_7c1abc11: Chấm điểm %{assignment}
   grade_change_activity_75fb525: Hoạt động thay đổi điểm
   grade_change_log_231f90e4: Nhật ký thay đổi điểm
@@ -12522,9 +12521,9 @@ vi-VN:
   grader_names_visible_to_final_grader_turned_on_7f768b67: Tên người chấm điểm hiển
     thị cho người chấm điểm cuối cùng, được bật
   grader_that_determines_final_grade_cc55f20: Người chấm xác định điểm cuối cùng
-  graders_anonymous_to_graders_turned_off_e017d355: Người chấm nặc danh với người
+  graders_anonymous_to_graders_turned_off_e017d355: Người chấm ẩn danh với người
     chấm đã tắt
-  graders_anonymous_to_graders_turned_on_6ccf213f: Người chấm nặc danh với người chấm
+  graders_anonymous_to_graders_turned_on_6ccf213f: Người chấm ẩn danh với người chấm
     đã bật
   graders_can_view_each_other_s_comments_d836b848: Người chấm có thể xem ý kiến của
     nhau
@@ -13498,6 +13497,8 @@ vi-VN:
   hour_s_b6e8d238: Giờ
   hours_late_989e9081: Giờ trễ
   hover_over_me_496521b9: Di chuột qua tôi
+  how_do_i_import_a_canvas_course_export_package_ed3aafd4: Làm sao để nhập 1 gói Canvas
+    xuất khoá học
   how_is_the_grade_determined_bb75bf53: Làm thế nào là điểm được xác định?
   how_is_this_affecting_you_b3b6a639: Điều này ảnh hưởng đến bạn như thế nào?
   how_many_minutes_ecca5ee7: Bao nhiêu phút?
@@ -17982,7 +17983,7 @@ vi-VN:
   no_exports_to_display_7f1b630b: Không truy xuất để hiển thị
   no_file_submitted_a879fa53: Không có tập tin nào được gửi
   no_final_grade_selected_3595c9c: Không có dấu cuối cùng được chọn
-  no_grade_3fa326c: không có điểm
+  no_grade_3fa326c: Không Có Điểm
   no_grade_assigned_90e531f5: Không có điểm được giao.
   no_grade_for_assignment_97c9bc75: Không có điểm cho %{assignment}
   no_grade_for_assignmenttitle_83baad53: Không có điểm cho %{assignmentTitle}
@@ -18371,8 +18372,7 @@ vi-VN:
   notifications_view_f9a60770: Thông báo - xem
   notify_users_this_quiz_has_changed_c5b05995: Thông báo cho người dùng bài kiểm tra
     này đã thay đổi
-  now_click_the_agenda_button_607fb40e: Bây giờ bấm vào nút * Chương trình nghị sự
-    *
+  now_click_the_agenda_button_607fb40e: Bây giờ bấm vào nút *Chương trình*
   now_that_your_course_is_set_up_and_available_you_p_c0c8635c: Bây giờ khóa học của
     bạn đã được thiết lập và có sẵn, có lẽ bạn sẽ không cần danh sách kiểm tra này
     nữa. Nhưng chúng tôi sẽ giữ nó trong trường hợp bạn nhận ra sau này bạn muốn thử
@@ -18383,6 +18383,7 @@ vi-VN:
     other: "%{num} tin nhắn"
   num_page_views_b087ba5:
     other: "%{num} lượt xem trang"
+    zero: "%{num} lượt xem trang"
   num_participations_f32f4f3f:
     other: "%{num} tham gia"
   number_between_1_and_16_inclusive_31f5468d: số từ 1 đến 16
@@ -18941,7 +18942,7 @@ vi-VN:
     mastery_error: Phải lớn hơn hoặc bằng 0
   over_time_bee1a733: vượt thời gian
   override_3de65b2c: ghi đè
-  override_grade_385adf30: điểm ghi đè
+  override_grade_385adf30: Ghi Đè Điểm
   override_score_53994655: ghi đè điểm
   overrides_e8659a73: Ghi đè
   overrides:
@@ -19790,7 +19791,7 @@ vi-VN:
     thống SIS được kích hoạt: Powerschool, Aspire (SIS2000), JMC và bất kỳ SIS hỗ
     trợ SIF nào khác chấp nhận các yếu tố SIF GradingC Category, GradingAss que, GradingAss
     queScore.'
-  post_grades_to_name_e0554f64: Đăng các điểm số lên %{name}
+  post_grades_to_name_e0554f64: Công bố các điểm số lên %{name}
   post_grades_to_posttosisname_70430da4: Đăng các điểm số lên %{postToSISName}
   post_grades_to_sis_97ece878: Đăng các dấu lên SIS
   post_grades_to_sis_checkbox_is_enabled_by_default__394a8229: Hộp kiểm "Đăng điểm
@@ -19805,7 +19806,7 @@ vi-VN:
   posted_at_4cfce2c3: "%{posted_at}"
   posted_on_e1010e1e: 'Đăng lên:'
   posted_to_student_861beec9: Gửi cho học sinh
-  posting_grades_cd7cd758: Đăng điểm lên
+  posting_grades_cd7cd758: Công bố Điểm
   posting_grades_is_not_allowed_because_grades_have__229d9c9e: Đăng điểm lên không
     được phép vì các Kết quả học tập chưa được nhận bài tập này.
   posting_grades_will_refresh_your_browser_this_may__97a9fe12: Đăng điểm lên sẽ làm
@@ -22176,7 +22177,7 @@ vi-VN:
     this_folder_is_empty: Thư mục này trống
     updated_at: Ngày sửa đổi
     updated_at_short: Sửa đổi
-    view: Lượt xem
+    view: Xem
   react_ui_rewrite_developer_key_management_aa1df236: React UI viết lại Quản lý khóa
     nhà phát triển
   read_7cabda44: đọc
@@ -22785,7 +22786,7 @@ vi-VN:
   saving_the_csp_status_failed_please_try_again_8275aaa4: Lưu trạng thái CSP không
     thành công, vui lòng thử lại.
   schedule_student_availability_332154a: Lịch trình học sinh có sẵn
-  scheduler_65b5ac91: Người lập kế hoạch
+  scheduler_65b5ac91: Trình lập lịch biểu
   scheduler_must_be_enabled_by_your_canvas_admin_7508c8c2: Trình lập lịch biểu phải
     được bật bởi quản trị viên Canvas của bạn.
   scheduler_must_be_enabled_for_your_account_e6e53972: Trình lập lịch biểu phải được
@@ -22911,7 +22912,7 @@ vi-VN:
         show_total_as_points: Hiển thị tổng số dưới dạng điểm trong trang điểm học
           sinh
         sis_export: Xuất bản nhãn hiệu lên SIS
-        upload_scores: Điểm tải lên (.csv)
+        upload_scores: Tải điểm lên (.csv)
       header:
         global_settings: Thiết lập toàn cầu
       mastery_toggles_and_actions:
@@ -24387,7 +24388,7 @@ vi-VN:
     android_banner_in_google_play: Trong Google Play
     android_banner_price: MIỄN PHÍ
     android_banner_title: Canvas bởi Instructure
-    android_banner_view_button: LƯỢT XEM
+    android_banner_view_button: XEM
   sms_f0ddceeb: tin nhắn
   snapshots_6e1806b4: Ảnh chụp nhanh
   snapshots_are_backups_of_your_canvas_trial_taking__f18bd571: Ảnh chụp nhanh là sao
@@ -25554,9 +25555,9 @@ vi-VN:
   the_roles_held_by_the_reporting_user_student_teach_8fa5a269: Các vai trò được giữ
     bởi người dùng báo cáo (học sinh, giáo viên, quản trị viên, v.v.)
   the_salesforce_account_id_if_it_exists_e7949706: ID tài khoản Salesforce (nếu có)
-  the_scheduler_tool_lets_you_set_up_time_slots_that_233345b1: Công cụ lập lịch cho
-    phép bạn thiết lập các khoảng thời gian mà học sinh (hoặc nhóm học sinh) có thể
-    đăng ký. Để bắt đầu, nhấp vào nút bên dưới.
+  the_scheduler_tool_lets_you_set_up_time_slots_that_233345b1: Trình lập lịch biểu
+    cho phép bạn thiết lập các khoảng thời gian mà học sinh (hoặc nhóm học sinh) có
+    thể đăng ký. Để bắt đầu, nhấp vào nút bên dưới.
   the_selected_group_was_cleared_because_the_student_656e4f1c: Nhóm được chọn đã bị
     xóa vì học sinh bạn yêu cầu không thuộc nhóm nào. Bạn có thể chọn một nhóm trong
     Sổ Điểm.
@@ -26925,7 +26926,7 @@ vi-VN:
   to_view_announcements_announcements_view_must_also_75f652df: Để xem thông báo, Thông
     báo - chế độ xem cũng phải được bật.
   to_view_assignments_make_sure_the_agenda_view_is_a_5695abfd: Để xem các bài tập,
-    hãy đảm bảo chế độ xem * Chương trình nghị sự * đang hoạt động.
+    hãy đảm bảo chế độ xem *Chương trình* đang hoạt động.
   to_view_discussions_in_a_course_discussions_view_m_18c3fa0b: Để xem các cuộc thảo
     luận trong một khóa học, Thảo luận - xem cũng phải được bật. Để quản lý các cuộc
     thảo luận, Thảo luận - kiểm duyệt phải được bật.
@@ -27575,7 +27576,7 @@ vi-VN:
     quản lý quyền
   use_the_new_quiz_lti_tool_in_place_of_regular_canv_d7cb0c7f: Sử dụng công cụ Bài
     kiểm tra LTI mới thay cho các Bài kiểm tra canvas thông thường.
-  use_the_new_scheduler_1273b832: Sử dụng lịch trình mới.
+  use_the_new_scheduler_1273b832: Sử dụng trình lập lịch biểu mới.
   use_this_configuration_for_parent_observer_registr_e49f8f66: Sử dụng cấu hình này
     để đối với đăng ký phụ huynh / người quan sát
   use_this_list_to_remove_assigned_students_add_new__ad6205ad: Sử dụng danh sách này
@@ -28151,8 +28152,8 @@ vi-VN:
         trong phần điều hướng ở bên trái. Trong lúc này, hãy đăng ký nhiều khóa học
         hơn hoặc thiết lập hồ sơ của bạn.
       welcome_to_happiness: Chào mừng bạn đến với Canvas!
-  uses_the_new_scheduler_and_its_functionality_b07e9b14: Sử dụng bộ lập kế hoạch mới
-    và chức năng của nó
+  uses_the_new_scheduler_and_its_functionality_b07e9b14: Sử dụng trình lập lịch biểu
+    mới và chức năng của nó
   validate_links_in_content_b1630fba: Xác thực các liên kết trong nội dung
   validate:
     is_required: Lĩnh vực này là bắt buộc
@@ -28192,7 +28193,7 @@ vi-VN:
   view_app_center_6c89a3fe: Xem Trung tâm ứng dụng
   view_app_configurations_52b52441: Xem cấu hình ứng dụng
   view_audit_trail_12f774b6: Xem dấu vết kiểm toán
-  view_ba339f93: Lượt xem
+  view_ba339f93: Xem
   view_canvas_insights_beta_fe446d71: Xem thông tin chi tiết Canvas (Beta)
   view_conditional_content_settings_a2dca270: Xem cài đặt nội dung có điều kiện
   view_course_analytics_eefe6b2: Xem phân tích khóa học
@@ -28262,8 +28263,7 @@ vi-VN:
     khả năng truy cập trong khi di chuyển tập tin, vui lòng sử dụng tùy chọn Di chuyển
     đến hộp thoại được tìm thấy trong menu.'
   warning_for_improved_accessibility_of_calendar_eve_da54b4e2: 'Cảnh báo: Để cải thiện
-    khả năng truy cập vào các sự kiện lịch, vui lòng sử dụng chế độ xem chương trình
-    nghị sự.'
+    khả năng truy cập vào các sự kiện lịch, vui lòng sử dụng chế độ xem chương trình'
   warning_for_improved_accessibility_of_reordering_a_5d0206c7: 'Cảnh báo: để cải thiện
     khả năng truy cập để sắp xếp lại các bài tập và nhóm, vui lòng sử dụng tùy chọn
     Di chuyển đến Hội thoại được tìm thấy trong menu.'
