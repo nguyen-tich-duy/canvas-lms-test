@@ -462,7 +462,7 @@ vi-VN:
     account_name_too_long: Tên tài khoản quá dài
     confirms:
       delete_announcement: Bạn có chắc chắn muốn xóa thông báo này?
-      global_announcement: Bạn phải xác nhận thông báo toàn cầu
+      global_announcement: Bạn phải xác nhận thông báo chung
       remove_account_admin: Bạn có chắc chắn muốn xóa quản trị viên tài khoản này?
     course: Khóa học
     custom_text_blank: "[Văn bản tùy chỉnh]"
@@ -1252,13 +1252,13 @@ vi-VN:
       feature_options: Tùy chọn tính năng
       feature_preview: Xem trước tính năng
       features_title: Đặc trưng
-      global_announcements_description: Thông báo toàn cầu là cách để bạn đăng thông
+      global_announcements_description: Thông báo chung là cách để bạn đăng thông
         báo đính kèm thông điệp lên bảng điều khiển của tất cả người dùng trong tài
         khoản của bạn. Chúng sẽ xuất hiện trên bảng điều khiển của mỗi người dùng
         trong khoảng thời gian nhất định hoặc cho đến khi người dùng nhấp vào liên
-        kết "đóng" (×) để bỏ qua cảnh báo. ** Những thông báo này nên được sử dụng
-        một cách hợp lý. **
-      global_announcements_title: Thông báo toàn cầu
+        kết "đóng" (×) để bỏ qua cảnh báo. **Những thông báo này nên được sử dụng
+        một cách hợp lý.**
+      global_announcements_title: Thông báo chung
       global_js_and_css_includes_description: Những tập tin này sẽ được bao gồm trong
         tất cả các lần tải trang cho tài khoản của bạn
       global_js_and_css_includes_title: JavaScript và CSS toàn cầu bao gồm
@@ -1267,6 +1267,7 @@ vi-VN:
         report_last_run: Lần chạy cuối cùng
         report_name: Tên
       headings:
+        privacy: Bảo mật
         quotas: Hạn mức tài khoản
         sections: Các báo cáo
         settings: Thiết lập tài khoản
@@ -1306,6 +1307,8 @@ vi-VN:
           tài khoản gốc này với cờ "Bao gồm khóa học này trong chỉ mục khóa học công
           khai" được bật.
         enable_eportfolios: Hồ sơ điện tử
+        enable_fullstory: Cho phép theo dõi với FullStory
+        enable_google_analytics: Cho phép theo dõi với Google Analytics
         enable_profiles: Kích hoạt hồ sơ
         enable_turnitin: Turnitin
         enable_user_notes: Tạp chí khoa
@@ -1340,6 +1343,8 @@ vi-VN:
         originality_report_visibility: Học sinh có thể xem báo cáo sáng tạo.
         outgoing_email_default_name_option_custom: Tên "Từ" tùy chỉnh
         outgoing_email_default_name_option_default: Cài đặt Canvas mặc định
+        prevent_course_availability_editing_by_teachers: Không để giáo viên sửa đổi
+          ngày khóa học hiển thị
         prevent_course_renaming_by_teachers: Đừng để giáo viên đổi tên các khóa học
           của họ
         restrict_quiz_questions: Hạn chế học sinh xem Bài kiểm tra sau ngày kết thúc
@@ -1458,6 +1463,7 @@ vi-VN:
       tab_announcements: Thông báo
       tab_external_tools: Ứng dụng
       tab_notifications: Tin báo
+      tab_privacy: Bảo mật
       tab_quotas: Hạn mức
       tab_reports: Báo cáo
       tab_settings: Cài đặt
@@ -1836,7 +1842,7 @@ vi-VN:
     cáo cấp quản trị
   add_group_c84f9e9d: Thêm nhóm
   add_group_set_f9809e11: Thêm bộ nhóm
-  add_help_menu_links_de9fc34f: Thêm liên kết menu trợ giúp
+  add_help_menu_links_de9fc34f: Thêm liên kết công cụ trợ giúp
   add_hostname_to_the_whitelist_c808192e: Thêm %{hostname} vào danh sách trắng
   add_icon_567dbcaa: thêm biểu tượng
   add_link_5c01c1e8: Thêm liên kết
@@ -1889,8 +1895,10 @@ vi-VN:
   add_submission_type_8690db4b: Thêm loại bài nộp
   add_subtitle_9f660cc: Thêm phụ đề
   add_tas_to_the_course_2aac6e02: Thêm trợ giảng vào khóa học
+  add_teachers_to_courses_48ac7a7a: Thêm giáo viên vào khoá học
   add_theme_32fa3d50: Thêm chủ đề
   add_to_course_481a51c4: Thêm vào khóa học ...
+  add_to_library_30514daa: Thêm vào thư viện
   add_to_student_to_do_58e66b4b: Thêm vào học sinh-phải-làm
   add_to_whitelist_24f3f1ba: Thêm vào danh sách trắng
   add_trigger_bc1a0fae: Thêm kích hoạt
@@ -1933,6 +1941,7 @@ vi-VN:
   admin_tools_notifications_tab_120d6cdf: Công cụ quản trị (tab Tin báo)
   admin_tools_restore_courses_tab_b07bbfa7: Công cụ quản trị (tab Khôi phục khóa học)
   admin_tools_undelete_courses_d9bd8631: Công cụ quản trị (Khóa học không phục hồi)
+  admin_tour_36d89fbb: Hướng dẫn cho Quản trị
   admin_tray_3b680e7b: Khay quản trị
   admin_user_name_29dd115a: admin_user_name
   admin_view_a2f4cd5c: Chế độ xem của quản trị viên
@@ -2302,7 +2311,7 @@ vi-VN:
   allows_user_to_add_edit_and_delete_events_in_the_c_14413268: Cho phép người dùng
     thêm, chỉnh sửa và xóa các sự kiện trong lịch khóa học.
   allows_user_to_add_edit_and_delete_global_announce_8463e383: Cho phép người dùng
-    thêm, chỉnh sửa và xóa các thông báo toàn cầu.
+    thêm, chỉnh sửa và xóa các thông báo chung.
   allows_user_to_add_edit_and_update_grades_in_the_g_29a4068e: "Cho phép người dùng
     thêm, chỉnh sửa và cập nhật điểm trong Sổ Điểm. \nCho phép người dùng truy cập
     Lịch sử Sổ điểm. \nCho phép người dùng truy cập Sổ Điểm chương trình \"Học thành
@@ -5358,13 +5367,13 @@ vi-VN:
       done_go_back_to_list: Xong, quay lại danh sách
       links:
         accessibility_warning: 'Mẹo: Để cải thiện khả năng truy cập vào các sự kiện
-          lịch, vui lòng sử dụng chế độ xem chương trình'
-        calendar_agenda: Chương trình
+          lịch, vui lòng sử dụng chế độ xem lịch trình'
+        calendar_agenda: Lịch trình
         calendar_month: Tháng
         calendar_scheduler: Trình lập lịch biểu
         calendar_week: Tuần
         improved_accessibility_recommend_agenda: 'Cảnh báo: Để cải thiện khả năng
-          truy cập, vui lòng sử dụng Lịch "Chế độ xem chương trình".'
+          truy cập, vui lòng sử dụng Lịch "Chế độ xem Lịch trình".'
       loading: Tải
       my_appointment_groups: Các nhóm hẹn của tôi
     calendar_navigator:
@@ -5643,6 +5652,7 @@ vi-VN:
   can_list_categorized_event_types_52596f7: Có thể liệt kê các loại sự kiện phân loại.
   can_list_subscriptions_to_data_service_data_b52d5e37: Có thể liệt kê các mục đăng
     ký dữ liệu dịch vụ dữ liệu.
+  can_lookup_account_information_13d69520: Có thể tìm kiếm thông tin tài khoản
   can_retrieve_user_data_associated_with_the_context_c5ec482c: Có thể truy xuất dữ
     liệu người dùng được liên kết với ngữ cảnh mà công cụ được cài đặt.
   can_show_subscription_to_data_service_data_688ce3: Có thể hiển thị đăng ký dữ liệu
@@ -5859,7 +5869,7 @@ vi-VN:
   canvas_will_regrade_all_your_submissions_after_you_2d68694a: Canvas sẽ chấm lại
     bài nộp của bạn sau khi bạn lưu Bài kiểm tra, việc này có thể mất vài phút.
   canvas_will_remove_keys_with_null_values_from_live_6d7e3091: Canvas sẽ xóa các khóa
-    có giá trị null khỏi tải trọng sự kiện trực tiếp nếu tính năng này được bật.
+    có giá trị null khỏi tải trọng của sự kiện trực tiếp nếu tính năng này được bật.
   canvas:
     migration:
       errors:
@@ -5896,6 +5906,7 @@ vi-VN:
   catalog_url_a01655dd: Danh mục URL
   catalog_users_already_exist_2894b8c4: Danh mục người dùng đã tồn tại
   category_b9a94408: Danh mục thể loại
+  categoryname_notification_preferences_cd64e4a0: "%{categoryName} tuỳ chọn tin báo"
   cc_subtitles_a0d16ff6: CC / Phụ đề
   cc:
     by: Đóng góp CC
@@ -6029,6 +6040,8 @@ vi-VN:
     nhanh để quay lại bản dùng thử của bạn như khi chụp ảnh nhanh. Lưu ý: Bạn sẽ mất
     bất kỳ công việc nào bạn đã thực hiện kể từ khi ảnh chụp nhanh được thực hiện
     và nó không thể hoàn tác!'
+  click_on_the_admin_navigation_button_to_access_acc_d0438ab7: Nhấn vào nút điều hướng
+    quản trị viên để vào cài đặt cho tài khoản
   click_the_button_above_to_add_content_4c7024a: Nhấp vào nút ở trên để thêm nội dung
   click_to_add_a_name_6cf551b0: Nhấn vào đây để thêm một tên
   click_to_change_profile_picture_for_display_name_6a4b41db: Nhấp để thay đổi ảnh
@@ -7857,7 +7870,7 @@ vi-VN:
       sis_source_id: Id nguồn SIS
       start_at: Bắt đầu từ
       storage_quota: Hạn mức lưu trữ
-      syllabus_body: Chương trình_phần thân
+      syllabus_body: syllabus_body
       tab_configuration: Cấu hình tab
       template_course_id: Mẫu khóa học Id
       turnitin_comments: Bình luận Turnitin
@@ -7884,6 +7897,8 @@ vi-VN:
   course_option_links_a79d263d: Liên kết tùy chọn khóa học
   course_outcomes_7dc1cbc7: Kết quả khóa học
   course_pages_449f1dd4: Trang khóa học
+  course_participation_is_limited_to_term_start_and__c8974314: Việc tham gia khóa
+    học được giới hạn ở giữa ngày bắt đầu và kết thúc *học kỳ*
   course_people_3058c948: Khóa học nhân dân
   course_quiz_extensions_4102f98f: Phần mở rộng bài kiểm tra khóa học
   course_quizzes_c337653c: Câu hỏi khóa học
@@ -9243,8 +9258,8 @@ vi-VN:
         username: Địa chỉ email
     register:
       africa: Châu phi
-      agree_to_terms: Tôi đồng ý với * điều khoản sử dụng * và thừa nhận chính sách
-        quyền riêng tư **.
+      agree_to_terms: Tôi đồng ý với *điều khoản sử dụng* và thừa nhận chính sách
+        quyền bảo mật**.
       asia_and_middle_east: Châu Á và Trung Đông
       assistant_superintendent: Trợ lý Giám sát
       australia_new_zealand_and_oceania: Úc, New Zealand và Châu Đại Dương
@@ -10299,9 +10314,8 @@ vi-VN:
     hoặc * điều khoản sử dụng * đã thay đổi kể từ lần cuối bạn đồng ý . Vui lòng đồng
     ý với * điều khoản sử dụng * trước khi bạn tiếp tục.
   either_you_re_a_new_user_or_the_terms_of_use_have__14f0d0d0: Bạn là người dùng mới
-    hoặc * điều khoản sử dụng * đã thay đổi kể từ lần cuối bạn đồng ý . Vui lòng đồng
-    ý với * điều khoản sử dụng * và ** chính sách quyền riêng tư ** trước khi bạn
-    tiếp tục.
+    hoặc *điều khoản sử dụng* đã thay đổi kể từ lần cuối bạn đồng ý . Vui lòng đồng
+    ý với *điều khoản sử dụng* và **chính sách bảo mật** trước khi bạn tiếp tục.
   either_you_re_a_new_user_or_the_terms_of_use_have__2bbebdef: Bạn là người dùng mới
     hoặc * điều khoản sử dụng * đã thay đổi kể từ lần cuối bạn đồng ý. Vui lòng đồng
     ý với * điều khoản sử dụng * trước khi bạn tiếp tục.
@@ -10349,7 +10363,9 @@ vi-VN:
   enable_dashboard_images_for_courses_5af458b0: Kích hoạt Bảng điều khiển cho các
     khóa học
   enable_extra_filter_options_b52c23e6: cho phép tùy chọn bộ lọc bổ sung
+  enable_face_to_face_connection_9df19b76: Bật kết nối mặt đối mặt
   enable_feature_title_987d8e9a: 'Bật tính năng: %{title}'
+  enable_fullstory_5c673a06: Bật fullstory
   enable_gradebook_list_students_by_sortable_name: Sắp xếp học sinh theo tên trong
     Sổ Điểm. Tên có thể sắp xếp mặc định thành 'Họ, Tên' và có thể được thay đổi trong
     cài đặt.
@@ -10395,6 +10411,7 @@ vi-VN:
   encourage_class_participation_4e069479: Khuyến khích tham gia lớp học
   encrypted_sourcedids_for_basic_outcomes_87fa11ea: Sourcedids được mã hóa cho các
     kết quả cơ bản
+  end_78c581cd: Kết thúc
   end_course_set_up_tutorial_dialog_5b812ec6: Hộp thoại Hướng dẫn thiết lập khóa học
     kết thúc
   end_course_set_up_tutorial_f358b85d: Hướng dẫn thiết lập khóa học
@@ -10415,6 +10432,8 @@ vi-VN:
   ends_at_9a62b528: Kết thúc vào
   enforce_scopes_be28989c: Phạm vi thực hiện
   english_c60612e2: Anh
+  enhances_the_color_contrast_of_text_buttons_etc_88e22e61: Tăng độ tương phản màu
+    sắc của văn bản, nút, v.v.
   enrolled_a6a517cd: Đã đăng ký
   enrolled_as_272da3b9: Ghi danh là
   enrollment_role_f5d985a7: Vai trò tuyển sinh
@@ -11113,7 +11132,7 @@ vi-VN:
       name: Tên
       name_only: Tên chỉ
       paste_xml: Dán XML tại đây
-      privacy: Riêng tư
+      privacy: Bảo mật
       public: Công khai
       shared_secret: Đã chia sẻ bí mật
       shared_secret_note: Nhập một giá trị mới để thay đổi
@@ -11135,7 +11154,7 @@ vi-VN:
         description: Sự miêu tả
         domain: Miền
         extras: Ngoài ra
-        privacy: Riêng tư
+        privacy: Bảo mật
         url: URL
         vendor_help_link: Liên kết trợ giúp từ nhà cung cấp
       resource_selection_configured: Lựa chọn tài nguyên được cấu hình
@@ -11698,6 +11717,7 @@ vi-VN:
   get_started_b9507525: Bắt đầu
   get_the_following_from_your_salesforce_connected_a_881fc9a3: 'Nhận thông tin sau
     từ Ứng dụng được kết nối Salesforce '
+  get_your_content_online_9546ecff: Đưa nội dung của bạn lên trực tuyến
   get_your_users_error_reports_posted_to_salesforce__76f57839: 'Nhận báo cáo lỗi người
     dùng của bạn được đăng lên Dịch vụ đám mây.
 
@@ -11712,9 +11732,9 @@ vi-VN:
   give_all_students_the_same_percent_grade_for_assig_6a008004: 'Cho tất cả học sinh
     cùng * phần trăm * mức điểm cho ** %{assignment.name} ** bằng cách nhập và gửi
     mức điểm bên dưới:'
-  global_announcements_a78912c8: Những thông báo toàn cầu
-  global_announcements_add_edit_delete_843ca4d2: Những thông báo toàn cầu - thêm /
-    chỉnh sửa / xóa
+  global_announcements_a78912c8: Thông báo chung
+  global_announcements_add_edit_delete_843ca4d2: Thông báo chung - thêm / chỉnh sửa
+    / xóa
   global_branding_df1cae12: Thương hiệu toàn cầu
   global_message_icons:
     announcement: thông báo
@@ -13320,6 +13340,7 @@ vi-VN:
   he_him_99aea1a8: Anh ấy / anh ấy
   he_him_a64fe27e: anh ấy / anh ấy
   hebrew_88fbf778: Tiếng Do Thái
+  hello_name_cabdd4ce: Xin chào %{name}!
   hello_name_your_outcomes_import_failed_due_to_an_e_385db5d3: "Xin chào %{name},
     \n\nQuá trình nhập kết quả của bạn không thành công do lỗi nhập của bạn. Vui lòng
     kiểm tra tập tin của bạn và thử tải lên lại tại %{url} \n\nĐã xảy ra lỗi sau:
@@ -13376,8 +13397,8 @@ vi-VN:
     Submitting_Ticket: Gửi vé ...
     which_course_is_this_question_about: Câu hỏi này là về khóa học nào?
     your_email_address: địa chỉ email của bạn
-  help_menu_links_51184b65: Liên kết menu trợ giúp
-  help_menu_options_7ecf7031: Tùy chọn menu trợ giúp
+  help_menu_links_51184b65: Liên kết công cụ trợ giúp
+  help_menu_options_7ecf7031: Tùy chọn công cụ trợ giúp
   help_us_improve_by_telling_us_what_happened_d6392f18: Giúp chúng tôi cải thiện bằng
     cách cho chúng tôi biết những gì đã xảy ra
   help_with_content_licensing_a146fb0e: Trợ giúp về cấp phép nội dung
@@ -13481,6 +13502,7 @@ vi-VN:
   highest_28ad71e6: Cao nhất
   highest_score_e080551e: Điểm cao nhất
   hindi_9bcd4b34: Tiếng Hindi
+  history_cd3f60a9: Lịch sử
   history_settings_c63dbaaf: Cài đặt lịch sử
   home_351838cd: Trang Chủ
   home_page_is_not_valid_2e8a25ae: Trang chủ không hợp lệ
@@ -13499,6 +13521,11 @@ vi-VN:
   hover_over_me_496521b9: Di chuột qua tôi
   how_do_i_import_a_canvas_course_export_package_ed3aafd4: Làm sao để nhập 1 gói Canvas
     xuất khoá học
+  how_do_i_use_the_learning_mastery_gradebook_to_vie_c555acf2: Làm cách nào để sử
+    dụng Sổ điểm Học tập Thành thạo để xem kết quả đầu ra trong một khóa học từ thanh
+    Sổ điểm?
+  how_do_i_view_user_details_for_an_enrollment_in_a__308e9ac0: Làm cách nào để xem
+    chi tiết người dùng đã đăng ký một khóa học?
   how_is_the_grade_determined_bb75bf53: Làm thế nào là điểm được xác định?
   how_is_this_affecting_you_b3b6a639: Điều này ảnh hưởng đến bạn như thế nào?
   how_many_minutes_ecca5ee7: Bao nhiêu phút?
@@ -13774,13 +13801,11 @@ vi-VN:
   if_you_need_to_make_your_course_public_please_cont_7084c67b: Nếu bạn cần công khai
     khóa học của mình, vui lòng liên hệ với quản trị viên / bộ phận hỗ trợ của bạn.
   if_you_turn_this_on_when_an_account_admin_goes_to__42e74f56: Nếu bạn bật tính năng
-    này, khi quản trị viên tài khoản truy cập trang để tạo thông báo toàn cầu, một
-    hộp kiểm sẽ xuất hiện để gửi thông báo trực tiếp đến người dùng khi thông báo
-    bắt đầu.
+    này, khi quản trị viên tài khoản truy cập trang để tạo thông báo chung, một hộp
+    đánh dấu sẽ xuất hiện để báo tin trực tiếp đến người dùng khi thông báo bắt đầu.
   if_you_turn_this_on_when_an_account_admin_goes_to__c1173b32: Nếu bạn bật tính năng
-    này, khi quản trị viên tài khoản truy cập trang để tạo thông báo toàn cầu, một
-    hộp kiểm sẽ xuất hiện để gửi thông báo trực tiếp đến người dùng khi thông báo
-    bắt đầu.
+    này, khi quản trị viên tài khoản truy cập trang để tạo thông báo chung, một hộp
+    đánh dấu sẽ xuất hiện để báo tin trực tiếp đến người dùng khi thông báo bắt đầu.
   if_you_ve_been_using_another_course_management_sys_67edfab1: Nếu bạn đã sử dụng
     một hệ thống quản lý khóa học khác, có lẽ bạn có những thứ trong đó mà bạn sẽ
     muốn chuyển sang Canvas. Chúng tôi có thể hướng dẫn bạn qua quá trình dễ dàng
@@ -13825,7 +13850,7 @@ vi-VN:
       gồm: %{type_list}'
     not_an_image: Tập tin được chọn không phải là một hình ảnh
   immediate_notifications_for_global_announcements_682f5a3d: Báo tin ngay lập tức
-    cho các thông báo toàn cầu
+    cho các thông báo chung
   immediately_c128ede6: Ngay
   immersive_reader_7b87538: Trình đọc
   immersive_reader_failed_to_load_bc8d4dd4: Trình đọc không thể tải
@@ -13904,6 +13929,7 @@ vi-VN:
   in_cases_where_it_is_available_load_the_rce_from_a_1fb32537: Trong trường hợp có
     sẵn, hãy tải RCE từ dịch vụ nội dung phong phú.
   in_class_23eeca38: Trong lớp
+  in_closed_grading_period_dc717846: Trong giai đoạn mà chấm điểm được đóng
   in_order_to_complete_the_process_you_will_be_redir_83376e10: Để hoàn tất quy trình,
     bạn sẽ được chuyển hướng đến trang đăng nhập nơi bạn cần đăng nhập bằng thông
     tin đăng nhập của con bạn.
@@ -14011,6 +14037,7 @@ vi-VN:
   InsertUpdateImageView:
     titles:
       insert_edit_image: Chèn / chỉnh sửa ảnh
+  insights_b514ad8d: Thông tin chi tiết
   install_c54fad9b: cài đặt
   installed_7b284a91: Cài đặt
   installed_by_admin_97c3a721: Được cài đặt bởi quản trị viên
@@ -14777,8 +14804,8 @@ vi-VN:
   loading_results_769c8819: Đang tải kết quả
   loading_results_spinner_73ef739c: Đang tải kết quả Spinner
   loading_students_30b71301: Đang tải học sinh
-  loading_sync_history_3eb11baf: Đang tải lịch sử đồng bộ hóa ...
-  loading_sync_history_9f342cbf: Đang tải lịch sử đồng bộ hóa ...
+  loading_sync_history_3eb11baf: Đang tải lịch sử đồng bộ ...
+  loading_sync_history_9f342cbf: Đang tải lịch sử đồng bộ ...
   loading_unsynced_changes_1b52f725: Đang tải các thay đổi không được đồng bộ hóa
     ...
   loading_unsynced_changes_b5d7b202: 'Đang tải các thay đổi không được đồng bộ hóa '
@@ -17881,7 +17908,7 @@ vi-VN:
   new_gradebook_development_f3741168: Phát triển sổ điểm mới
   new_gradebook_enables_an_early_release_of_new_grad_76b8bf45: Sổ Điểm mới cho phép
     phát hành sớm các cải tiến Sổ Điểm mới.
-  new_gradebook_history_b4367fc7: Cuốn sách Mark mới Lịch sử
+  new_gradebook_history_b4367fc7: Lịch sử chấm điểm mới
   new_gradebook_plagiarism_indicator_8dd22971: Chỉ số đạo văn mới
   new_group_category_66be9cbd: Nhóm mới
   new_group_set_7241a581: Tập hợp nhóm mới
@@ -18191,7 +18218,7 @@ vi-VN:
   notification:
     account_notification_description: Tin báo trên toàn bộ tổ chức (cũng được hiển
       thị trên các trang Bảng điều khiển)
-    account_notification_display: Tin báo tổng
+    account_notification_display: Thông báo chung
     added_to_conversation_description: Bạn được thêm vào một cuộc trò chuyện
     added_to_conversation_display: Khi được thêm vào cuộc hội thoại
     all_submissions_description: "* Chỉ người hướng dẫn và Quản trị viên: * Bài tập
@@ -18372,7 +18399,7 @@ vi-VN:
   notifications_view_f9a60770: Thông báo - xem
   notify_users_this_quiz_has_changed_c5b05995: Thông báo cho người dùng bài kiểm tra
     này đã thay đổi
-  now_click_the_agenda_button_607fb40e: Bây giờ bấm vào nút *Chương trình*
+  now_click_the_agenda_button_607fb40e: Bây giờ bấm vào nút *Lịch trình*
   now_that_your_course_is_set_up_and_available_you_p_c0c8635c: Bây giờ khóa học của
     bạn đã được thiết lập và có sẵn, có lẽ bạn sẽ không cần danh sách kiểm tra này
     nữa. Nhưng chúng tôi sẽ giữ nó trong trường hợp bạn nhận ra sau này bạn muốn thử
@@ -19867,8 +19894,8 @@ vi-VN:
   primary_color_button_b75db628: Nút màu chính
   primary_color_button_disabled_9081ddff: Nút màu chính bị vô hiệu hóa
   print_grades_9d5dd50f: In điểm số
-  privacy_290109ea: Riêng tư
-  privacy_level_f0ec09a3: Mức độ riêng tư
+  privacy_290109ea: Bảo mật
+  privacy_level_f0ec09a3: Mức độ Bảo mật
   private_3883d133: Riêng tư
   proceed_f3d33864: Tiến hành
   process_multiple_content_items_from_course_modules_6de90fd8: Xử lý nhiều mục nội
@@ -22195,6 +22222,8 @@ vi-VN:
   received_content_53049822: Nội dung nhận được
   recent_activity_51239235: Hoạt động gần đây
   recent_announcements_8becc59c: Thông báo gần đây
+  recent_history_bcb0f4c0: Lịch sử gần đây
+  recent_history_tray_241a384e: Thanh lịch sử gần đây
   recent_student:
     last_logged_in: đăng nhập lần cuối %{last_login}
   recentint_remainderint_decaying_average_79bc09fb: "%{recentInt} / %{remainderInt}
@@ -22329,7 +22358,7 @@ vi-VN:
   remove_name_624e06be: Xóa %{name}
   remove_name_as_an_admin_c296cf49: Xóa %{name} với tư cách quản trị viên
   remove_null_values_from_live_event_payloads_3c826f: Xóa giá trị null khỏi tải trọng
-    sự kiện trực tiếp
+    của sự kiện trực tiếp
   remove_placement_90862c13: Xóa %{placement}
   remove_points_from_rubric_dcd4b585: Xóa điểm khỏi phiếu tự đánh giá
   remove_pronouns_5ff760ff: Xóa đại từ
@@ -22457,6 +22486,10 @@ vi-VN:
   restrict_students_from_accessing_courses_before_st_f7c22c00: Hạn chế học sinh truy
     cập các khóa học trước ngày bắt đầu
   restrict_students_from_annotating_6c28ab9b: Hạn chế học sinh chú thích
+  restrict_students_from_viewing_course_after_term_e_1f93ccb9: Hạn chế học sinh xem
+    khóa học sau ngày kết thúc học kỳ
+  restrict_students_from_viewing_course_before_term__3c4924f0: Hạn chế học sinh xem
+    khóa học trước ngày bắt đầu học kỳ
   restricted_access_d3e99a39: Giới hạn truy cập
   resubmit_to_the_associated_tool_for_plagiarism_ana_8d84d913: Gửi lại công cụ liên
     quan để phân tích đạo văn.
@@ -22507,7 +22540,7 @@ vi-VN:
       manage_account_settings: Quản lý cài đặt cấp tài khoản
       manage_admin_users: Thêm / xóa các giáo viên khác, người thiết kế khóa học hoặc
         trở giảng vào khóa học
-      manage_announcements: Quản lý thông báo toàn cầu
+      manage_announcements: Quản lý thông báo chung
       manage_assignments: Quản lý (thêm / chỉnh sửa / xóa) bài tập và bài kiểm tra
       manage_calendar: Thêm, chỉnh sửa và xóa các sự kiện trên lịch khóa học
       manage_canvasnet_courses: Quản lý các khóa học Mạng Canvas
@@ -23732,7 +23765,7 @@ vi-VN:
       creating_course: 'Đang tạo khóa học '
       labels:
         course_code: Tên ngắn
-        license: Nội dung giấy phép
+        license: Giấy phép của nội dung
         name: Tên khóa học
       new_course_name_placeholder: Tên khóa học
       sample_course_code: Khóa học-101
@@ -24604,6 +24637,7 @@ vi-VN:
     Nhấn vào đây để bỏ sao.
   starred_subject_click_to_unstar_6aafcddc: Được gắn dấu sao "%{subject}". Nhấn vào
     đây để bỏ sao.
+  start_5a4cfcd6: Bắt đầu
   start_date_c41cb23a: 'Ngày bắt đầu:'
   start_date_e937be8a: Ngày bắt đầu
   start_date_end_date_d809dd93: "%{start_date} - %{end_date}"
@@ -25180,7 +25214,7 @@ vi-VN:
     điểm với SIS" được bật theo mặc định cho các bài tập, thảo luận được chấm điểm
     và các câu hỏi.
   sync_grades_to_sis_fd01f7fd: Đồng bộ hóa điểm với SIS
-  sync_history_3d46eb19: Đồng bộ hóa lịch sử
+  sync_history_3d46eb19: Lịch sử Đồng bộ
   sync_in_progress_12ff1d3c: Đồng bộ hóa đang diễn ra
   sync_to_name_6f04716d: Đồng bộ hóa với %{name}
   sync_to_name_disabled_click_to_toggle_53a1396f: Đồng bộ hóa với %{name} bị tắt.
@@ -25232,6 +25266,7 @@ vi-VN:
     observees: Đang quan sát
     outcomes: " Kết quả"
     pages: Trang
+    past_global_announcements: Thông báo chung
     people: Mọi người
     profile: Hồ sơ
     quizzes: Bài kiểm tra
@@ -25372,11 +25407,11 @@ vi-VN:
   the_announcement_title_could_not_be_linked_to_the__78c747f3: Thông báo "%{title}"
     không thể được liên kết với Bài học "%{mod_title}".
   the_announcements_tab_is_always_visible_to_admins__58df854d: Tab Thông báo luôn
-    hiển thị cho quản trị viên; tuy nhiên, để quản lý thông báo, Thông báo toàn cầu
-    - thêm / chỉnh sửa / xóa cũng phải được bật.
+    hiển thị cho quản trị viên; tuy nhiên, để quản lý thông báo, Thông báo chung -
+    thêm / chỉnh sửa / xóa cũng phải được bật.
   the_announcements_tab_is_always_visible_to_admins__eb447785: Tab Thông báo luôn
-    hiển thị cho quản trị viên; tuy nhiên, để quản lý thông báo, Thông báo toàn cầu
-    - thêm / chỉnh sửa / xóa cũng phải được bật.
+    hiển thị cho quản trị viên; tuy nhiên, để quản lý thông báo, Thông báo chung -
+    thêm / chỉnh sửa / xóa cũng phải được bật.
   the_app_was_activated_a84e055f: Ứng dụng đã được kích hoạt
   the_app_was_added_58e2836a: Ứng dụng đã được thêm vào
   the_app_was_added_successfully_3f785a23: Ứng dụng đã được thêm thành công
@@ -25471,6 +25506,9 @@ vi-VN:
     đã được thay đổi đối với %{name}.
   the_grade_you_entered_has_been_selected_and_can_no_ca87612b: Điểm bạn đã nhập đã
     được chọn và không thể thay đổi nữa.
+  the_gradebook_will_factor_in_ungraded_submissions__3fcf0bd8: Sổ điểm sẽ tính đến
+    các bài nộp không được chấm điểm như thể chúng bị điểm 0 cho các phép tính. Đây
+    chỉ là cách xem của giáo viên, và không ảnh hưởng đến việc chấm điểm thực tế.
   the_grading_period_cannot_be_found_646a8a24: Giai đoạn chấm điểm không thể tìm thấy.
   the_grading_period_set_was_deleted_cce5d8f6: Thiết lập giai đoạn chấm điểm đã bị
     xóa
@@ -26028,8 +26066,8 @@ vi-VN:
     thuật cho thấy quyền vẫn được kích hoạt cho quản trị viên. Đối với các vai trò
     khác, sự cho phép có thể bị vô hiệu hóa.
   this_permission_only_affects_course_announcements__6bc2b0a5: Sự cho phép này chỉ
-    ảnh hưởng đến thông báo khóa học; để quản lý thông báo toàn cầu, Thông báo toàn
-    cầu - thêm / chỉnh sửa / xóa phải được bật.
+    ảnh hưởng đến thông báo khóa học; để quản lý thông báo chung, Thông báo chung
+    - thêm / chỉnh sửa / xóa phải được bật.
   this_permission_only_controls_adding_users_at_the__5a2463b1: Quyền này chỉ kiểm
     soát việc thêm người dùng ở cấp tài khoản. Để thêm người dùng vào một khóa học,
     Người dùng - thêm / xóa học sinh khỏi các khóa học hoặc Người dùng - thêm / xóa
@@ -26084,6 +26122,14 @@ vi-VN:
     Khi bạn bắt đầu thay đổi giá trị màu sắc và hình ảnh ở thanh bên trái, bạn sẽ
     thấy nút * Xem trước Thay đổi của bạn *. Nhấp vào nó để làm mới trang này và xem
     những thay đổi của bạn trông như thế nào.
+  this_setting_only_affects_your_view_of_student_gra_8f58eb33: Cài đặt này chỉ ảnh
+    hưởng đến chế độ xem của bạn về điểm học sinh và hiển thị điểm như thể tất cả
+    các bài tập chưa được phân loại đều bị điểm 0. Cài đặt này chỉ là một thay đổi
+    trực quan và không ảnh hưởng đến điểm của học sinh hoặc những người dùng khác
+    của Sổ điểm này. Khi cài đặt này được bật, Canvas sẽ không điền các số không trong
+    Sổ điểm cho các bài nộp của học sinh trong các bài tập cá nhân. Chỉ các nhóm bài
+    tập và tổng số cột sẽ tự động tính điểm 0 vào tỷ lệ phần trăm tổng thể cho mỗi
+    học sinh.
   this_student_s_enrollment_has_been_concluded_c03bfafe: Tuyển sinh của học sinh này
     đã kết thúc.
   this_student_s_enrollment_has_been_concluded_f135b8e4: Tuyển sinh của học sinh này
@@ -26926,7 +26972,7 @@ vi-VN:
   to_view_announcements_announcements_view_must_also_75f652df: Để xem thông báo, Thông
     báo - chế độ xem cũng phải được bật.
   to_view_assignments_make_sure_the_agenda_view_is_a_5695abfd: Để xem các bài tập,
-    hãy đảm bảo chế độ xem *Chương trình* đang hoạt động.
+    hãy đảm bảo chế độ xem *Lịch trình* đang hoạt động.
   to_view_discussions_in_a_course_discussions_view_m_18c3fa0b: Để xem các cuộc thảo
     luận trong một khóa học, Thảo luận - xem cũng phải được bật. Để quản lý các cuộc
     thảo luận, Thảo luận - kiểm duyệt phải được bật.
@@ -27162,7 +27208,7 @@ vi-VN:
   tool_name_7d58a6e4: Tên công cụ
   tool_not_found_f6366382: Không tìm thấy công cụ
   tool_placements_3f996c24: Vị trí công cụ
-  tool_privacy_level_9d392813: Cấp độ riêng tư của công cụ
+  tool_privacy_level_9d392813: Cấp độ Bảo mật của công cụ
   tool_supports_deep_linking_at_this_placement_561e1874: Công cụ hỗ trợ Liên kết sâu
     tại vị trí này
   tool_toolname_found_for_client_id_clientid_would_y_13f35b91: Công cụ "%{toolName}"
@@ -27534,6 +27580,7 @@ vi-VN:
   use_default_890939b7: Sử dụng mặc định
   use_experimental_features_before_they_are_generall_3dfaddd1: Sử dụng các tính năng
     thử nghiệm trước khi chúng thường được kích hoạt trong sản xuất
+  use_high_contrast_ui_a5917282: Sử dụng giao diện người dùng có độ tương phản cao
   use_html5_recorder_in_content_editor_instead_of_fl_c867ea39: Sử dụng Trình ghi HTML5
     trong Trình chỉnh sửa nội dung thay vì Flash
   use_mathman_to_convert_latex_to_mathml_680ef7b0: Sử dụng MathMan để chuyển đổi LaTeX
@@ -28201,7 +28248,7 @@ vi-VN:
   view_feature_settings_at_an_account_level_ec7f5e10: Xem cài đặt tính năng ở cấp
     tài khoản
   view_file_8a1c62e5: Xem tập tin
-  view_gradebook_history_a9272918: Xem lịch sử Sổ điểm
+  view_gradebook_history_a9272918: Xem Lịch sử Sổ điểm
   view_grades_8d3bae6c: Xem điểm
   view_grades_for_name_45aeb2f2: Xem điểm cho %{name}
   view_grading_history_e64bb8fe: Xem lịch sử chấm điểm
@@ -28228,6 +28275,8 @@ vi-VN:
   view_the_assignment_e61ca4fc: Xem bài tập
   view_this_message_in_conversations_5a16bc9f: Xem tin nhắn này trong Cuộc trò chuyện
   view_toolname_placements_4a5724d1: Xem %{toolName} sắp xếp
+  view_ungraded_as_zero_view_in_gradebook_1bfc0783: Xem Không được chấm điểm là Điểm
+    Không trong Sổ điểm
   view_uploads_status_4c836211: Xem trạng thái tải lên
   view_user_groups_538f22b4: Xem nhóm người dùng
   view_user_groups_d2bfa855: Xem nhóm người dùng
@@ -28263,7 +28312,7 @@ vi-VN:
     khả năng truy cập trong khi di chuyển tập tin, vui lòng sử dụng tùy chọn Di chuyển
     đến hộp thoại được tìm thấy trong menu.'
   warning_for_improved_accessibility_of_calendar_eve_da54b4e2: 'Cảnh báo: Để cải thiện
-    khả năng truy cập vào các sự kiện lịch, vui lòng sử dụng chế độ xem chương trình'
+    khả năng truy cập vào các sự kiện lịch, vui lòng sử dụng chế độ xem lịch trình'
   warning_for_improved_accessibility_of_reordering_a_5d0206c7: 'Cảnh báo: để cải thiện
     khả năng truy cập để sắp xếp lại các bài tập và nhóm, vui lòng sử dụng tùy chọn
     Di chuyển đến Hội thoại được tìm thấy trong menu.'
@@ -28377,10 +28426,18 @@ vi-VN:
   welsh_42ab94b1: người xứ Wales
   were_errors_27343020:
     other: Là lỗi hệ thống
+  what_are_collaborations_27c20a98: Hợp tác là gì?
   what_are_self_sign_up_groups_af1f002a: Nhóm tự đăng ký là gì?
+  what_assignment_types_can_i_create_in_a_course_1ed4eed4: 'Tôi có thể tạo những loại
+    bài tập nào trong một khóa học? '
   what_does_provisioning_only_mean_eac9a4a1: Chỉ cung cấp nghĩa là gì?
   what_happened_322d8259: Chuyện gì đã xảy ra?
   what_it_does_d4debc07: Những gì nó làm
+  what_s_a_class_without_people_to_take_and_lead_it__4470b81a: Một lớp học là gì nếu
+    không có người đứng đầu và dẫn dắt nó? Trang Mọi Người hiển thị danh sách người
+    dùng trong khoá học. Tuỳ thuộc vào phân quyền của bạn, bạn có thể thêm học sinh,
+    trợ giảng, và người quan sát vào khoá học. Bạn cũng có thể tạo ra từ những nhóm
+    học sinh đến những nhóm bài tập, thảo luận và tập tin
   what_should_the_csv_file_look_like_985a59ac: Tập tin CSV trông như thế nào?
   when_adding_multiple_users_use_a_comma_or_line_bre_67f9c87d: Khi thêm nhiều người
     dùng, hãy sử dụng dấu phẩy hoặc ngắt dòng để phân tách người dùng.
@@ -28591,7 +28648,7 @@ vi-VN:
       toolbar_menu:
         settings: Cài đặt
       unpublished_indicator: Chưa được đăng
-      view_page_history_wiki: Xem lịch sử trang
+      view_page_history_wiki: Xem Lịch sử Trang
       wiki:
         todo_date: 'Ngày cần làm:'
   will_keep_the_average_of_all_your_scores_d7e6b733: Sẽ lấy rung bình cộng của tất
@@ -28777,6 +28834,9 @@ vi-VN:
     một số thông tin của người dùng này, nhưng họ có thể thay đổi lại nếu họ chọn.
   you_can_use_a_single_16x16_32x32_48x48_ico_file_85da88b5: Bạn có thể sử dụng một
     tập tin đơn ico 16x16, 32x32, 48x48.
+  you_can_view_dismissed_announcements_by_going_to_a_7f6f4f08: Bạn có thể xem các
+    thông báo bị loại bỏ bằng cách chuyển đến Tài khoản và chọn Thông báo chung từ
+    menu.
   you_can_view_your_grades_based_on_what_if_scores_s_a1aeae72: Bạn có thể xem điểm
     của mình dựa trên điểm What-If để bạn biết điểm sẽ bị ảnh hưởng như thế nào bởi
     các bài tập sắp tới hoặc các bài tập được gửi lại. Bạn có thể kiểm tra điểm cho
