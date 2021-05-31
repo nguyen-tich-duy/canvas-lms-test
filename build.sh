@@ -47,54 +47,48 @@ message "Add QTI module"
 mkdir -p $WEB_ROOT/vendor
 [ ! -e $WEB_ROOT/vendor/QTIMigrationTool ] && git clone https://github.com/instructure/QTIMigrationTool.git $WEB_ROOT/vendor/QTIMigrationTool --depth 1
 
-# build canvas-lms
-message "Building canvas-lms"
+function build {
+  PROJECT_NAME=$1
+
+  message "Building $PROJECT_NAME"
+
+  [ -d $BASE_PATH/docker-compose/$PROJECT_NAME ] \
+    && cp -r $BASE_PATH/docker-compose/$PROJECT_NAME/* $PROJECT_NAME/
+
+  [ -d $BASE_PATH/config/$PROJECT_NAME ] \
+    && cp -r $BASE_PATH/config/$PROJECT_NAME/* $PROJECT_NAME/config/
+
+  cd $BASE_PATH/$PROJECT_NAME
+
+  if [ "$ACTION" == "clean" ]; then
+    docker-compose down --rmi local
+  else
+    [ -z "$SKIP_BUILD" ] && docker-compose build || message "[SKIPPED]"
+  fi
+  cd ..
+
+}
 
 # .env
-cat >canvas-lms/.env<<EOF
+tee $BASE_PATH/canvas-lms/.env <<EOF
 COMPOSE_PROJECT_NAME=${BUILD_PREFIX}-lms
 WEB_IMAGE=${WEB_IMAGE}
 POSTGRES_IMAGE=${POSTGRES_IMAGE}
 EOF
 
-# config
-cp -ur docker-compose/canvas-lms/* canvas-lms/
-cp -ur config/canvas-lms/* canvas-lms/config/
+build canvas-lms
 
-cd $WEB_ROOT
-
-if [ "$ACTION" == "clean" ]; then
-  docker-compose down --rmi local
-else
-  [ -z "$SKIP_BUILD" ] && docker-compose build || message "[SKIPPED]"
-fi
-cd ..
-
-# build canvas-rce-api
-message "Building canvas-rce-api"
-
-cat >canvas-rce-api/.env<<EOF
+tee $BASE_PATH/canvas-rce-api/.env <<EOF
 COMPOSE_PROJECT_NAME=${BUILD_PREFIX}-rce-api
 RCE_IMAGE=${RCE_IMAGE}
 EOF
 
-cp -ur docker-compose/canvas-rce-api/* canvas-rce-api/
-
-cd $BASE_PATH/canvas-rce-api
-
-if [ "$ACTION" == "clean" ]; then
-  docker-compose down --rmi local
-else
-  [ -z "$SKIP_BUILD" ] && docker-compose build || message "[SKIPPED]"
-fi
-cd ..
+build canvas-rce-api
 
 if [ "$ACTION" == "push" ]; then
   cd $WEB_ROOT
-  # ignore docker-compose.override.yml to avoid mistake
   exec_command "docker-compose push"
 
   cd $BASE_PATH/canvas-rce-api
-  # ignore docker-compose.override.yml to avoid mistake
   exec_command "docker-compose push"
 fi
