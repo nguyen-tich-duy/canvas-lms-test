@@ -454,7 +454,7 @@ vi-VN:
       enrollment_states: 'Các tình trạng Tuyển sinh: %{states};'
   account_roles_10fea071: Vai trò tài khoản
   account_roles_d13f8f75: Vai trò tài khoản
-  account_rubrics_40c190a8: 'Khung chấm điểm tài khoản '
+  account_rubrics_40c190a8: 'Khung biểu điểm tài khoản '
   account_settings_fe083453: Thiết lập tài khoản
   account_settings_subaccount_navigation_3af6f7f5: Cài đặt tài khoản (Điều hướng phụ)
   account_settings:
@@ -516,7 +516,7 @@ vi-VN:
     tab_plugins: Tiện ích bổ sung
     tab_question_banks: Ngân hàng câu hỏi
     tab_root_accounts: Tài khoản gốc
-    tab_rubrics: Khung chấm điểm
+    tab_rubrics: Khung biểu điểm
     tab_settings: Cài đặt
     tab_sis_import: Nhập từ SIS
     tab_statistics: Số liệu thống kê
@@ -1364,7 +1364,7 @@ vi-VN:
         sis_app_token: Mã thông báo đại lý SIS
         sis_app_url: URL ứng dụng SIS
         sis_default_grade_export: Hộp thư "Post Grades to SIS" được bật theo mặc định
-          cho các bài tập, thảo luận được phân loại và các bài kiểm tra
+          cho các bài tập, thảo luận được chấm điểm và các bài kiểm tra
         sis_source_id: ID SIS
         start_at: Bắt đầu
         students_can_create_courses: Học sinh
@@ -1837,7 +1837,7 @@ vi-VN:
   add_files_to_the_course_da6ffd32: Thêm tập tin vào khóa học
   add_folder_ba50d107: Thêm thư mục
   add_grading_period_6f774dc3: Thêm thời gian chấm điểm
-  add_grading_scheme_81e23c05: Thêm sơ đồ phân loại
+  add_grading_scheme_81e23c05: Thêm sơ đồ chấm điểm
   add_grading_scheme_to_admin_grade_reports_23eb8c6e: Thêm lược đồ chấm điểm vào báo
     cáo cấp quản trị
   add_group_c84f9e9d: Thêm nhóm
@@ -1880,7 +1880,7 @@ vi-VN:
     sắp xếp lại các phần cho danh mục đầu tư này.
   add_review_2fb1590c: Thêm nhận xét
   add_role_3dc4d273: Thêm vai trò
-  add_rubric_3636d9a6: Thêm khung chấm điểm
+  add_rubric_3636d9a6: Thêm Khung biểu điểm
   add_scope_a5208f8b: Thêm phạm vi
   add_section_8b027a1c: Thêm phần
   add_set_of_grading_periods_5b4d6e51: Thêm bộ thời gian chấm điểm
@@ -2077,6 +2077,7 @@ vi-VN:
   all_my_files_a0213441: Tất cả các tập tin của tôi
   all_my_sections_375248b3: Tất cả các phần của tôi
   all_roles_f3bba14d: Tất cả các vai trò
+  all_rubrics_5114c466: Tất cả  Khung biểu điểm
   all_scopename_scopes_6c220783: Tất cả phạm vi %{scopeName}
   all_sections_daf11554: Tất cả các phần
   all_start_dates_must_be_before_the_end_date_d949eca9: Tất cả các ngày bắt đầu phải
@@ -2107,6 +2108,8 @@ vi-VN:
   allow_a_teacher_to_set_the_number_of_allowed_attem_19deb51d: Cho phép giáo viên
     đặt số lần làm lại được phép trên một bài tập thông qua UI
   allow_bb7ce9b1: Cho phép
+  allow_blueprint_publishing_after_association_fae6ba95: Cho phép đăng Bản Mẫu sau
+    khi Liên kết
   allow_bulk_grade_export_to_sis_e11a6e66: Cho phép xuất hàng loạt điểm sang SIS
   allow_comments_a1f45d8: Cho phép nhận xét
   allow_comments_for_title_7ac9e00: Cho phép nhận xét cho %{title}
@@ -2342,8 +2345,8 @@ vi-VN:
   allows_user_to_add_new_assignments_to_a_module_51ae198c: Cho phép người dùng thêm
     các bài tập mới vào một học phần.
   allows_user_to_add_non_graded_discussions_to_list__65e44efe: Cho phép người dùng
-    thêm các cuộc thảo luận không được phân loại vào Bảng điều khiển dạng xem danh
-    sách thông qua hộp kiểm Thêm vào việc cần làm của học sinh.
+    thêm các cuộc thảo luận không được chấm điểm vào danh sách trong Bảng điều khiển,
+    thông qua hộp chọn Thêm vào việc cần làm của học sinh.
   allows_user_to_add_pages_to_list_view_dashboard_vi_a661a203: Cho phép người dùng
     thêm trang vào Bảng điều khiển dạng xem danh sách thông qua hộp kiểm Thêm vào
     việc cần làm của học sinh.
@@ -2416,7 +2419,7 @@ vi-VN:
   allows_user_to_create_and_manage_appointments_on_t_393e9e84: Cho phép người dùng
     tạo và quản lý các cuộc hẹn trên lịch bằng Trình lập lịch biểu.
   allows_user_to_create_and_modify_grading_schemes_e4433a19: Cho phép người dùng tạo
-    và sửa đổi các sơ đồ phân loại.
+    và sửa đổi các sơ đồ chấm điểm.
   allows_user_to_create_collaborations_allows_user_t_96f8c3be: Cho phép người dùng
     tạo cộng tác. Cho phép người dùng xem, chỉnh sửa và xóa các hội nghị mà họ đã
     tạo.
@@ -2433,9 +2436,9 @@ vi-VN:
     tạo, chỉnh sửa và xóa các nhóm khóa học. Cho phép người dùng tạo, chỉnh sửa và
     xóa các nhóm khóa học do học sinh tạo ra.
   allows_user_to_create_edit_and_delete_course_rubri_92b58f29: Cho phép người dùng
-    tạo, chỉnh sửa và xóa phiếu tự đánh giá khóa học trong liên kết Rubrics.
+    tạo, chỉnh sửa và xóa Khung biểu điểm khóa học trong liên kết Khung biểu điểm.
   allows_user_to_create_edit_and_delete_rubrics_1c0acc08: Cho phép người dùng tạo,
-    chỉnh sửa và xóa khung chấm điểm.
+    chỉnh sửa và xóa Khung biểu điểm.
   allows_user_to_create_import_edit_and_delete_outco_472c842e: Cho phép người dùng
     tạo, nhập, chỉnh sửa và xóa các kết quả và nhóm kết quả ở cấp khóa học.
   allows_user_to_create_import_edit_and_delete_outco_8eff991: Cho phép người dùng
@@ -2516,7 +2519,7 @@ vi-VN:
   allows_user_to_import_learning_outcomes_17fce84a: Cho phép người dùng nhập kết quả
     học tập.
   allows_user_to_import_learning_outcomes_to_rubrics_45331ded: Cho phép người dùng
-    nhập kết quả học tập vào phiếu tự đánh giá.
+    nhập kết quả học tập vào Khung biểu điểm.
   allows_user_to_import_resources_from_commons_into__255ad23: Cho phép người dùng
     nhập tài nguyên từ Thư viện chung vào một khóa học. Cho phép người dùng chia sẻ
     bài tập cho Thư viện chung hoặc chỉnh sửa nội dung được chia sẻ trước đó.
@@ -2536,8 +2539,7 @@ vi-VN:
     không xuất bản, v.v.).
   allows_user_to_manage_observers_associated_with_st_4b45f2be: Cho phép người dùng
     quản lý người quan sát liên quan đến học sinh trong tài khoản.
-  allows_user_to_manage_rubrics_326eedc2: Cho phép người dùng quản lý phiếu tự đánh
-    giá.
+  allows_user_to_manage_rubrics_326eedc2: Cho phép người dùng quản lý Khung biểu điểm.
   allows_user_to_manually_add_an_app_in_account_sett_c5ce3789: Cho phép người dùng
     thêm thủ công một ứng dụng trong Cài đặt tài khoản.
   allows_user_to_manually_add_and_delete_an_app_in_a_402d3d91: Cho phép người dùng
@@ -2723,7 +2725,7 @@ vi-VN:
     bằng dấu phẩy (CSV). Cho phép người dùng truy cập Sổ Điểm học tập thành thạo (nếu
     được bật).
   allows_user_to_view_grader_comments_on_a_rubric_in_2ac9f890: Cho phép người dùng
-    xem các bình luận của học sinh về một phiếu tự đánh giá trong SpeedGrader.
+    xem các bình luận của học sinh về một Khung biểu điểm trong SpeedGrader.
   allows_user_to_view_groups_in_a_course_8a95805b: Cho phép người dùng xem các nhóm
     trong một khóa học.
   allows_user_to_view_last_activity_and_total_activi_1455c521: Cho phép người dùng
@@ -2776,7 +2778,7 @@ vi-VN:
     xem liên kết Thông báo trong Điều hướng khóa học. Cho phép người dùng xem thông
     báo khóa học.
   allows_user_to_view_the_course_grading_scheme_32a6042: Cho phép người dùng xem sơ
-    đồ phân loại khóa học.
+    đồ chấm điểm khóa học.
   allows_user_to_view_the_course_statistics_button_i_f44b2c7a: Cho phép người dùng
     xem nút Thống kê khóa học trong Cài đặt khóa học.
   allows_user_to_view_the_discussions_link_in_course_2604505d: Cho phép người dùng
@@ -2809,6 +2811,9 @@ vi-VN:
     mới.
   allows_user_to_view_the_people_link_in_course_navi_58b38f5d: Cho phép người dùng
     xem liên kết Mọi người trong Điều hướng khóa học.
+  allows_user_to_view_the_rubrics_link_in_course_nav_fc5fabff: Cho phép người dùng
+    xem Khung biểu điểm trong thanh Điều hướng Khoá Học. Cho phép người dùng tạo,
+    chỉnh sửa và xoá Khung biểu điểm của Khoá học
   allows_user_to_view_the_sis_id_in_a_user_s_login_d_71e0922b: Cho phép người dùng
     xem ID SIS trong chi tiết đăng nhập của người dùng.
   allows_user_to_view_the_user_sis_id_column_in_the__265cb234: Cho phép người dùng
@@ -2895,7 +2900,7 @@ vi-VN:
   an_error_occurred_while_loading_account_proficienc_d38554c8: Xảy ra lỗi trong khi
     tải xếp hạng thành thạo tài khoản
   an_error_occurred_while_loading_associations_9699b3ee: Đã xảy ra lỗi trong khi tải
-    các tổ chức
+    các Liên kết
   an_error_occurred_while_loading_changes_9851b56f: Đã xảy ra lỗi trong khi tải thay
     đổi
   an_error_occurred_while_loading_courses_11d4571e: Đã xảy ra lỗi trong khi tải các
@@ -2908,7 +2913,7 @@ vi-VN:
   an_error_occurred_while_saving_account_proficiency_43e7fb6a: Xảy ra lỗi trong khi
     lưu xếp hạng mức thành thạo tài khoản
   an_error_occurred_while_saving_associations_bd66f3f4: Đã xảy ra lỗi khi lưu các
-    tổ chức
+    Liên kết
   an_error_occurred_while_saving_the_assignment_post_94f1184e: Xảy ra lỗi trong khi
     lưu chính sách đăng tải bài tập
   an_error_occurred_while_saving_the_course_post_pol_b48976dc: Đã xảy ra lỗi trong
@@ -3087,9 +3092,9 @@ vi-VN:
   anonymous_assignments_must_be_manually_posted_a13d2ca5: Bài tập ẩn danh phải được
     đăng thủ công
   anonymous_e1b8ad27: Ẩn danh
-  anonymous_grading_cannot_be_enabled_for_group_assi_faa33494: Phân loại ẩn danh không
+  anonymous_grading_cannot_be_enabled_for_group_assi_faa33494: Chấm điểm ẩn danh không
     thể được kích hoạt cho bài tập nhóm
-  anonymous_grading_ccb5045c: Phân loại ẩn danh
+  anonymous_grading_ccb5045c: Chấm điểm Ẩn danh
   anonymous_grading_forces_student_names_to_be_hidde_8b46d7e7: Việc chấm điểm ẩn danh
     buộc các tên học sinh bị ẩn trong SpeedGrader ™
   anonymous_instructor_annotations_2b6c822: Chú thích của người hướng dẫn ẩn danh
@@ -3121,8 +3126,8 @@ vi-VN:
   anonymous_user_d984b9ce: Người dùng Chưa xác định
   anonymous_was_never_turned_on_e5e8aeda: Ẩn danh không bao giờ được bật
   anonymous_was_turned_off_300d25ec: Ẩn danh đã bị tắt
-  anonymously_graded_59149570: Phân loại ẩn danh
-  anonymously_graded_assignments_can_t_be_group_assi_ddb00bb2: Bài tập được phân loại
+  anonymously_graded_59149570: Chấm điểm ẩn danh
+  anonymously_graded_assignments_can_t_be_group_assi_ddb00bb2: Bài tập được Chấm điểm
     ẩn danh không thể là bài tập nhóm
   another_assignment_name_369f8481: Tên bài tập khác
   another_configuration_is_currently_selected_select_95b394e: Một cấu hình khác hiện
@@ -3317,13 +3322,13 @@ vi-VN:
   are_you_sure_you_want_to_delete_this_recording_a4aab14b: Bạn có chắc chắn muốn xóa
     bản ghi này?
   are_you_sure_you_want_to_delete_this_rubric_any_co_29d7ac76: Bạn có chắc chắn muốn
-    xóa phiếu tự đánh giá này? Bất kỳ khóa học nào hiện đang được liên kết với phiếu
-    tự đánh giá này vẫn sẽ có quyền truy cập vào nó, nhưng không có khóa học mới nào
+    xóa Khung biểu điểm này? Bất kỳ khóa học nào hiện đang được liên kết với Khung
+    biểu điểm này vẫn sẽ có quyền truy cập vào nó, nhưng không có khóa học mới nào
     có thể sử dụng nó.
   are_you_sure_you_want_to_delete_this_rubric_this_a_d4ff43c7: Bạn có chắc chắn muốn
-    xóa phiếu tự đánh giá này? Hành động này sẽ xóa liên kết phiếu tự đánh giá này
-    khỏi tất cả các bài tập trong khóa học hiện tại và xóa mọi đánh giá liên quan
-    hiện có.
+    xóa Khung biểu điểm này? Hành động này sẽ xóa liên kết Khung biểu điểm này khỏi
+    tất cả các bài tập trong khóa học hiện tại và xóa mọi đánh giá liên quan hiện
+    có.
   are_you_sure_you_want_to_delete_this_to_do_item_497016ea: Bạn có chắc chắn muốn
     xóa mục Công việc này không?
   are_you_sure_you_want_to_delete_this_track_f5a16357: Bạn có chắc chắn muốn xóa bản
@@ -3421,7 +3426,7 @@ vi-VN:
   assignment_comments_e43ed898: Nhận xét
   assignment_configuration_4153cb88: Cấu hình bài tập
   assignment_context_has_been_graded_for_name_af51759a: "%{assignment}, %{context}
-    đã được phân loại cho %{name}."
+    đã được chấm điểm cho %{name}."
   assignment_created_assignment_name_course_name_324a5639: Bài tập được tạo - %{assignment_name},
     %{course_name}
   assignment_created_b3ee04d7: Bài tập được tạo
@@ -3447,10 +3452,10 @@ vi-VN:
   assignment_enhancements_student_557372ab: Bài tập nâng cao - Học sinh
   assignment_excused_eb6c08fa: Bài tập được miễn
   assignment_extensions_cac06daa: Phần mở rộng bài tập
-  assignment_graded_grade_on_assignment_name_in_cour_5082fd1: 'Bài tập được phân loại:
+  assignment_graded_grade_on_assignment_name_in_cour_5082fd1: 'Bài tập được chấm điểm:
     %{grade} trên %{assignment_name} trong %{course_code}'
-  assignment_graded_score_on_assignmentname_in_cours_1acbf85f: 'Bài tập được phân
-    loại: %{score} trên %{assignmentName} trong %{courseName}'
+  assignment_graded_score_on_assignmentname_in_cours_1acbf85f: 'Bài tập được Chấm
+    điểm: %{score} cho %{assignmentName} trong %{courseName}'
   assignment_grades_have_already_been_published_ff2d84c6: Điểm bài tập đã được đăng.
   assignment_grades_have_already_been_released_4c8a91b: Điểm bài tập đã được phát
     hành
@@ -3547,7 +3552,7 @@ vi-VN:
   assignment_title_8a707dd2: tiêu đề bài tập
   assignment_title_e3192978: 'Bài tập: %{title}'
   assignment_type_60255aac: Loại bài tập
-  assignment_unmuted_2cffe4ca: Bài tập chưa được phân loại
+  assignment_unmuted_2cffe4ca: Bài tập chưa được Chấm điểm
   assignment_updated_c7482598: Bài tập được cập nhật
   assignment_url_37c849c6: url bài tập
   assignment_view_1206a60b: Xem bài tập
@@ -3597,7 +3602,7 @@ vi-VN:
       on_paper: trên giấy
     titles:
       gpa_scale_explainer: Điểm trung bình GPA là gì?
-      grading_scheme_info: Xem / Chỉnh sửa sơ đồ phân loại
+      grading_scheme_info: Xem / Chỉnh sửa Sơ đồ Chấm điểm
     vericite_submission_types_validation: VeriCite chỉ hỗ trợ gửi tập tin và nhập
       văn bản
   AssignmentGroupCreateDialog:
@@ -3639,7 +3644,7 @@ vi-VN:
   assignmentRubricDialog:
     loading: Tải...
     titles:
-      assignment_rubric_details: Phân công chi tiết phiếu tự đánh giá
+      assignment_rubric_details: Chi tiết Khung biểu điểm Bài tập
   assignments_1e02582c: Bài tập
   assignments_2_e88d7a26: Bài tập 2
   assignments_2_student_error_page_3ca3e0df: Bài tập 2 Trang lỗi của học sinh
@@ -3849,7 +3854,7 @@ vi-VN:
     edit:
       edit_assignment: Chỉnh sửa bài tập
       links:
-        add_rubric: Phiếu tự đánh giá
+        add_rubric: Khung biểu điểm
     errors:
       add_group_failed: Thêm nhóm không thành công
       delete_reminder_failed: Xóa thất bại
@@ -3898,8 +3903,8 @@ vi-VN:
     grading_type_selector:
       display_grade_as: Hiển thị Điểm là
       gpa_scale_explainer: 'GPA Scale Grading được thiết kế cho các trường sử dụng
-        thang điểm 4.0 (hoặc 5.0 / 6.0) cho tất cả các bài tập. Lược đồ phân loại
-        này tương tự như màn hình Điểm số nhưng có một số khác biệt quan trọng:'
+        thang điểm 4.0 (hoặc 5.0 / 6.0) cho tất cả các bài tập. Sơ đồ chấm điểm này
+        tương tự như màn hình Điểm số nhưng có một số khác biệt quan trọng:'
       gpa_scale_input_explainer: Điểm số là đầu vào trên thang điểm 4.0. Chẳng hạn,
         nếu một bài tập vượt quá 100 điểm, nhập kết quả 4.0 vào 100%, 3.0 kết quả
         là 87%, v.v.
@@ -4070,8 +4075,8 @@ vi-VN:
       overview: Đánh giá ngang hàng của học sinh sẽ được coi là hoàn thành khi học
         sinh đã nhận xét ít nhất một lần trên trang.
       overview_with_rubric: Đánh giá ngang hàng của học sinh sẽ được coi là hoàn thành
-        khi học sinh đã nhận xét ít nhất một lần trên trang và điền vào mẫu phiếu
-        tự đánh giá cho bài tập.
+        khi học sinh đã nhận xét ít nhất một lần trên trang và điền vào mẫu Khung
+        biểu điểm cho bài tập.
       page_title: Đánh giá ngang hàng
       reviews_per_user: "%{count} đánh giá trên mỗi người dùng"
       submitted: trình
@@ -4109,8 +4114,8 @@ vi-VN:
       due_at: Hạn
       for: Cho
       links:
-        add_rubric: Phiếu tự đánh giá
-        assign_rubric: Chỉ định phiếu tự đánh giá
+        add_rubric: Khung biểu điểm
+        assign_rubric: Gán Khung biểu điểm
         edit: Chỉnh sửa
       manage: quản lý
       messages:
@@ -4148,7 +4153,7 @@ vi-VN:
           view_original_page: Xem trang gốc
           view_quiz: Xem bài nộp của Bài kiểm tra
           view_survey: Xem bài nộp khảo sát
-        view_rubric_evaluation: Xem đánh giá phiếu tự đánh giá
+        view_rubric_evaluation: " Xem Đánh giá của Khung biểu điểm"
       messages:
         no_comments: Không bình luận
         submission_late_timestamp: "%{submitted_at} (muộn)"
@@ -4357,8 +4362,8 @@ vi-VN:
   associated_account_name_91854e37: Tên tài khoản liên kết
   associated_course_name_9b5b1945: Tên khóa học liên kết
   associated_courses_1fbc6202: Các khóa học liên kết
-  associations_3fd4abe8: Tổ chức
-  associations_saved_successfully_48b9eae3: Các tổ chức đã lưu thành công
+  associations_3fd4abe8: Liên kết
+  associations_saved_successfully_48b9eae3: Các Liên kết đã lưu thành công
   at_791460b3: tại
   at_least_one_scope_must_be_selected_97d6fce9: Ít nhất một phạm vi phải được chọn.
   at_least_one_section_must_be_selected_to_hide_grad_f88c946f: Ít nhất một phần phải
@@ -4769,7 +4774,7 @@ vi-VN:
   blocked_domain_name_b5b93150: Tên miền bị chặn
   blue_daf8fea9: Màu xanh da trời
   blueprint_5cca2ef: Bản mẫu của khóa học
-  blueprint_course_associations_72c9609: Nhóm các Bản mẫu của khóa học
+  blueprint_course_associations_72c9609: Những Liên kết của Khóa học Bản Mẫu
   blueprint_course_e16ed131: Bản mẫu của khóa học
   blueprint_course_id_9ee357fb: blueprint_course_id
   blueprint_course_information_term_course_10d5cf30: 'Thông tin Bản mẫu của khóa học:
@@ -5125,7 +5130,7 @@ vi-VN:
     find_user: Tìm người dùng
     import: 'Nhập '
     login: Đăng nhập
-    manage_rubrics: Quản lý khung chấm điểm
+    manage_rubrics: Quản lý Khung biểu điểm
     masquerade: Đóng vai thành người dùng
     ok: Đồng ý
     okay: Được
@@ -5649,7 +5654,8 @@ vi-VN:
     này
   can_interact_with_users_in_their_section_only_48cb8c43: Chỉ có thể tương tác với
     người dùng trong phần của họ
-  can_list_categorized_event_types_52596f7: Có thể liệt kê các loại sự kiện phân loại.
+  can_list_categorized_event_types_52596f7: Có thể liệt kê các loại sự kiện đã được
+    phân loại.
   can_list_subscriptions_to_data_service_data_b52d5e37: Có thể liệt kê các mục đăng
     ký dữ liệu dịch vụ dữ liệu.
   can_lookup_account_information_13d69520: Có thể tìm kiếm thông tin tài khoản
@@ -5660,11 +5666,11 @@ vi-VN:
   can_t_compute_score_until_an_assignment_has_points_f34dd600: Không thể tính điểm
     cho đến khi bài tập có điểm khả thi
   can_t_delete_alignments_based_on_rubric_associatio_1a10fcce: Không thể xóa sắp xếp
-    dựa trên các liên kết khung chấm điểm. Để xóa các liên kết này, bạn cần xóa hàng
-    khỏi khung chấm điểm của asset "
+    dựa trên các liên kết Khung biểu điểm. Để xóa các liên kết này, bạn cần xóa hàng
+    khỏi Khung biểu điểm
   can_t_delete_alignments_based_on_rubric_associatio_d9fd10a3: Không thể xóa sắp xếp
-    dựa trên các liên kết khung chấm điểm . Để xóa các liên kết này, bạn cần xóa hàng
-    khỏi khung chấm điểm của asset
+    dựa trên các liên kết Khung biểu điểm . Để xóa các liên kết này, bạn cần xóa hàng
+    khỏi Khung biểu điểm
   can_t_enable_anonymous_grading_and_group_assignmen_9938416e: Không thể kích hoạt
     chấm điểm ẩn danh và bài tập nhóm cùng nhau
   can_t_perform_diffing_against_more_than_one_file_o_44475c0d: 'Không thể thực hiện
@@ -5787,7 +5793,7 @@ vi-VN:
   canvas_alert_grade_change_date_for_name_56f680ed: 'Thông báo Canvas - Thay đổi cấp
     độ: %{date} cho %{name}'
   canvas_alert_graded_assignment_context_for_name_459fdf31: 'Thông báo Canvas - Đã
-    được phân loại: %{assignment}, %{context} cho %{name}'
+    được chấm điểm: %{assignment}, %{context} cho %{name}'
   canvas_alert_in_asset_link_students_are_clicking_b_4cfcfbff: Canvas Alert - Trong
     %{asset_link}, học sinh đang nhấp vào %{bad_link} đến nội dung họ không thể truy
     cập.
@@ -5938,11 +5944,14 @@ vi-VN:
   change_points_possible_to_match_rubric_dialog:
     prompts:
       update_assignment_points: Rời khỏi tổng số điểm của bài tập tại %{assignmentPoints}
-        và tổng số điểm của phiếu tự đánh giá tại %{rubricPoints} sẽ dẫn đến số điểm
+        và tổng số điểm của Khung biểu điểm tại %{rubricPoints} sẽ dẫn đến số điểm
         tối đa có thể là %{toPercentage_pointRatio} cho bài nộp của học sinh được
-        chấm bằng khung chấm điểm.
+        chấm bằng Khung biểu điểm.
     titles:
-      update_assignment_points: Thay đổi điểm bài tập để phù hợp với phiếu đánh giá?
+      update_assignment_points: Thay đổi điểm bài tập để phù hợp với Khung biểu điểm?
+  change_rubrics_visibility_on_accounts_to_depend_on_967b4caa: Thay đổi độ nhìn thấy
+    của Khung biểu điểm trong các Tài khoản để phụ thuộc vào phân quyền của Khung
+    biểu điểm thay cho phân quyền Kết quả Học tập theo năng lực.
   change_section_to_sectionname_6e947e90: Thay đổi phần thành %{sectionName}
   change_sis_ids_3a47154d: Thay đổi ID SIS
   changed_by_person_c39615e: 'Thay đổi bởi: %{person}'
@@ -7757,7 +7766,7 @@ vi-VN:
       quiz_is_locked: Không thể sao chép bài kiểm tra "%{title}" vì nó bị khóa.
       quizzes: Một số bài kiểm tra không xuất được
       resources: Không thể liên kết một số tài nguyên.
-      rubrics: Không thể xuất Khung chấm điểm
+      rubrics: Không thể xuất Khung biểu điểm
       tool_profiles: Không thể xuất một số cấu hình công cụ
       topic: Chủ đề thảo luận "%{title}" không xuất được
       topic_is_locked: Không thể sao chép chủ đề "%{title}" vì nó bị khóa.
@@ -7842,7 +7851,7 @@ vi-VN:
       default_view: Chế độ xem mặc định
       default_wiki_editing_roles: Vai trò chỉnh sửa Wiki mặc định
       enrollment_term_id: Id Ghi danh cho Học kỳ
-      grading_standard_id: Phân loại tiêu chuẩn Id
+      grading_standard_id: Id Tiêu chuẩn Chấm điểm
       group_weighting_scheme: Đề án trọng số nhóm
       hide_distribution_graphs: Ẩn đồ thị phân phối
       hide_final_grade: Ẩn điểm cuối cùng
@@ -7910,6 +7919,7 @@ vi-VN:
   course_roles_1314f962: Vai trò khóa học
   course_roles_d2d5d666: Vai trò khóa học
   course_roster_78f70e97: Bảng phân công khóa học
+  course_rubrics_881dcf0: Khung biểu điểm của Khoá Học
   course_search:
     cant_be_blank: Không thể để trống
   course_section_7a988066: Phần khóa học
@@ -8480,7 +8490,7 @@ vi-VN:
         course_visibility: Hiển thị
         custom_course_visibility: Tùy chỉnh
         enrollment_term_id: Học kỳ
-        grading_scheme: Đề án chấm điểm
+        grading_scheme: Sơ đồ Chấm điểm
         grading_standard_enabled: Cho phép chương trình chấm điểm khóa học
         hide_distribution_graphs: Ẩn biểu đồ phân phối điểm từ học sinh
         hide_final_grades: Ẩn tổng số trong bản tóm tắt điểm của học sinh
@@ -8633,11 +8643,11 @@ vi-VN:
       not_weighted: Bài tập khóa học không có trọng số.
     statistics:
       active_students: Học sinh năng động
-      all_rubrics: Tất cả khung chấm điểm
+      all_rubrics: Tất cả Khung biểu điểm
       any: Bất kì
       assignment_groups: Nhóm chuyển nhượng
       assignments: Bài tập
-      course_rubrics: Khung chấm điểm Khóa học
+      course_rubrics: " Khung biểu điểm Khóa học"
       discussion_posts: Bài viết thảo luận
       discussion_topic: Đề tài thảo luận
       discussions: Thảo luận
@@ -8703,7 +8713,7 @@ vi-VN:
   create_account_263ec6: Tạo tài khoản
   create_an_ba36d171: Tạo ra một
   create_and_administer_online_quizzes_and_surveys_b_7d2fa85f: Tạo và quản lý các
-    bài kiểm tra và khảo sát trực tuyến, cả được phân loại và không được phân loại.
+    bài kiểm tra và khảo sát trực tuyến, cả được chấm điểm và không được chấm điểm.
   create_announcements_above_1c36202b: Tạo thông báo ở trên
   create_as_many_discussion_topics_as_needed_as_assi_45ec1df: Tạo nhiều chủ đề thảo
     luận khi cần, dưới dạng bài tập để chấm điểm hoặc như một diễn đàn để chia sẻ
@@ -8806,7 +8816,7 @@ vi-VN:
     error_reports: Báo cáo lỗi
     files: Các tập tin
     grades: Điểm
-    grading_standards: Phân loại
+    grading_standards: Chấm điểm
     groups: Các nhóm
     jobs: Việc làm
     media: Phương tiện truyền thông
@@ -8820,7 +8830,7 @@ vi-VN:
     quizzes: Bài kiểm tra
     registered_services: Dịch vụ đã đăng ký
     revisions: Sửa đổi
-    rubrics: Khung chấm điểm
+    rubrics: Khung biểu điểm
     settings: "~"
     site_admin: Quản trị trang web
     stats: Số liệu thống kê
@@ -9196,8 +9206,8 @@ vi-VN:
   delete_requirement_bce2d943: Xóa yêu cầu
   delete_requirement_item_type_d7453a69: Xóa yêu cầu %{item} (%{type})
   delete_role_label_succeeded_1690aa28: Xóa vai trò %{label} đã thành công
-  delete_rubric_9b66412d: Xóa Khung chấm điểm
-  delete_rubric_title_ac3a24e6: 'Xóa Khung chấm điểm: %{title}'
+  delete_rubric_9b66412d: Xóa Khung biểu điểm
+  delete_rubric_title_ac3a24e6: 'Xóa Khung biểu điểm: %{title}'
   delete_section_name_a48d9d79: Xóa Phần "%{name}"
   delete_selected_a023ccf8: Xóa đã chọn
   delete_selected_announcements_69e23710: Xóa các thông báo đã chọn
@@ -9336,16 +9346,23 @@ vi-VN:
   determines_visibility_and_management_of_outcomes_t_8a40bf86: Xác định mức độ hiển
     thị và quản lý tab Kết quả trong điều hướng tài khoản. Cho phép người dùng tạo,
     nhập, chỉnh sửa và xóa các kết quả và nhóm kết quả ở cấp tài khoản và khóa học.
+  determines_visibility_and_management_of_rubrics_li_83a26d8e: Xác định khả năng hiển
+    thị và quản lý liên kết Khung biểu điểm trong Điều hướng Tài khoản. Cho phép người
+    dùng xem liên kết Khung biểu điểm trong Điều hướng khóa học. Cho phép người dùng
+    tạo, chỉnh sửa và xóa các Khung biểu điểm của khóa học.
   determines_visibility_and_management_of_rubrics_ta_88a65a22: Xác định mức độ hiển
-    thị và quản lý tab Khung chấm điểm trong điều hướng tài khoản. Cho phép người
-    dùng quản lý khung chấm điểm.
+    thị và quản lý thẻ Khung biểu điểm trong điều hướng tài khoản. Cho phép người
+    dùng quản lý Khung biểu điểm.
   determines_visibility_and_management_of_rubrics_ta_e5dad169: Xác định mức độ hiển
-    thị và quản lý tab Khung chấm điểm trong điều hướng tài khoản. Cho phép người
-    dùng quản lý khung chấm điểm.
+    thị và quản lý tab Khung biểu điểm trong điều hướng tài khoản. Cho phép người
+    dùng quản lý Khung biểu điểm.
   determines_visibility_and_management_of_sis_import_a91ed255: Xác định mức độ hiển
     thị và quản lý tab Nhập SIS trong điều hướng tài khoản.
   determines_visibility_and_management_of_the_questi_fbf70ba9: Xác định mức độ hiển
     thị và quản lý của liên kết điều hướng tài khoản Ngân hàng Câu hỏi.
+  determines_visibility_and_management_of_the_rubric_55b55b25: Xác định khả năng hiển
+    thị và quản lý liên kết Khung biểu điểm trong Điều hướng tài khoản. Cho phép người
+    dùng tạo, chỉnh sửa và xóa các Khung biểu điểm.
   determines_visibility_of_sis_import_tab_in_account_3d48272d: Xác định mức độ hiển
     thị của tab Nhập SIS trong điều hướng tài khoản. Cho phép người dùng xem ngày
     nhập SIS trước đó, lỗi và các mục đã nhập.
@@ -9471,30 +9488,30 @@ vi-VN:
   disabling_sync_to_name_failed_e7521ebb: Vô hiệu hóa Đồng bộ hóa thành %{name} không
     thành công
   disabling_this_permission_will_override_if_enabled_6481b015: Vô hiệu hóa quyền này
-    sẽ ghi đè (nếu được bật) Khung chấm điểm - thêm / chỉnh sửa / xóa quyền, ngăn
+    sẽ ghi đè (nếu được bật) Khung biểu điểm - thêm / chỉnh sửa / xóa quyền, ngăn
     người dùng tạo hoặc chỉnh sửa phiếu đánh giá từ một bài riêng lẻ. Tuy nhiên, nếu
     Kết quả học tập - thêm / chỉnh sửa / xóa được bật, người dùng vẫn có thể thêm
-    phiếu đánh giá thông qua Kết quả (nút Quản lý khung chấm điểm).
+    phiếu đánh giá thông qua Kết quả (nút Quản lý Khung biểu điểm).
   disabling_this_permission_will_override_if_enabled_7f2a87cc: Vô hiệu hóa quyền này
-    sẽ ghi đè (nếu được bật) Khung chấm điểm - thêm / chỉnh sửa / xóa quyền, ngăn
+    sẽ ghi đè (nếu được bật) Khung biểu điểm - thêm / chỉnh sửa / xóa quyền, ngăn
     người dùng tạo hoặc chỉnh sửa phiếu đánh giá từ một bài riêng lẻ. Tuy nhiên, nếu
     Kết quả học tập - thêm / chỉnh sửa / xóa được bật, người dùng vẫn có thể thêm
-    phiếu đánh giá thông qua Kết quả (nút Quản lý khung chấm điểm).
+    phiếu đánh giá thông qua Kết quả (nút Quản lý Khung biểu điểm).
   disabling_this_permission_will_override_if_enabled_8d9c42f5: Vô hiệu hóa quyền này
-    sẽ ghi đè (nếu được bật) Khung chấm điểm - thêm / chỉnh sửa / xóa quyền, ngăn
+    sẽ ghi đè (nếu được bật) Khung biểu điểm - thêm / chỉnh sửa / xóa quyền, ngăn
     người dùng tạo hoặc chỉnh sửa phiếu đánh giá từ một bài riêng lẻ. Tuy nhiên, nếu
     Kết quả học tập - thêm / chỉnh sửa / xóa được bật, người dùng vẫn có thể thêm
-    phiếu đánh giá thông qua Kết quả-Quản lý khung chấm điểm.
+    phiếu đánh giá thông qua Kết quả (nút Quản lý Khung biểu điểm).
   disabling_this_permission_will_override_if_enabled_955dfb03: Vô hiệu hóa quyền này
-    sẽ ghi đè (nếu được bật) Khung chấm điểm - thêm / chỉnh sửa / xóa quyền, ngăn
+    sẽ ghi đè (nếu được bật) Khung biểu điểm - thêm / chỉnh sửa / xóa quyền, ngăn
     người dùng tạo hoặc chỉnh sửa phiếu đánh giá từ một bài riêng lẻ. Tuy nhiên, nếu
     Kết quả học tập - thêm / chỉnh sửa / xóa được bật, người dùng vẫn có thể thêm
-    phiếu đánh giá thông qua Kết quả (nút Quản lý khung chấm điểm).
+    phiếu đánh giá thông qua Kết quả (nút Quản lý Khung biểu điểm).
   disabling_this_permission_will_override_if_enabled_9c4fa650: Vô hiệu hóa quyền này
-    sẽ ghi đè (nếu được bật) Khung chấm điểm - thêm / chỉnh sửa / xóa quyền, ngăn
+    sẽ ghi đè (nếu được bật) Khung biểu điểm - thêm / chỉnh sửa / xóa quyền, ngăn
     người dùng tạo hoặc chỉnh sửa phiếu đánh giá từ một bài riêng lẻ. Tuy nhiên, nếu
     Kết quả học tập - thêm / chỉnh sửa / xóa được bật, người dùng vẫn có thể thêm
-    phiếu đánh giá thông qua Kết quả (nút Quản lý khung chấm điểm).
+    phiếu đánh giá thông qua Kết quả (nút Quản lý Khung biểu điểm).
   disallow_comments_6d04b47a: Không cho phép bình luận
   disallow_comments_for_title_21f9c653: Không cho phép nhận xét cho %{title}
   disallow_replies_for_title_ca3806b2: Không cho phép trả lời cho %{title}
@@ -9714,7 +9731,7 @@ vi-VN:
       other: "%{count} câu trả lời."
       zero: Không câu trả lời
     show:
-      add_rubric: Thêm phiếu tự đánh giá
+      add_rubric: Thêm Khung biểu điểm
       announcement_closed: Thông báo này được đóng nhận bình luận
       announcement_locked: Nội dung của thông báo này sẽ không hiển thị cho người
         dùng cho đến khi %{date}
@@ -9747,7 +9764,7 @@ vi-VN:
       reply_to_message: Trả lời tin nhắn hiện tại
       reply_to_topic: Trả lời chủ đề
       retrieved_from_feed: Lấy từ %{feed}
-      show_rubric: Hiển thị phiếu tự đánh giá
+      show_rubric: Hiển thị Khung biểu điểm
       speed_grader: SpeedGrader ™
       topic: Chủ đề
       topic_podcast_feed_link: Chủ đề Podcast Feed
@@ -10182,30 +10199,30 @@ vi-VN:
   edit_quiz_ededddd8: Chỉnh sửa Bài kiểm tra
   edit_rating_c2ac31e5: Chỉnh sửa đánh giá
   edit_role_1e96ad20: Chỉnh sửa vai trò
-  edit_rubric_title_104d6fd2: 'Chỉnh sửa phiếu tự đánh giá: %{title}'
+  edit_rubric_title_104d6fd2: 'Chỉnh sửa Khung biểu điểm: %{title}'
   edit_rubric:
     buttons:
-      create_rubric: Tạo phiếu tự đánh giá
-      update_rubric: Cập nhật phiếu tự đánh giá
+      create_rubric: Tạo Khung biểu điểm
+      update_rubric: Cập nhật Khung biểu điểm
     change: Thay đổi
     discussion_points_possible:
       other: "%{count} điểm"
     errors:
-      load_rubrics_failed: Tải khung chấm điểm không thành công, vui lòng thử lại
+      load_rubrics_failed: Tải  Khung biểu điểm không thành công, vui lòng thử lại
     leave_different: Để lại khác nhau.
     messages:
-      loading_rubric_groups: Đang tải khung chấm điểm
-      loading_rubrics: Đang tải khung chấm điểm
+      loading_rubric_groups: Đang tải Khung biểu điểm
+      loading_rubrics: Đang tải Khung biểu điểm
     prompts:
-      confirm_delete: Bạn có chắc chắn muốn xóa phiếu tự đánh giá này?
-      read_only_rubric: Bạn không thể chỉnh sửa phiếu tự đánh giá này, vì bạn không
+      confirm_delete: Bạn có chắc chắn muốn xóa Khung biểu điểm này?
+      read_only_rubric: Bạn không thể chỉnh sửa Khung biểu điểm này, vì bạn không
         được phép hoặc nó được sử dụng ở nhiều nơi. Bất kỳ thay đổi nào bạn thực hiện
-        sẽ dẫn đến một phiếu tự đánh giá mới dựa trên phiếu tự đánh giá cũ. Vẫn tiếp
-        tục?
+        sẽ dẫn đến việc tạo một khung biểu điểm mới dựa trên khung biểu điểm cũ. Vẫn
+        tiếp tục?
     titles:
       criterion_long_description: Mô tả chi tiết tiêu chí
       edit_rubric_rating: Chỉnh sửa xếp hạng
-      find_existing_rubric: Tìm phiếu tự đánh giá hiện có
+      find_existing_rubric: Tìm Khung biểu điểm hiện có
   edit_section_name_558cc89: Chỉnh sửa phần "%{name}"
   edit_survey_b0d6890d: Chỉnh sửa khảo sát
   edit_term_name_29a8a322: Chỉnh sửa học kỳ %{name}
@@ -11577,7 +11594,8 @@ vi-VN:
     messages:
       loading_outcomes: Đang tải kết quả ...
       no_outcomes_found: Không tìm thấy kết quả
-      no_rubric_outcomes_found: Không tìm thấy kết quả cấu hình rubric
+      no_rubric_outcomes_found: Không tìm thấy cấu hình Khung biểu điểm cho Kết quả
+        Năng lực
     titles:
       find_outcome: Tìm kết quả
   find_questions_4930b38f: Tìm câu hỏi
@@ -11746,7 +11764,7 @@ vi-VN:
     warning: cảnh báo
   global_navigation_8bee3501: Điều hướng toàn cầu
   global_navigation_tray_35612e2e: Khay điều hướng toàn cầu
-  go_30af2a7b: Đi
+  go_30af2a7b: Bắt đầu
   go_back_ed239e69: Quay lại
   go_to_name_s_profile_eaa1826b: Đi đến hồ sơ của %{name}
   go_to_prerequisite_175c1f3f: Đi đến điều kiện tiên quyết
@@ -11944,7 +11962,7 @@ vi-VN:
       aria_record: Nhấn vào đây để ghi lại
       aria_record_reset: Nhấn vào đây để ghi lại
       aria_stop: Nhấn "Dừng" để kết thúc ghi âm.
-    edit_view_rubric: Xem phiếu tự đánh giá
+    edit_view_rubric: Xem Khung biểu điểm
     errors:
       no_points_possible: Không thể thay đổi mà không có điểm khả thi
       none_to_update: Không có gì để cập nhật
@@ -12259,7 +12277,7 @@ vi-VN:
       click_to_change: Nhấn vào đây để kiểm tra một số điểm khác
       close_comments: Đóng
       close_comments_label: Đóng bình luận
-      close_rubric: Đóng phiếu tự đánh giá
+      close_rubric: Đóng  Khung biểu điểm
       close_score: Đóng
       close_score_screenreader: Đóng chi tiết điểm số
       collapse: Thu gọn tất cả các nhóm kết quả học tập thành thạo.
@@ -12275,7 +12293,7 @@ vi-VN:
       for_course: Đối với khóa học
       grading_in_progress: Giáo viên hướng dẫn đang làm việc với điểm
       headers:
-        anonymous: Đã được phân loại ẩn danh
+        anonymous: Đã được Chấm điểm Ẩn danh
         details: Chi tiết
         due: Do
         grades: Điểm số cho %{student}
@@ -12304,8 +12322,8 @@ vi-VN:
       page_title: Điểm số cho %{student}
       print_grades: In
       score_details: Chi tiết điểm số
-      see_rubric_results: Xem kết quả phiếu tự đánh giá
-      see_rubric_results_screenreader: Xem kết quả phiếu tự đánh giá
+      see_rubric_results: Xem Kết quả Khung biểu điểm
+      see_rubric_results_screenreader: Xem kết quả Khung biểu điểm
       see_scoring_details: Xem chi tiết ghi điểm
       see_scoring_details_screenreader: Xem chi tiết ghi điểm
       see_turnitin_results: Xem kết quả Turnitin
@@ -12319,7 +12337,7 @@ vi-VN:
         revert_score: Trở lại điểm ban đầu
         turnitin_score: Điểm tương tự Turnitin - thêm thông tin
         vericite_score: Điểm tương tự VeriCite - thêm thông tin
-        view_rubric_evaluation: Xem đánh giá phiếu tự đánh giá
+        view_rubric_evaluation: " Xem Đánh giá của Khung biểu điểm"
         view_scoring_details: Xem chi tiết chấm điểm
       total: Tổng số
     grade:
@@ -12425,7 +12443,7 @@ vi-VN:
         leave_comment: Để lại bình luận
         next_student: Học sinh tiếp theo
         previous_student: Học sinh trước
-        use_rubric: Sử dụng phiếu tự đánh giá
+        use_rubric: Sử dụng Khung biểu điểm
       keycodes:
         change_grade: g
         leave_comment: c
@@ -12809,7 +12827,7 @@ vi-VN:
   group_assignments_can_t_be_anonymously_graded_2dd9be24: Bài tập nhóm không thể được
     phân loại ẩn danh
   group_assignments_cannot_be_enabled_for_anonymousl_ed896b1c: Bài tập nhóm không
-    thể được kích hoạt cho bài tập được phân loại ẩn danh
+    thể được kích hoạt cho bài tập được Chấm điểm ẩn danh
   group_assignments_cannot_be_enabled_for_moderated__6b2faeef: Bài tập nhóm không
     thể được kích hoạt cho bài tập được chấm hội đồng
   group_categories_7a569a4d: Danh mục nhóm
@@ -13519,8 +13537,16 @@ vi-VN:
   hour_s_b6e8d238: Giờ
   hours_late_989e9081: Giờ trễ
   hover_over_me_496521b9: Di chuột qua tôi
+  how_do_i_add_a_rubric_in_a_course_a4c7a40: Làm sao để thêm Khung biểu điểm vào khoá
+    học?
+  how_do_i_add_a_rubric_to_an_assignment_46fd097e: Làm sao để thêm 1 Khung biểu điểm
+    vào Bài tập?
+  how_do_i_align_an_outcome_with_a_rubric_in_a_cours_d9c8f009: Làm sao để sắp xếp
+    Kết quả theo năng lực vào Khung biểu điểm trong 1 khoá học?
   how_do_i_import_a_canvas_course_export_package_ed3aafd4: Làm sao để nhập 1 gói Canvas
     xuất khoá học
+  how_do_i_manage_rubrics_in_a_course_a5441fb7: Làm sao để quản lý Khung biểu điểm
+    trong 1 khoá học?
   how_do_i_use_the_learning_mastery_gradebook_to_vie_c555acf2: Làm cách nào để sử
     dụng Sổ điểm Học tập Thành thạo để xem kết quả đầu ra trong một khóa học từ thanh
     Sổ điểm?
@@ -13903,8 +13929,8 @@ vi-VN:
     no_global_permission: Bạn không được phép quản lý kết quả toàn cầu, không thể
       thêm "%{title}"
   importers/rubric_importer:
-    no_context_found: Không thể tìm thấy Rubric bên ngoài cho "%{title}", tạo bản
-      sao.
+    no_context_found: Không thể tìm thấy Khung biểu điểm bên ngoài cho "%{title}",
+      tạo bản sao.
   importers/wiki_page_importer:
     title_for_topics_category: "%{category} Chủ đề"
     warnings:
@@ -13974,7 +14000,7 @@ vi-VN:
     đến SpeedGrader trong menu tiêu đề bài tập trong Sổ Điểm.
   includes_grade_values_in_the_admin_grade_reports_a28200da: Bao gồm các giá trị điểm
     trong các báo cáo cấp quản trị viên.
-  includes_rubrics_in_the_course_sidebar_navigation_6dd52682: Bao gồm các khung chấm
+  includes_rubrics_in_the_course_sidebar_navigation_6dd52682: Bao gồm các Khung biểu
     điểm trong điều hướng thanh bên khóa học
   incomplete_95612d72: chưa hoàn thiện
   incomplete_da3c2ea2: chưa hoàn thiện
@@ -14624,7 +14650,7 @@ vi-VN:
         groups: Nhóm học sinh
         learning_outcomes: Kết quả học tập
         quizzes: Bài kiểm tra
-        rubrics: Khung chấm điểm
+        rubrics: Khung biểu điểm
         syllabus_body: Chương trình học
         tool_profiles: Hồ sơ công cụ
         wikis: Trang
@@ -14766,11 +14792,11 @@ vi-VN:
   loading_announcements_b927a86c: Đang tải thông báo
   loading_assessment_audit_trail_5cf4c10: Đang tải nhật ký giám sátđánh giá
   loading_assignments_352ec769: Đang tải bài tập
-  loading_associations_2b92bcf7: Đang tải các hiệp hội ...
-  loading_associations_9da66c4e: Đang tải hiệp hội
-  loading_associations_complete_b93a9c6e: Tải hiệp hội đã hoàn thành
-  loading_associations_started_1f65d8d: Tải hiệp hội đã bắt đầu
-  loading_assotiations_ac5f6dbf: Đang tải các hiệp hội ...
+  loading_associations_2b92bcf7: Đang tải các Liên kết ...
+  loading_associations_9da66c4e: Đang tải Liên kết
+  loading_associations_complete_b93a9c6e: Tải Liên kết đã hoàn thành
+  loading_associations_started_1f65d8d: Tải Liên kết đã bắt đầu
+  loading_assotiations_ac5f6dbf: Đang tải các Liên kết ...
   loading_available_scopes_bc29bf98: Đang tải phạm vi có sẵn
   loading_bde52856: Đang tải
   loading_change_log_94ac6073: Đang tải Nhật ký thay đổi
@@ -14786,7 +14812,7 @@ vi-VN:
   loading_f99d93d4: "...Đang tải"
   loading_features_d26820f6: Đang tải tính năng
   loading_folders_d8b5869e: Đang tải thư mục
-  loading_graders_f6a76142: Đang tải các phân loại
+  loading_graders_f6a76142: Đang tải các điểm
   loading_last_attended_date_5a42463: Đang tải ngày tham dự cuối cùng
   loading_mastery_paths_c558a766: Đang tải các đường dẫn thông thạo ...
   loading_media_32847745: Đang tải phương tiện
@@ -14840,7 +14866,7 @@ vi-VN:
   locked_objects_cannot_be_edited_in_associated_cour_1af858c8: Đối tượng bị khóa không
     thể được chỉnh sửa trong các khóa học liên quan.
   locked_until_item_name_is_graded_3b8d967f: Đã khóa cho đến khi "%{item_name}" được
-    phân loại
+    Chấm điểm
   locked_until_mastery_path_is_processed_for_item_na_48766cf7: Đã khóa cho đến khi
     đường dẫn chính được xử lý cho "%{item_name}"
   locked_until_unlock_date_498ead5f: Bị khóa cho đến khi %{unlock_date}
@@ -15079,7 +15105,7 @@ vi-VN:
   manage_options_for_name_83278ad0: Quản lý các tùy chọn cho %{name}
   manage_pages_4d2adeb6: Quản lý trang
   manage_profile_pictures_40c958ce: Quản lý ảnh hồ sơ
-  manage_rubrics_5d274f6a: Quản lý khung chấm điểm
+  manage_rubrics_5d274f6a: Quản lý Khung biểu điểm
   manage_snapshots_1dc4b79d: Quản lý ảnh chụp nhanh
   manage_snapshots_modal_b0517bb6: Quản lý phương thức chụp nhanh
   manage_update_23de23a1: Quản lý cập nhật
@@ -17154,7 +17180,7 @@ vi-VN:
         not_applicable: Không có
         score: 'điểm: %{score} trên %{total}'
         score_pending_review: điểm chờ xem lại của giáo viên
-        sms_body: "%{assignment} đã được phân loại."
+        sms_body: "%{assignment} đã được chấm điểm."
       summary:
         graded_date: 'Được chấm tại: %{date}'
         no_date_set: Không đặt ngày
@@ -17320,7 +17346,7 @@ vi-VN:
     module_type: Học phần
     quiz_question_type: Câu hỏi Bài kiểm tra
     quiz_type: Bài kiểm tra
-    rubric_type: Phiếu tự đánh giá
+    rubric_type: Khung biểu điểm
     webct:
       course_not_found: Khóa học Blackboard không được tìm thấy.
     wiki_page_type: Trang Wiki
@@ -17404,7 +17430,7 @@ vi-VN:
   moderated_grading_setting_cannot_be_enabled_for_pe_fc7b5b8b: Cài đặt chấm điểm hội
     đồng không thể được bật cho các bài tập được đánh giá ngang hàng.
   moderated_grading_setting_cannot_be_enabled_for_un_e40e6cd4: Cài đặt chấm điểm hội
-    đồng không thể được bật cho các bài tập chưa được phân loại.
+    đồng không thể được bật cho các bài tập chưa được Chấm điểm.
   moderation_is_unable_to_occur_at_this_time_due_to__fc2d90c9: Duyệt điểm không thể
     xảy ra tại thời điểm này do Điểm chưa được nộp.
   moderation_page_4061aa2b: Trang điều hành
@@ -17413,6 +17439,8 @@ vi-VN:
   modified_by_52d699e9: ", được sửa đổi bởi:"
   modified_by_c1584b3c: Được sửa đổi bởi
   modified_by_user_e6c8ade3: 'được sửa đổi bởi: %{user}'
+  modify_permissions_for_account_rubrics_6c3aee59: Chỉnh lại phân quyền cho Khung
+    biểu điểm ở Tài khoản Trường
   module_90d9fd32: Học phần
   module_completed_50c50762: Học phần hoàn thành
   module_filter_63b17d11: Bộ lọc học phần
@@ -17502,6 +17530,7 @@ vi-VN:
         cancel: Hủy bỏ
     assignments_to_grade:
       other: "%{count} bài tập có bài nộp chưa được phân loại"
+      zero: "%{count} bài tập có bài nộp chưa được chấm điểm"
     assignments_to_post:
       other: Bạn đã sẵn sàng để gửi %{count} bài tập.
     continue: Tiếp tục
@@ -18083,7 +18112,7 @@ vi-VN:
   non_canvas_11f36d4a: Không Canvas
   non_existent_content_referenced_in_this_resource_d86c6bcb: 'Nội dung không tồn tại
     được tham chiếu trong tài nguyên này:'
-  non_scoring_rubrics_9f2033ad: Khung chấm điểm không cho điểm
+  non_scoring_rubrics_9f2033ad: " Khung biểu điểm không dùng để chấm điểm"
   nonce_77113ba4: Nonce
   none_3b5e34d2: Không có
   none_9b6c9bec: Không có
@@ -18097,7 +18126,7 @@ vi-VN:
     sẽ được chỉ định mục này.
   not_all_settings_options_are_available_at_the_suba_20efaa98: Không phải tất cả các
     tùy chọn cài đặt đều khả dụng ở cấp phụ, bao gồm tab Thông báo.
-  not_anonymously_graded_87574f91: Không được phân loại ẩn danh
+  not_anonymously_graded_87574f91: Không được Chấm điểm Ẩn danh
   not_applicable_d5dfd285: không áp dụng
   not_available_487d3648: Không có sẵn
   not_available_assignment_is_anonymous_94e77edf: Không có sẵn; Bài tập là ẩn danh
@@ -18133,7 +18162,7 @@ vi-VN:
     sinh
   not_yet_assessed_9362f199: Chưa được đánh giá
   not_yet_completed_345a0bca: Chưa hoàn thành
-  not_yet_graded_40475341: Chưa được phân loại
+  not_yet_graded_40475341: Chưa được Chấm điểm
   note_8b73ce09: Ghi chú
   note_associated_tools_are_only_listed_once_even_if_ebae2aba: 'LƯU Ý: Các công cụ
     liên kết chỉ được liệt kê một lần, ngay cả khi chúng đã được cài đặt trong nhiều
@@ -18369,9 +18398,10 @@ vi-VN:
       pseudonym_registration_done: Đăng ký bút danh Xong
       report_generated: Báo cáo được tạo
       report_generation_failed: Tạo báo cáo không thành công
-      rubric_assessment_invitation: Lời mời đánh giá phiếu tự đánh giá
-      rubric_assessment_submission_reminder: Nhắc nhở đánh giá phiếu tự đánh giá
-      rubric_association_created: Hiệp hội phiếu tự tạo
+      rubric_assessment_invitation: Lời mời đến Khung biểu điểm cho Đánh giá
+      rubric_assessment_submission_reminder: Nhắc nhở Nộp Đánh giá cho Khung biểu
+        điểm
+      rubric_association_created: Liên kết Khung biểu điểm đã được tạo
       submission_comment: Nhận xét về bài đã nộp
       submission_comment_for_teacher: Nhận xét về bài đã nộp cho giáo viên
       submission_grade_changed: Đăng ký thay đổi
@@ -18643,7 +18673,7 @@ vi-VN:
   open_event_menu_for_783510e3: Mở menu sự kiện cho
   open_for_comments_1810648: Mở để bình luận
   open_for_comments_f8f7641e: Mở lại để nhận xét
-  open_grading_scheme_menu_5f889203: Mở menu Đề án chấm điểm
+  open_grading_scheme_menu_5f889203: Mở thanh Sơ đồ Chấm điểm
   open_id_connect_values_81fbee7: Giá trị kết nối Id mở
   open_id_connect_values_a60c9206: "* Giá trị kết nối Id mở"
   open_in_theme_editor_156028e2: Mở trong Trình chỉnh sửa chủ đề
@@ -18712,7 +18742,7 @@ vi-VN:
   other_carrier_45531207: Người vận chuyển khác
   other_ddacb37d: Khác
   other_incorrect_match_options_c1418af5: 'Tùy chọn đối sánh không chính xác khác:'
-  other_options_d25f199c: Sự lựa chọn khác
+  other_options_d25f199c: Lựa chọn khác
   other_timezones_42530564: Các múi giờ khác
   out_of_78a76f91: ra khỏi
   out_of_formattedoutof_e08e90d5: ra khỏi %{formattedOutOf}
@@ -18762,11 +18792,11 @@ vi-VN:
       error: Xảy ra lỗi. Hãy làm mới trang và thử lại.
       updateSuccess: Cập nhật thành công
     length_error: Phải có 255 ký tự trở xuống
-  outcomes_and_rubrics_account_course_68d0bf1d: Kết quả và khung chấm điểm (Tài khoản
+  outcomes_and_rubrics_account_course_68d0bf1d: Kết quả và Khung biểu điểm (Tài khoản
     / Khóa học)
-  outcomes_and_rubrics_account_course_f0d23419: Kết quả và khung chấm điểm (Tài khoản,
+  outcomes_and_rubrics_account_course_f0d23419: Kết quả và Khung biểu điểm (Tài khoản,
     Khóa học)
-  outcomes_and_rubrics_f893d141: Kết quả và khung chấm điểm
+  outcomes_and_rubrics_f893d141: Kết quả và  Khung biểu điểm
   outcomes_are_created_here_to_track_mastery_in_a_co_2f487549: Kết quả được tạo ra
     ở đây để theo dõi sự thành thạo trong một khóa học. Để bắt đầu, hãy kiểm tra thanh
     menu dọc theo ở đầu. Nhấp vào nút Kết quả mới để tạo kết quả mới hoặc nút Nhóm
@@ -20426,6 +20456,7 @@ vi-VN:
     unpublishing: Đang huỷ đăng ...
   publish_the_course_f2f6ef80: Đăng khóa học
   publish_title_102f2d90: Đăng %{title}
+  publish_upon_association_53cb0450: Đăng ngay khi Liên kết
   publishable:
     cant_unpublish: Không thể huỷ đăng bài
   publishableModuleItem:
@@ -21636,7 +21667,7 @@ vi-VN:
           find_questions: Tìm câu hỏi
           new_question: Câu hỏi mới
           new_question_group: Nhóm câu hỏi mới
-          show_assignment_rubric: Hiển thị phiếu tự đánh giá
+          show_assignment_rubric: Hiển thị  Khung biểu điểm
         manage: quản lý
         minutes: Phút
         new_assignment: Bài tập mới
@@ -21884,7 +21915,7 @@ vi-VN:
           preview: Xem trước
           quiz_statistics: Thống kê bài kiểm tra
           see_full_quiz: Xem toàn bộ Bài kiểm tra
-          show_assignment_rubric: Hiển thị phiếu tự đánh giá
+          show_assignment_rubric: Hiển thị Khung biểu điểm
           show_student_quiz_results: Hiển thị kết quả bài kiểm tra của học sinh
           show_student_survey_results: Hiển thị kết quả khảo sát học sinh
           survey_statistics: Thống kê khảo sát
@@ -21998,7 +22029,7 @@ vi-VN:
     rubric:
       loading: Đang tải...
       titles:
-        details: Phân công chi tiết phiếu tự đánh giá
+        details: Chi tiết Khung biểu điểm Bài tập
     show:
       answers:
         correct: Chính xác!
@@ -22336,7 +22367,7 @@ vi-VN:
     học
   remove_all_group_observer_members_af5675f3: Xóa tất cả thành viên quan sát nhóm
   remove_as_front_page_2698aa12: Xóa làm Trang trước
-  remove_association_1412eabf: Xóa hội
+  remove_association_1412eabf: Xóa Liên kết
   remove_attachment_ceae0973: Xóa tập tin đính kèm
   remove_attendee_name_55165070: Xóa người tham dự %{name}
   remove_attribute_59a4aa64: Xóa thuộc tính
@@ -22360,7 +22391,7 @@ vi-VN:
   remove_null_values_from_live_event_payloads_3c826f: Xóa giá trị null khỏi tải trọng
     của sự kiện trực tiếp
   remove_placement_90862c13: Xóa %{placement}
-  remove_points_from_rubric_dcd4b585: Xóa điểm khỏi phiếu tự đánh giá
+  remove_points_from_rubric_dcd4b585: Xóa điểm khỏi Khung biểu điểm
   remove_pronouns_5ff760ff: Xóa đại từ
   remove_pronouns_pronoun_c8b03d78: Xóa các đại từ %{pronoun}
   remove_recipient_name_a6b83cef: Xóa người nhận %{name}
@@ -22375,7 +22406,8 @@ vi-VN:
   remove_text_8e485c41: Xóa %{text}
   remove_these_dates_48453a81: Xóa những ngày này
   remove_this_item_from_the_module_4b2ceab7: Loại bỏ mục này khỏi học phần
-  remove_this_rubric_from_my_list_c7d80704: Xóa Rubric này khỏi danh sách của tôi.
+  remove_this_rubric_from_my_list_c7d80704: Xóa Khung biểu điểm này khỏi danh sách
+    của tôi.
   remove_this_section_9a88ca43: Xóa phần này
   remove_user_from_section_5556f465: Xóa người dùng khỏi phần
   removed_course_association_course_a233342c: Đã xóa liên kết khóa học %{course}
@@ -22462,7 +22494,7 @@ vi-VN:
   responsive_layout_54e4ca06: Giao diện đáp ứng
   restart_link_validation_b61286fc: Khởi động lại xác nhận liên kết
   restore_courses_182e162e: Khôi phục khóa học
-  restored_course_association_course_c9e16045: Đã khôi phục tổ chức khóa học %{course}
+  restored_course_association_course_c9e16045: Đã khôi phục Liên kết khóa học %{course}
   restrict_access_84ba6bb8: Hạn chế truy cập
   restrict_sms_to_select_types_9dd6399c: Hạn chế SMS để chọn loại
   restrict_student_access:
@@ -22560,7 +22592,7 @@ vi-VN:
       manage_links: Quản lý vai trò và liên kết tin cậy
       manage_outcomes: Quản lý kết quả học tập
       manage_role_overrides: Quyền quản lý
-      manage_rubrics: Tạo và chỉnh sửa khung chấm điểm
+      manage_rubrics: Tạo và chỉnh sửa Khung biểu điểm
       manage_sections: Quản lý (tạo / chỉnh sửa / xóa) các phần khóa học
       manage_sis: Quản lý dữ liệu SIS
       manage_site_settings: Quản lý cài đặt toàn trang và plugin
@@ -22711,67 +22743,75 @@ vi-VN:
     unknown_user: Người dùng không xác định
   rubric_association:
     no_details: Không có chi tiết
-  rubric_created_64980593: Phiếu tự tạo
-  rubric_criterion_range_12499bf1: Phạm vi tiêu chí phiếu tự đánh giá
-  rubric_deleted_3d9efc18: Phiếu tự đánh giá đã bị xóa
-  rubric_fc39da76: Phiếu tự đánh giá
-  rubric_updated_103e24dc: Cập nhật phiếu tự đánh giá
+  rubric_created_64980593: Khung biểu điểm được tạo
+  rubric_criterion_range_12499bf1: Phạm vi Tiêu chí Khung biểu điểm
+  rubric_deleted_3d9efc18: Khung biểu điểm đã bị xóa
+  rubric_fc39da76: Khung biểu điểm
+  rubric_updated_103e24dc: Cập nhật Khung biểu điểm
   rubric:
-    context_name_rubric: "%{course_name} Phiếu tự đánh giá"
+    context_name_rubric: "%{course_name} Khung biểu điểm"
     no_description: Không có mô tả
     unknown_details: Không biết chi tiết
-  rubrics_add_edit_delete_8299eff7: khung chấm điểm - thêm / chỉnh sửa / xóa
+  rubrics_add_edit_delete_8299eff7: Khung biểu điểm - thêm / chỉnh sửa / xóa
   rubrics_and_speedgrader_ececaed4: khung chấm điểm và SpeedGrader
-  rubrics_b5ef369b: khung chấm điểm
-  rubrics_in_course_navigation_539ea536: khung chấm điểm trong điều hướng khóa học
-  rubrics_speedgrader_a6ebec57: khung chấm điểm, SpeedGrader
+  rubrics_b5ef369b: Khung biểu điểm
+  rubrics_can_show_students_your_expectations_for_as_3382da64: Khung biểu điểm có
+    thể cho sinh viên thấy kỳ vọng của bạn đối với chất lượng bài tập và cách họ sẽ
+    được chấm điểm tương ứng. Khung biểu điểm có thể được liên kết với các bài tập,
+    cuộc thảo luận và bài kiểm tra. Chỉ sử dụng Khung biểu điểm để chấm điểm hoặc
+    tạo Khung biểu điểm không cho điểm dành riêng cho việc chấm điểm dựa trên đánh
+    giá và dựa trên kết quả mà không có điểm. Kết quả có thể được thêm vào dưới dạng
+    tiêu chí trong Khung biểu điểm.
+  rubrics_in_course_navigation_539ea536: Khung biểu điểm trong điều hướng khóa học
+  rubrics_speedgrader_a6ebec57: " Khung biểu điểm, SpeedGrader"
+  rubrics_tutorial_tray_be65d10d: Thanh Hướng dẫn Sử dụng  Khung biểu điểm
   rubrics:
     index:
-      account_rubrics: Khung chấm điểm tài khoản
-      are_you_sure_prompt: Bạn có chắc chắn muốn xóa phiếu tự đánh giá này? Bất kỳ
-        khóa học nào hiện đang được liên kết với phiếu tự đánh giá này vẫn sẽ có quyền
-        truy cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng nó.
+      account_rubrics: Khung biểu điểm tài khoản
+      are_you_sure_prompt: Bạn có chắc chắn muốn xóa Khung biểu điểm này? Bất kỳ khóa
+        học nào hiện đang được liên kết với Khung biểu điểm này vẫn sẽ có quyền truy
+        cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng nó.
       buttons:
-        add_rubric: Thêm phiếu tự đánh giá
-      course_rubrics: khung chấm điểm khóa học
-      delete_rubric: Xóa phiếu tự đánh giá
-      edit_rubric: Chỉnh sửa phiếu tự đánh giá
-      page_title: khung chấm điểm
+        add_rubric: Thêm Khung biểu điểm
+      course_rubrics: Khung biểu điểm Khóa học
+      delete_rubric: Xóa Khung biểu điểm
+      edit_rubric: Chỉnh sửa Khung biểu điểm
+      page_title: " Khung biểu điểm"
       points_possible:
         other: "%{count} điểm có thể"
-      user_rubrics: khung chấm điểm người dùng
+        zero: "%{count} điểm là tối đa"
+      user_rubrics: Khung biểu điểm của người dùng
     loading: Đang tải...
     show:
       buttons:
-        delete: Xóa phiếu tự đánh giá
+        delete: Xóa Khung biểu điểm
       prompts:
-        are_you_sure_delete: Bạn có chắc chắn muốn xóa phiếu tự đánh giá này? Bất
-          kỳ khóa học nào hiện đang được liên kết với phiếu tự đánh giá này vẫn sẽ
-          có quyền truy cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng
-          nó.
-      rubric_can_not_modify: khung chấm điểm không thể được sửa đổi một khi chúng
+        are_you_sure_delete: Bạn có chắc chắn muốn xóa Khung biểu điểm này? Bất kỳ
+          khóa học nào hiện đang được liên kết với Khung biểu điểm này vẫn sẽ có quyền
+          truy cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng nó.
+      rubric_can_not_modify: Khung biểu điểm không thể được sửa đổi một khi chúng
         đã được sử dụng ở nhiều nơi.
       titles:
-        edit_rubric: Chỉnh sửa phiếu tự đánh giá
+        edit_rubric: Chỉnh sửa Khung biểu điểm
     titles:
-      assignment_rubric_details: Phân công chi tiết phiếu tự đánh giá
+      assignment_rubric_details: Chi tiết Khung biểu điểm Bài tập
     user_index:
       buttons:
-        add_rubric: Thêm phiếu tự đánh giá
-      delete_rubric: Xóa phiếu tự đánh giá
+        add_rubric: Thêm Khung biểu điểm
+      delete_rubric: Xóa Khung biểu điểm
       headings:
-        user_rubrics: khung chấm điểm người dùng
-      page_title: khung chấm điểm
+        user_rubrics: Khung biểu điểm của người dùng
+      page_title: Khung biểu điểm
       points_possible:
         other: "%{count} điểm có thể"
+        zero: "%{count} điểm là tối đa"
       prompts:
-        are_you_sure_delete: Bạn có chắc chắn muốn xóa phiếu tự đánh giá này? Bất
-          kỳ khóa học nào hiện đang được liên kết với phiếu tự đánh giá này vẫn sẽ
-          có quyền truy cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng
-          nó.
-        are_you_sure_remove: Bạn có chắc chắn muốn xóa phiếu tự đánh giá này khỏi
-          danh sách của bạn?
-      remove_rubric: Xóa Phiếu tự đánh giá này khỏi danh sách của tôi
+        are_you_sure_delete: Bạn có chắc chắn muốn xóa Khung biểu điểm này? Bất kỳ
+          khóa học nào hiện đang được liên kết với Khung biểu điểm này vẫn sẽ có quyền
+          truy cập vào nó, nhưng, không có khóa học mới nào có thể sử dụng nó.
+        are_you_sure_remove: Bạn có chắc chắn muốn xóa Khung biểu điểm này khỏi danh
+          sách của bạn?
+      remove_rubric: Xóa Khung biểu điểm này khỏi danh sách của tôi
   running_c5a4998d: Đang chạy
   russia_7_87bc99d5: Nga (+7)
   russian_1e3e197: tiếng Nga
@@ -22810,9 +22850,9 @@ vi-VN:
     công
   saving_2521e616: Đang lưu
   saving_assignment_fb958949: Tiết kiệm bài tập
-  saving_associations_989bd4da: Đang lưu tổ chức
-  saving_associations_complete_e4b9634d: Đang lưu tổ chức hoàn thành
-  saving_associations_started_8ac85360: Đang lưu tổ chức đã bắt đầu
+  saving_associations_989bd4da: Đang lưu Liên kết
+  saving_associations_complete_e4b9634d: Lưu Liên kết đã hoàn thành
+  saving_associations_started_8ac85360: Lưu Liên kết đã bắt đầu
   saving_d55dd90e: Đang lưu...
   saving_new_role_458f4ba8: Đang lưu vai trò mới
   saving_recording_e111cb05: Lưu bản ghi ...
@@ -22869,7 +22909,7 @@ vi-VN:
         set_default_grade: Đặt điểm mặc định
       details:
         avg_score: Điểm trung bình
-        graded_sub_count: 'Bài dự thi đã được phân loại:'
+        graded_sub_count: 'Bài nộp đã được Chấm điểm:'
         high_score: Điểm cao
         low_score: Điểm thấp
         no_points: Không có điểm nào khả thi
@@ -23154,7 +23194,7 @@ vi-VN:
   security_tab_failed_to_load_2d2242a: Tab bảo mật không tải được
   see_other_users_primary_email_address_59c8473f: Xem địa chỉ email chính của người
     dùng khác
-  see_rubric_results_62a6447d: Xem kết quả phiếu tự đánh giá.
+  see_rubric_results_62a6447d: Xem kết quả  khung biểu điểm.
   see_scoring_details_f7fd1f3b: Xem chi tiết điểm số.
   see_some_lti_tools_that_work_great_with_canvas_16ef75a0: "* Xem một số công cụ LTI
     * hoạt động tuyệt vời với Canvas."
@@ -23229,7 +23269,7 @@ vi-VN:
   select_one_of_the_options_c8b0c6e4: 'Chọn một trong các tùy chọn:'
   select_prerequisite_module_57894963: Chọn học phần tiên quyết
   select_prerequite_module_e9042bb0: Chọn học phần tiên quyết
-  select_rubric_2aa2ffa2: Chọn phiếu tự đánh giá
+  select_rubric_2aa2ffa2: Chọn Khung biểu điểm
   select_student_group_c0be9f3e: Chọn nhóm học sinh
   select_student_name_caaff244: Chọn học sinh %{name}
   select_studentname_e7b7908d: Chọn %{studentName}
@@ -23464,8 +23504,8 @@ vi-VN:
         percent_of_final_grade: Phần trăm điểm cuối cùng
     assignment_rubric_dialog:
       links:
-        add_rubric: Thêm phiếu tự đánh giá
-        assign_rubric: Nộp phiếu tự đánh giá
+        add_rubric: Thêm Khung biểu điểm
+        assign_rubric: Chỉ định Khung biểu điểm
     assignment:
       due_at: "%{date} tại %{time}"
       graded_count: "%{graded_count} Đã chấm"
@@ -23473,7 +23513,7 @@ vi-VN:
         delete_assignment: Xóa bài tập
         edit_assignment: Chỉnh sửa bài tập
         submission_comments: Nộp nhận xét
-        view_rubric_evaluation: Xem nhận xét phiếu tự đánh giá
+        view_rubric_evaluation: Xem Đánh giá của Khung biểu điểm
       points_out_of: "%{points} trong số %{possible}"
       student_mute_notification: Giáo viên đang chấm điểm
       submitted_and_graded_count: "%{submitted_count} Đã nộp, %{graded_count} Đã chấm"
@@ -23882,13 +23922,13 @@ vi-VN:
         linked_to_learning_outcome: Tiêu chí này được liên kết với kết quả học tập
     rubric_dialog:
       buttons:
-        use_this_rubric: Sử dụng phiếu tự đánh giá này
+        use_this_rubric: Sử dụng Khung biểu điểm này
       criterion_count: "%{count} tiêu chí"
       links:
-        manage_rubrics: Quản lý phiếu tự đánh giá
+        manage_rubrics: Quản lý Khung biểu điểm
       points_possible: "%{points} điểm khả thi"
       titles:
-        find_a_rubric: Tìm một phiếu tự đánh giá
+        find_a_rubric: Khung biểu điểm
     rubric_forms:
       criteria_description_label: Mô tả tiêu chí
       points: "%{points} điểm"
@@ -23916,12 +23956,12 @@ vi-VN:
       labels:
         total_points: Tổng điểm
       points_out_of: "* %{points} * trong số ** %{total} **"
-      rubric: Phiếu tự đánh giá
+      rubric: Khung biểu điểm
     rubric:
       buttons:
-        create: Tạo phiếu tự đánh giá
+        create: Tạo Khung biểu điểm
       defaults:
-        rubric_title: Một số phiếu tự đánh giá
+        rubric_title: Một số Khung biểu điểm
       headers:
         criteria: Các tiêu chí
         points: Điểm
@@ -23929,34 +23969,36 @@ vi-VN:
       labels:
         custom_rating: Tôi sẽ viết bình luận theo bất cứ dạng nào khi đánh giá học
           sinh
-        grading_rubric: Sử dụng phiếu tự đánh giá này để phân loại bài tập
+        grading_rubric: Sử dụng Khung biểu điểm này để chấm điểm bài tập
         total_points: Tổng số điểm
         totallying_rubric: Ẩn tổng số điểm của kết quả đánh giá
       links:
         add_criterion: Tiêu chí
-        delete: Xóa phiếu tự đánh giá
-        edit: Chỉnh sửa phiếu tự đánh giá
-        find_a_rubric: Tìm một phiếu tự đánh giá
-        find_another_rubric: Tìm một phiếu tự đánh giá khác
+        delete: Xóa Khung biểu điểm
+        edit: Chỉnh sửa Khung biểu điểm
+        find_a_rubric: Tìm một Khung biểu điểm
+        find_another_rubric: Tìm một Khung biểu điểm khác
         find_outcome: Tìm kết quả
-        find_rubric: Tìm phiếu tự đánh giá
+        find_rubric: Tìm Khung biểu điểm
       messages:
-        locked: Không thể thay đổi một phiếu tự đánh giá khi bạn bắt đầu sử dụng nó.
+        locked: Không thể thay đổi một Khung biểu điểm khi bạn bắt đầu sử dụng nó.
         rubric_in_use:
           other: Hãy nhớ rằng%{count} học sinh đã được đánh giá bằng cách sử dụng
             phiếu tự đánh giá này. Thay đổi nó sẽ ảnh hưởng đến kết quả đánh giá của
             họ.
-        rubric_in_use2: Bạn đã đánh giá học sinh với phiếu tự đánh giá này. Bất kỳ
-          thay đổi quan trọng nào cũng có thể ảnh hưởng đến kết quả đánh giá của họ.
+          zero: Hãy nhớ rằng %{count} học sinh đã được đánh giá dựa theo Khung biểu
+            điểm này. Thay đổi nó sẽ ảnh hưởng đến kết quả đánh giá của học sinh
+        rubric_in_use2: Bạn đã đánh giá học sinh với Khung biểu điểm này. Bất kỳ thay
+          đổi quan trọng nào cũng có thể ảnh hưởng đến kết quả đánh giá của họ.
       out_of: "%{points} * trong số %{total} *"
-      rubric: Phiếu tự đánh giá
+      rubric: Khung biểu điểm
       rubric_title: Chức vụ
       title: 'Chức vụ:'
       titles:
-        find_existing_rubric: Tìm phiếu tự đánh giá hiện có
+        find_existing_rubric: Tìm Khung biểu điểm hiện có
     rubrics_component:
       links:
-        assign_rubric: Chỉ định phiếu tự đánh giá
+        assign_rubric: Chỉ định Khung biểu điểm
     select_content_dialog:
       add_to_module: Thêm %{item} vào * Bài học *
       assignment_item: Bài tập
@@ -24271,7 +24313,7 @@ vi-VN:
   show_question_details_b059df00: Hiển thị chi tiết câu hỏi
   show_recent_activity_stream_2be4abc1: Hiển thị các hoạt động trực tiếp gần đây
   show_report_to_students_a07888a6: Hiển thị báo cáo cho học sinh
-  show_rubric_dca783f2: Hiển thị phiếu tự đánh giá
+  show_rubric_dca783f2: Hiển thị Khung biểu điểm
   show_saved_what_if_scores_358bfe5f: Hiển thị các điểm "What-If" đã lưu
   show_student_names_dcb40934: Hiển thị tên học sinh
   show_sub_accounts_for_account_name_fa71a658: Hiển thị tài khoản phụ cho %{account_name}
@@ -24549,7 +24591,7 @@ vi-VN:
       aria_record: Nhấn vào đây để ghi âm
       aria_record_reset: Nhấn vào đây để ghi lại
       aria_stop: Nhấn "Stop" để kết thúc việc ghi âm
-    edit_view_rubric: Xem phiếu tự đánh giá
+    edit_view_rubric: Xem Khung biểu điểm
     group: Nhóm
     mic_blocked_message: 'Quyền sử dụng micro bị chặn. Để thay đổi, hãy chuyển đến
       chrome: // settings / content / micrô'
@@ -24905,7 +24947,7 @@ vi-VN:
     this_was_submitted_multiple_times_choose_a_submission_to_view: 'Đã nộp nhiều lần,
       chọn để xem:'
     update_grade: Cập nhật điểm
-    view_rubric_assessment_in_the_speedgrader: Xem nhận xét phiếu tự đánh giá trong
+    view_rubric_assessment_in_the_speedgrader: Xem Khung biểu điểm Đánh giá trong
       SpeedGrader
   submission_draft_cannot_be_more_then_one_attempt_a_43f45197: Chỉ được nộp bài làm
     lại một lần trước khi nộp bài hiện tài
@@ -25035,7 +25077,7 @@ vi-VN:
         save_comment: Lưu bình luận
       crumbs:
         assignments: Bài tập
-      hide_rubric_button: Ẩn phiếu tự đánh giá
+      hide_rubric_button: Ẩn Khung biểu điểm
       labels:
         add_a_comment: Thêm một bình luận
         grade: Điểm
@@ -25058,13 +25100,13 @@ vi-VN:
       peer_review_not_done: "** Đánh giá bạn học này chưa kết thúc. ** Để được coi
         là kết thúc, bạn cần để lại ít nhất một nhận xét."
       peer_review_not_done_rubric: "** Đánh giá bạn học này chưa kết thúc. ** Để được
-        coi là kết thúc, bạn cần để lại ít nhất một nhận xét và điền vào mẫu phiếu
-        tự đánh giá ở bên phải."
+        coi là kết thúc, bạn cần để lại ít nhất một nhận xét và điền vào Khung biểu
+        điểm ở bên phải."
       peer_review_steps_complete: Bạn đã hoàn thành các bước cần thiết cho đánh giá
         bạn học này.
       see_vericite_results: Xem kết quả VeriCite
       sent_to_whole_group: Gửi bình luận cho cả nhóm
-      show_rubric: Hiển thị phiếu tự đánh giá
+      show_rubric: Hiển thị Khung biểu điểm
       speedgrader: SpeedGrader ™
       student_mute_notification: Điểm chưa sẵn sàng bởi vì giáo viên đang chấm.
       submission_details: Chi tiết nộp
@@ -25270,7 +25312,7 @@ vi-VN:
     people: Mọi người
     profile: Hồ sơ
     quizzes: Bài kiểm tra
-    rubrics: Phiếu tự đánh giá
+    rubrics: Khung biểu điểm
     settings: Cài đặt
     syllabus: Chương trình học
     tab_location_error: Tab vị trí không hợp lệ
@@ -25646,6 +25688,7 @@ vi-VN:
   themes_89bfe9c4: Chủ đề
   there_are_count_associations_906edb03:
     other: Có %{count} Hiệp hội
+    zero: Có %{count} Liên kết
   there_are_count_results_in_the_list_e74f6e36:
     other: Có %{count} kết quả trong danh sách
   there_are_count_unsynced_changes_25ed3bed:
@@ -25681,7 +25724,7 @@ vi-VN:
   there_was_a_problem_deleting_the_grading_period_50ce07c5: Có một vấn đề trong xóa
     thời gian chấm điểm
   there_was_a_problem_deleting_the_grading_scheme_2a959c40: Có một vấn đề trong xóa
-    sơ đồ phân loại
+    sơ đồ chấm điểm
   there_was_a_problem_exporting_c33dc250: Có một vấn đề trong khi xuất.
   there_was_a_problem_fetching_periods_bdc09a8f: Có một vấn đề trong thời gian tìm
     nạp.
@@ -25945,9 +25988,9 @@ vi-VN:
   this_grade_has_negative_points_496400d4: Tổng điểm này có điểm âm
   this_grade_is_invalid_8ab192c7: Điểm này không hợp lệ
   this_grade_is_unusually_high_60533c20: Điểm này cao bất thường
-  this_has_more_question_types_like_hotspot_categori_620e9df6: Điều này có thêm nhiều
-    loại câu hỏi như hotspot, phân loại, khớp và đặt hàng. Nó cũng có nhiều tính năng
-    kiểm duyệt và hỗ trợ.
+  this_has_more_question_types_like_hotspot_categori_620e9df6: Điều chỉnh này có thêm
+    nhiều loại câu hỏi như hotspot, phân loại, nối và đặt hàng. Nó cũng có nhiều tính
+    năng kiểm duyệt và hỗ trợ.
   this_image_appears_as_a_background_watermark_to_yo_1c6b4497: 'Hình ảnh này xuất
     hiện dưới dạng hình nền có chữ mờ cho trang của bạn. Các định dạng được chấp nhận:
     png, svg, gif, jpeg.'
@@ -26124,7 +26167,7 @@ vi-VN:
     những thay đổi của bạn trông như thế nào.
   this_setting_only_affects_your_view_of_student_gra_8f58eb33: Cài đặt này chỉ ảnh
     hưởng đến chế độ xem của bạn về điểm học sinh và hiển thị điểm như thể tất cả
-    các bài tập chưa được phân loại đều bị điểm 0. Cài đặt này chỉ là một thay đổi
+    các bài tập chưa được chấm điểm đều bị điểm 0. Cài đặt này chỉ là một thay đổi
     trực quan và không ảnh hưởng đến điểm của học sinh hoặc những người dùng khác
     của Sổ điểm này. Khi cài đặt này được bật, Canvas sẽ không điền các số không trong
     Sổ điểm cho các bài nộp của học sinh trong các bài tập cá nhân. Chỉ các nhóm bài
@@ -26183,8 +26226,11 @@ vi-VN:
     những thay đổi này cho toàn bộ tài khoản của bạn. Bạn có muốn tiến hành?
   this_will_apply_this_theme_to_your_entire_account__4cfabbe5: Điều này sẽ áp dụng
     chủ đề này cho toàn bộ tài khoản của bạn. Bạn có muốn tiến hành?
+  this_will_update_all_rubrics_aligned_to_outcomes_w_59d8d04b: Điều này sẽ cập nhật
+    tất cả các Khung biểu điểm được liên kết với kết quả chưa được đánh giá trong
+    khóa học này .
   this_will_update_all_rubrics_using_this_outcome_th_6954ca45: Điều này sẽ cập nhật
-    tất cả các số liệu sử dụng kết quả này mà chưa được đánh giá
+    tất cả các Khung biểu điểm sử dụng Kết quả này mà chưa được đánh giá
   threshold_pts_45f0e5d8: 'ngưỡng: %{pts}'
   ticket_successfully_submitted_f6254460: Vé nộp thành công.
   ticketing_system_52205bff: Hệ thống bán vé
@@ -26732,7 +26778,7 @@ vi-VN:
     kế khóa học hoặc trợ giảng từ các khóa học đến khóa học và Cuộc trò chuyện - cũng
     phải bật tin nhắn cho từng thành viên khóa học.
   to_edit_course_grading_schemes_courses_add_edit_de_bdcf3563: Để chỉnh sửa sơ đồ
-    phân loại điểm, Khóa học - thêm / chỉnh sửa / xóa cũng phải được bật.
+    chấm điểm, Khóa học - thêm / chỉnh sửa / xóa cũng phải được bật.
   to_edit_course_settings_courses_add_edit_delete_mu_7354470c: Để chỉnh sửa cài đặt
     khóa học, Khóa học - thêm / chỉnh sửa / xóa phải được bật.
   to_edit_course_settings_courses_add_edit_delete_mu_844988d0: Để chỉnh sửa cài đặt
@@ -28267,7 +28313,8 @@ vi-VN:
   view_prior_enrollments_9b519b25: 'Xem ưu tiên tuyển sinh '
   view_question_banks_188a9e0f: Xem Ngân hàng câu hỏi
   view_range_student_details_8116d68a: Xem chi tiết phạm vi học sinh
-  view_rubric_evaluation_b1b0db2a: Xem nhận xét phiếu tự đánh giá
+  view_rubric_d71cce10: Xem Khung biểu điểm
+  view_rubric_evaluation_b1b0db2a: Xem Đánh giá từ Khung biểu điểm
   view_scoring_details_9fb7a0a5: Xem chi tiết chấm điểm
   view_student_analytics_6b8ccd42: Xem phân tích học sinh
   view_student_submission_5beaf78: Xem bài nộp của học sinh
@@ -28829,6 +28876,20 @@ vi-VN:
     tài khoản phụ có tài khoản phụ trong đó.
   you_can_t_delete_account_name_because_it_has_cours_a81c57c9: Bạn không thể xóa %{account_name}
     vì nó có các khóa học trong đó
+  you_can_t_edit_this_rubric_either_because_you_don__5247d35d: Bạn không thể chỉnh
+    sửa Khung biểu điểm này vì bạn không có quyền hoặc nó đang được sử dụng ở nhiều
+    nơi. Bất kỳ thay đổi nào bạn thực hiện sẽ dẫn đến một Khung biểu điểm mới. Bất
+    kỳ Kết quả nào có liên quan sẽ sử dụng thang đo mức độ thông thạo tài khoản. Vẫn
+    tiếp tục?
+  you_can_t_edit_this_rubric_either_because_you_don__ab22f243: Bạn không thể chỉnh
+    sửa Khung biểu điểm này vì bạn không có quyền hoặc nó đang được sử dụng ở nhiều
+    nơi. Bất kỳ thay đổi nào bạn thực hiện sẽ dẫn đến một Khung biểu điểm mới. Bất
+    kỳ Kết quả nào có liên quan sẽ sử dụng thang đo mức độ thông thạo tài khoản. Vẫn
+    tiếp tục?
+  you_can_t_edit_this_rubric_either_because_you_don__c2472826: Bạn không thể chỉnh
+    sửa Khung biểu điểm này vì bạn không có quyền hoặc nó đang được sử dụng ở nhiều
+    nơi. Bất kỳ thay đổi nào bạn thực hiện sẽ dẫn đến một Khung biểu điểm mới dựa
+    trên Khung biểu điểm cũ. Vẫn tiếp tục?
   you_can_try_to_log_in_again_2b23ef0f: Bạn có thể thử * đăng nhập lại *.
   you_can_update_some_of_this_user_s_information_but_8e99a045: Bạn có thể cập nhật
     một số thông tin của người dùng này, nhưng họ có thể thay đổi lại nếu họ chọn.
