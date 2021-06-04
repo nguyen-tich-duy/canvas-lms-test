@@ -34,6 +34,9 @@ cp .env.production .env
 
 # Update other config files in config folder if necessary
 
+# For cassandra memory, run ./calc_cassandra_heap.sh in order to know the suitable HEAP_NEWSIZE, and apply appropriate MAX_HEAP_SIZE.
+./calc_cassandra_heap.sh
+
 # Step 3: 
 ./pull.sh 
 
