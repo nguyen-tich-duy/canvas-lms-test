@@ -14,6 +14,9 @@ services:
       # VIRTUAL_HOST: canvas.docker
     volumes: &BASE-VOLUMES
       - ./canvas-lms/config:/usr/src/app/config
+      - brandable_css:/usr/src/app/public/dist/brandable_css
+      - assets:/usr/src/app/public/assets
+      - stylesheets:/usr/src/app/app/stylesheets
       - log:/usr/src/app/log
       - quizzes_tmp:/usr/src/app/client_apps/canvas_quizzes/tmp
       - reports:/usr/src/app/reports
@@ -83,6 +86,9 @@ services:
       - cassandra_data:/bitnami
 
 volumes:
+  brandable_css: {}
+  assets: {}
+  stylesheets: {}
   upload: {}
   log: {}
   quizzes_tmp: {}
