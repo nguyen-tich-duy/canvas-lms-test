@@ -82,6 +82,8 @@ services:
     environment:
       CASSANDRA_AUTHENTICATOR: AllowAllAuthenticator
       CASSANDRA_AUTHORIZER: AllowAllAuthorizer
+      MAX_HEAP_SIZE: ${CASSANDRA_MAX_HEAP_SIZE}
+      HEAP_NEWSIZE: ${CASSANDRA_HEAP_NEWSIZE}
     volumes:
       - cassandra_data:/bitnami
 
