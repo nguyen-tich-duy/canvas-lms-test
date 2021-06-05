@@ -1,4 +1,4 @@
-production: &production
+production:
   address: mailcatcher
   port: 1025
   domain: <%= ENV["PUBLIC_DOMAIN"] %>

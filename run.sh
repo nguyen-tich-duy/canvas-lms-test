@@ -13,4 +13,6 @@ cd $BASE_PATH
 source ./.env.production
 source ./.env
 
+export COMPOSE_FILE=docker-compose.yml:docker-compose.tools.yml
+
 docker-compose run --rm $@

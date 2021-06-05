@@ -18,8 +18,13 @@ IFS=$'\n\t'
 source ./.env.production
 source ./.env
 
+export COMPOSE_FILE=docker-compose.yml:docker-compose.tools.yml
+
 if [ "$1" == "production" ]; then
   sudo tail -n 100 -f /var/lib/docker/volumes/${COMPOSE_PROJECT_NAME}_log/_data/production.log | ccze -A
+elif [ "$1" == "delayed_job" ]; then
+  # docker-compose run --rm alpine tail -n 100 -f /data/log/delayed_job.log | ccze -A
+  sudo less -r /var/lib/docker/volumes/${COMPOSE_PROJECT_NAME}_log/_data/delayed_job.log
 else
   docker-compose logs --tail=100 -f $@ | ccze -A
 fi
