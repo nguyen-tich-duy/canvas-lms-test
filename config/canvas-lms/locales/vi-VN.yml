@@ -3878,7 +3878,9 @@ vi-VN:
     thu này?
   are_you_sure_you_want_to_delete_your_copy_of_these_f04442ed:
     zero: Bạn có chắc chắn muốn xóa bản sao của các cuộc hội thoại này? Hành động
+      này không thể được hoàn tác.
     one: Bạn có chắc chắn muốn xóa bản sao của các cuộc hội thoại này? Hành động
+      này không thể được hoàn tác.
     other: Bạn có chắc chắn muốn xóa bản sao của các cuộc hội thoại này? Hành động
       này không thể được hoàn tác.
   are_you_sure_you_want_to_delete_your_reservation_t_5ae87209: Bạn có chắc chắn muốn
@@ -3926,7 +3928,9 @@ vi-VN:
     other: Bạn có chắc chắn muốn hủy đăng ký những cuộc trò chuyện này?
   are_you_sure_you_want_to_unarchive_your_copy_of_th_c961b520:
     zero: Bạn có chắc chắn muốn hủy lưu trữ bản sao của (các) cuộc trò chuyện này
+      không?
     one: Bạn có chắc chắn muốn hủy lưu trữ bản sao của (các) cuộc trò chuyện này
+      không?
     other: Bạn có chắc chắn muốn hủy lưu trữ bản sao của (các) cuộc trò chuyện này
       không?
   argentina_3257a200: Argentina
@@ -9211,9 +9215,6 @@ vi-VN:
           cho tài khoản người dùng *%{user}*.
         observer: Bạn đã được mời tham gia khóa học này với tư cách là *người quan
           sát* cho tài khoản người dùng *%{user}*.
-        one: Bạn đã được mời tham gia khóa học này cho tài khoản người dùng * %{user}
-          *.
-        zero: Bạn đã được mời tham gia khóa học này cho tài khoản người dùng *%{user}*.
         one: Bạn đã được mời tham gia khóa học này cho tài khoản người dùng *%{user}*.
         other: Bạn đã được mời tham gia khóa học này cho tài khoản người dùng *%{user}*.
         student: Bạn đã được mời tham gia khóa học này với tư cách *học sinh* cho
@@ -17655,24 +17656,29 @@ vi-VN:
     alert:
       email:
         body:
-          zero: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
-          one: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
-          other: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
-            sau đã được đáp ứng:'
+          zero: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện sau đã được đáp ứng:'
+          one: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện sau đã được đáp ứng:'
+          other: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện sau đã được đáp ứng:'
         body_student:
           zero: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
+            được đáp ứng:'
           one: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
+            được đáp ứng:'
           other: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
             được đáp ứng:'
         html:
           body:
             zero: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
+              sau đã được đáp ứng:'
             one: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
+              sau đã được đáp ứng:'
             other: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
               sau đã được đáp ứng:'
           body_student:
             zero: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
+              được đáp ứng:'
             one: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
+              được đáp ứng:'
             other: 'Một thông báo đã được kích hoạt cho bạn vì các điều kiện sau đã
               được đáp ứng:'
           interaction_description: Không có tương tác giữa học sinh và giáo viên trong
@@ -17698,12 +17704,16 @@ vi-VN:
       summary:
         body:
           zero: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
+            sau đã được đáp ứng:'
           one: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
+            sau đã được đáp ứng:'
           other: 'Một thông báo đã được kích hoạt cho %{student} vì các điều kiện
             sau đã được đáp ứng:'
         body_student:
           zero: 'Một cảnh báo đã được kích hoạt cho bạn vì các điều kiện sau đã được
+            đáp ứng:'
           one: 'Một cảnh báo đã được kích hoạt cho bạn vì các điều kiện sau đã được
+            đáp ứng:'
           other: 'Một cảnh báo đã được kích hoạt cho bạn vì các điều kiện sau đã được
             đáp ứng:'
         interaction_description:
@@ -17718,7 +17728,9 @@ vi-VN:
           other: "%{count} hoặc nhiều bài tập chưa được chấm điểm"
         ungraded_timespan_description:
           zero: Một hoặc nhiều bài nộp đã không được chấm điểm trong %{count} hoặc
+            nhiều ngày hơn
           one: Một hoặc nhiều bài nộp đã không được chấm điểm trong %{count} hoặc
+            nhiều ngày hơn
           other: Một hoặc nhiều bài nộp đã không được chấm điểm trong %{count} hoặc
             nhiều ngày hơn
         usernote_description:
@@ -20061,7 +20073,9 @@ vi-VN:
   multiple_modules_930713d4: Nhiều Học phần
   must_achieve_mastery_at_least_count_times_scores_a_628db168:
     zero: Phải đạt được thành thạo ít nhất %{count} lần. Điểm trên thành thạo sẽ
+      được tính trung bình để tính điểm cuối cùng.
     one: Phải đạt được thành thạo ít nhất %{count} lần. Điểm trên thành thạo sẽ
+      được tính trung bình để tính điểm cuối cùng.
     other: Phải đạt được thành thạo ít nhất %{count} lần. Điểm trên thành thạo sẽ
       được tính trung bình để tính điểm cuối cùng.
   must_be_255_characters_or_less_e8e7f25e: Phải có từ 255 ký tự trở xuống
@@ -23562,7 +23576,9 @@ vi-VN:
         các tham số đã cho
       only_n_valid_combinations:
         zero: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
+          đã cho
         one: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
+          đã cho
         other: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
           đã cho
     answer_comments: Trả lời ý kiến
@@ -23681,7 +23697,9 @@ vi-VN:
         các tham số đã cho
       only_n_valid_combinations:
         zero: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
+          đã cho
         one: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
+          đã cho
         other: Hệ thống chỉ có thể tạo các kết hợp hợp lệ %{count} cho các tham số
           đã cho
     answer_comments: 'Nhận xét câu trả lời '
@@ -24666,7 +24684,9 @@ vi-VN:
           thể thực hiện các bài kiểm tra được chấm điểm
         quiz_regraded_your_score_affected:
           zero: Bài kiểm tra này đã được đăng lại; điểm số mới của bạn phản ánh %{count}
+            câu hỏi đã bị ảnh hưởng.
           one: Bài kiểm tra này đã được đăng lại; điểm số mới của bạn phản ánh %{count}
+            câu hỏi đã bị ảnh hưởng.
           other: Bài kiểm tra này đã được đăng lại; điểm số mới của bạn phản ánh %{count}
             câu hỏi đã bị ảnh hưởng.
         quiz_regraded_your_score_not_affected: Bài kiểm tra này đã được đăng lại;
@@ -24792,7 +24812,11 @@ vi-VN:
         delete_quiz: Bạn có chắc chắn muốn xóa bài kiểm tra này?
         delete_quiz_submissions_warning:
           zero: 'Cảnh báo: %{count} học sinh đã thực hiện bài kiểm tra này. Nếu bạn
+            xóa nó, mọi bài nộp đã hoàn thành sẽ bị xóa và không còn xuất hiện trong
+            sổ điểm.'
           one: 'Cảnh báo: %{count} học sinh đã thực hiện bài kiểm tra này. Nếu bạn
+            xóa nó, mọi bài nộp đã hoàn thành sẽ bị xóa và không còn xuất hiện trong
+            sổ điểm.'
           other: 'Cảnh báo: %{count} học sinh đã thực hiện bài kiểm tra này. Nếu bạn
             xóa nó, mọi bài nộp đã hoàn thành sẽ bị xóa và không còn xuất hiện trong
             sổ điểm.'
@@ -24823,7 +24847,9 @@ vi-VN:
         navigate_away: Bạn sắp điều hướng khỏi trang này. Vẫn tiếp tục?
         unanswered_questions:
           zero: Bạn có %{count} câu hỏi chưa được trả lời (xem thanh bên phải để
+            biết chi tiết). Vẫn tiếp tục gửi?
           one: Bạn có %{count} câu hỏi chưa được trả lời (xem thanh bên phải để
+            biết chi tiết). Vẫn tiếp tục gửi?
           other: Bạn có %{count} câu hỏi chưa được trả lời (xem thanh bên phải để
             biết chi tiết). Vẫn tiếp tục gửi?
         unfinished_quiz: Bạn sắp rời khỏi bài kiểm tra dang dở. Vẫn tiếp tục?
@@ -24972,7 +24998,9 @@ vi-VN:
     cancel: Hủy bỏ
     confirm_delete_with_contents:
       zero: Bạn có chắc chắn muốn xóa các mục %{count} này và mọi thứ bên trong chúng
+        không?
       one: Bạn có chắc chắn muốn xóa các mục %{count} này và mọi thứ bên trong chúng
+        không?
       other: Bạn có chắc chắn muốn xóa các mục %{count} này và mọi thứ bên trong chúng
         không?
     created_at: Ngày tạo
@@ -27058,7 +27086,11 @@ vi-VN:
           sử dụng nó.
         rubric_in_use:
           zero: Hãy nhớ rằng%{count} học sinh đã được đánh giá bằng cách sử dụng
+            phiếu tự đánh giá này. Thay đổi nó sẽ ảnh hưởng đến kết quả đánh giá của
+            họ.
           one: Hãy nhớ rằng%{count} học sinh đã được đánh giá bằng cách sử dụng
+            phiếu tự đánh giá này. Thay đổi nó sẽ ảnh hưởng đến kết quả đánh giá của
+            họ.
           other: Hãy nhớ rằng%{count} học sinh đã được đánh giá bằng cách sử dụng
             phiếu tự đánh giá này. Thay đổi nó sẽ ảnh hưởng đến kết quả đánh giá của
             họ.
@@ -27827,7 +27859,9 @@ vi-VN:
     final_point_ratio: "%{pointRatio} điểm"
     invalid_group_warning:
       zero: 'Lưu ý: Điểm không bao gồm các bài tập từ các nhóm %{list_of_group_names}
+        vì không có điểm nào có thể.'
       one: 'Lưu ý: Điểm không bao gồm các bài tập từ các nhóm %{list_of_group_names}
+        vì không có điểm nào có thể.'
       other: 'Lưu ý: Điểm không bao gồm các bài tập từ các nhóm %{list_of_group_names}
         vì không có điểm nào có thể.'
     media_recordin: Bản ghi từ các phương tiện truyền thông
@@ -32282,7 +32316,9 @@ vi-VN:
       title: Cài đặt thử nghiệm Canvas
       weekly_message:
         zero: Cài đặt Canvas này chỉ để thử nghiệm và sẽ đặt lại sau mỗi %{count}
+          tuần.
         one: Cài đặt Canvas này chỉ để thử nghiệm và sẽ đặt lại sau mỗi %{count}
+          tuần.
         other: Cài đặt Canvas này chỉ để thử nghiệm và sẽ đặt lại sau mỗi %{count}
           tuần.
   was_locked_at_date_acf1c576: Đã bị khóa tại %{date}
