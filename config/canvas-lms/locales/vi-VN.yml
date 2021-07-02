@@ -8578,18 +8578,18 @@ vi-VN:
     one: "%{count} người trả lời"
     other: "%{count} người trả lời"
   count_results_9926447c:
-    zero: "%{count} kết quả"
-    one: "%{count} kết quả"
+    zero: "0 kết quả"
+    one: "1 kết quả"
     other: "%{count} kết quả"
   count_results_displayed_ed39a0f0:
-    zero: "%{count} kết quả được hiển thị "
-    one: "%{count} kết quả được hiển thị "
+    zero: "0 kết quả được hiển thị "
+    one: "1 kết quả được hiển thị "
     other: "%{count} kết quả được hiển thị "
   count_rows_added_dacc9daf: "%{count} hàng được thêm vào"
   count_rows_removed_c6ff7bc: "%{count} hàng bị xóa"
   count_sections_466dcd5c:
-    zero: "%{count} Phần"
-    one: "%{count} Phần"
+    zero: "0 Phần"
+    one: "1 Phần"
     other: "%{count} Phần"
   count_sets_of_grading_periods_found_c8857ae9:
     zero: "%{count} bộ giai đoạn chấm điểm được tìm thấy."
@@ -10171,16 +10171,16 @@ vi-VN:
   datetime:
     distance_in_words:
       about_x_hours:
-        zero: khoảng %{count} giờ
-        one: khoảng %{count} giờ
+        zero: khoảng 0 giờ
+        one: khoảng 1 giờ
         other: khoảng %{count} giờ
       about_x_months:
-        zero: khoảng %{count} tháng
-        one: khoảng %{count} tháng
+        zero: khoảng 0 tháng
+        one: khoảng 1 tháng
         other: khoảng %{count} tháng
       about_x_years:
-        zero: khoảng %{count} năm
-        one: khoảng %{count} năm
+        zero: khoảng 0 năm
+        one: khoảng 1 năm
         other: khoảng %{count} năm
       almost_x_years:
         zero: gần %{count} năm
