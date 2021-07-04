@@ -8586,9 +8586,9 @@ vi-VN:
   count_rows_added_dacc9daf: "%{count} hàng được thêm vào"
   count_rows_removed_c6ff7bc: "%{count} hàng bị xóa"
   count_sections_466dcd5c:
-    zero: "%{count} Phần 2"
-    one: "%{count} Phần 2"
-    other: "%{count} Phần 2"
+    zero: "%{count} Phần"
+    one: "%{count} Phần"
+    other: "%{count} Phần"
   count_sets_of_grading_periods_found_c8857ae9:
     zero: "%{count} bộ giai đoạn chấm điểm được tìm thấy."
     one: "%{count} bộ giai đoạn chấm điểm được tìm thấy."
